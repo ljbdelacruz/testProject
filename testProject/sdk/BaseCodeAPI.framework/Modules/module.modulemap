@@ -1,0 +1,11 @@
+framework module BaseCodeAPI {
+  umbrella header "BaseCodeAPI.h"
+
+  export *
+  module * { export * }
+}
+
+module BaseCodeAPI.Swift {
+    header "BaseCodeAPI-Swift.h"
+    requires objc
+}
