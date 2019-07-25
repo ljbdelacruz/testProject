@@ -11,18 +11,36 @@ import BaseCodeAPI
 
 class ViewController: UIViewController {
     var categoryRepo:CategoryRepository?;
+    var presenter:MainPresenter!;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        presenter.attachView(view: self);
+        presenter.loadCategory();
+    }
+
+}
+
+extension ViewController:MainView{
+    func getCategoryByIDSuccess(category: CategoryModel) {
+        
+        print(category.toJSON())
+        print("Category")
     }
     
+    func getretrieveCategoryByParentSuccess(categories: [CategoryModel]) {
+        print(categories.toJSON())
+        print("Category")
+    }
     
-    
-    func loadCategory(){
+    func insertCategorySuccess(category: CommonResponse) {
         
     }
+    func error(err: Error) {
+        print(err.localizedDescription);
+    }
     
-
-
+    
 }
 

@@ -12,7 +12,7 @@ import RxSwift
 
 protocol MainView: BaseView {
     func getCategoryByIDSuccess(category:CategoryModel)
-    func getretrieveCategoryByParentSuccess(category:CategoryModel)
+    func getretrieveCategoryByParentSuccess(categories:[CategoryModel])
     func insertCategorySuccess(category:CommonResponse)
     func error(err:Error)
 }
@@ -25,6 +25,21 @@ class MainPresenter: BasePresenter {
     init(repository: CategoryRepository) {
         self.repository = repository
         self.disposeBag = DisposeBag()
+    }
+    func loadCategory(){
+        repository.getAll(parentID: "0").subscribe( { (event) in
+            switch event {
+            case .next(let response):
+                self.getView()?.getretrieveCategoryByParentSuccess(categories: response)
+                break;
+            case .error(let error):
+                print(error.localizedDescription)
+                self.getView()?.error(err: error);
+                break;
+            case .completed:
+                break
+            }
+        }).disposed(by: disposeBag)
     }
     
 }

@@ -17,8 +17,24 @@
 		043EAC5122E9B2D2004F5594 /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043EAC5022E9B2D2004F5594 /* PresentationAssembly.swift */; };
 		043EAC5522E9B458004F5594 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043EAC5422E9B458004F5594 /* MainPresenter.swift */; };
 		043EAC5722E9B49F004F5594 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043EAC5622E9B49F004F5594 /* BaseView.swift */; };
+		043EAC5822E9BB54004F5594 /* BaseCodeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043EAC4B22E9B131004F5594 /* BaseCodeAPI.framework */; };
+		043EAC5922E9BB54004F5594 /* BaseCodeAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 043EAC4B22E9B131004F5594 /* BaseCodeAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		672445BC98DDEB5339045398 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBCBC1A150BDDA4616AB22D /* Pods_testProject.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		043EAC5A22E9BB55004F5594 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				043EAC5922E9BB54004F5594 /* BaseCodeAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		043EAC3522E9B0C6004F5594 /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043EAC4C22E9B131004F5594 /* BaseCodeAPI.framework in Frameworks */,
+				043EAC5822E9BB54004F5594 /* BaseCodeAPI.framework in Frameworks */,
 				672445BC98DDEB5339045398 /* Pods_testProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +165,7 @@
 				043EAC3222E9B0C6004F5594 /* Frameworks */,
 				043EAC3322E9B0C6004F5594 /* Resources */,
 				381A0696F94EDDDF010FE4F7 /* [CP] Embed Pods Frameworks */,
+				043EAC5A22E9BB55004F5594 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -7,16 +7,24 @@
 //
 
 import UIKit
+import BaseCodeAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let assembler = AppAssembler.instance
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Constants.baseURL="http://192.168.88.23:8080";
         return true
+    }
+    func initWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let vc = assembler.initialViewController()
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
