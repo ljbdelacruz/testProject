@@ -41,5 +41,19 @@ class MainPresenter: BasePresenter {
             }
         }).disposed(by: disposeBag)
     }
+    func insertCategory(body:CategoryModel){
+        repository.new(body: body).subscribe( { (event) in
+            switch event {
+            case .next(let response):
+                self.getView()?.insertCategorySuccess(category: response)
+                break;
+            case .error(let error):
+                self.getView()?.error(err: error);
+                break;
+            case .completed:
+                break
+            }
+        }).disposed(by: disposeBag)
+    }
     
 }

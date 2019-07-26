@@ -17,14 +17,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         presenter.attachView(view: self);
-        presenter.loadCategory();
+//        presenter.loadCategory();
+        var body=CategoryModel();
+        body.name="Test";
+        body.parent="0";
+        presenter.insertCategory(body: body)
     }
 
 }
 
 extension ViewController:MainView{
     func getCategoryByIDSuccess(category: CategoryModel) {
-        
         print(category.toJSON())
         print("Category")
     }
@@ -35,9 +38,11 @@ extension ViewController:MainView{
     }
     
     func insertCategorySuccess(category: CommonResponse) {
-        
+        print("Success");
+        print(category.toJSON());
     }
     func error(err: Error) {
+        print("Error");
         print(err.localizedDescription);
     }
     
