@@ -4,7 +4,8 @@
 target 'testProject' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+  
+  pod 'IQKeyboardManagerSwift',:tag => 'v6.0.4',:git => 'https://github.com/hackiftekhar/IQKeyboardManager.git'
   # Pods for testProject
   pod 'Swinject', '~> 2.5.0'
   pod 'SwinjectStoryboard', '~> 2.1.0'

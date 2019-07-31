@@ -58,6 +58,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.1.0):
     - GoogleUtilities/Logger
+  - IQKeyboardManagerSwift (6.0.4)
   - Moya (12.0.1):
     - Moya/Core (= 12.0.1)
   - Moya-ObjectMapper/Core (2.8):
@@ -104,6 +105,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
+  - IQKeyboardManagerSwift (from `https://github.com/hackiftekhar/IQKeyboardManager.git`, tag `v6.0.4`)
   - Moya (= 12.0.1)
   - Moya-ObjectMapper/RxSwift (= 2.8)
   - Moya/RxSwift (= 12.0.1)
@@ -145,10 +147,16 @@ SPEC REPOS:
     - SwinjectStoryboard
 
 EXTERNAL SOURCES:
+  IQKeyboardManagerSwift:
+    :git: https://github.com/hackiftekhar/IQKeyboardManager.git
+    :tag: v6.0.4
   SwiftEventBus:
     :git: https://github.com/cesarferreira/SwiftEventBus.git
 
 CHECKOUT OPTIONS:
+  IQKeyboardManagerSwift:
+    :git: https://github.com/hackiftekhar/IQKeyboardManager.git
+    :tag: v6.0.4
   SwiftEventBus:
     :commit: 7cc44cd9896740cdc4ecc8a868375f96133e3324
     :git: https://github.com/cesarferreira/SwiftEventBus.git
@@ -163,6 +171,7 @@ SPEC CHECKSUMS:
   FirebaseMessaging: 31377e05331d16dc6c9fd82554f9a5c49aa70aed
   GoogleAppMeasurement: 51d8d9ea48f0ca44484d29cfbdef976fbd4fc336
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
+  IQKeyboardManagerSwift: 36dbe324b4f9793f5f41ba5227f3e7c76dfefd50
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
@@ -180,6 +189,6 @@ SPEC CHECKSUMS:
   SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
   SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: 0fbbacbb26ba7a55acd948c291fc4430eddc850d
+PODFILE CHECKSUM: 05ea175de58f01840fc99609a8f719526f31986d
 
 COCOAPODS: 1.5.3

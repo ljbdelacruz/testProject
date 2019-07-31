@@ -28,6 +28,11 @@
 		04B231D322F13200002824F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231D222F13200002824F4 /* HomeViewController.swift */; };
 		04B231D622F1349C002824F4 /* VideosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231D522F1349C002824F4 /* VideosModel.swift */; };
 		04B231DA22F13651002824F4 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231D922F13651002824F4 /* UICollectionView+.swift */; };
+		04B231DD22F1625A002824F4 /* YoutubeCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B231DC22F1625A002824F4 /* YoutubeCell1.xib */; };
+		04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231DE22F16290002824F4 /* YoutubeCell1.swift */; };
+		04B231E222F1656F002824F4 /* ToWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231E122F1656F002824F4 /* ToWatchViewController.swift */; };
+		04B231E422F166A8002824F4 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231E322F166A8002824F4 /* UITableView+.swift */; };
+		04B231E622F1682F002824F4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231E522F1682F002824F4 /* String+.swift */; };
 		672445BC98DDEB5339045398 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBCBC1A150BDDA4616AB22D /* Pods_testProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +72,11 @@
 		04B231D222F13200002824F4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		04B231D522F1349C002824F4 /* VideosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosModel.swift; sourceTree = "<group>"; };
 		04B231D922F13651002824F4 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		04B231DC22F1625A002824F4 /* YoutubeCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YoutubeCell1.xib; sourceTree = "<group>"; };
+		04B231DE22F16290002824F4 /* YoutubeCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeCell1.swift; sourceTree = "<group>"; };
+		04B231E122F1656F002824F4 /* ToWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToWatchViewController.swift; sourceTree = "<group>"; };
+		04B231E322F166A8002824F4 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		04B231E522F1682F002824F4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		5ABC0CAFA648EC058186F6F4 /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5DBCBC1A150BDDA4616AB22D /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CFB9901955EB8B4A4FEABF /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +117,7 @@
 		043EAC3722E9B0C6004F5594 /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				04B231E722F1697B002824F4 /* helpers */,
 				04B231D822F13642002824F4 /* extensions */,
 				04B231D422F13486002824F4 /* Model */,
 				043EAC5222E9B432004F5594 /* View */,
@@ -174,6 +185,7 @@
 			children = (
 				04B231C922F12A79002824F4 /* Dashboard.storyboard */,
 				04B231D222F13200002824F4 /* HomeViewController.swift */,
+				04B231E122F1656F002824F4 /* ToWatchViewController.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -181,6 +193,7 @@
 		04B231CB22F12BC7002824F4 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				04B231E022F16299002824F4 /* TableCell */,
 				04B231CC22F12BD3002824F4 /* CollectionCell */,
 			);
 			path = CustomView;
@@ -215,8 +228,34 @@
 			isa = PBXGroup;
 			children = (
 				04B231D922F13651002824F4 /* UICollectionView+.swift */,
+				04B231E322F166A8002824F4 /* UITableView+.swift */,
+				04B231E522F1682F002824F4 /* String+.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		04B231DB22F1623B002824F4 /* YoutubeCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				04B231DC22F1625A002824F4 /* YoutubeCell1.xib */,
+				04B231DE22F16290002824F4 /* YoutubeCell1.swift */,
+			);
+			path = YoutubeCell1;
+			sourceTree = "<group>";
+		};
+		04B231E022F16299002824F4 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				04B231DB22F1623B002824F4 /* YoutubeCell1 */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		04B231E722F1697B002824F4 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 		1E6DAD004D2949CF03848663 /* Frameworks */ = {
@@ -302,6 +341,7 @@
 				04B231CA22F12A79002824F4 /* Dashboard.storyboard in Resources */,
 				043EAC4322E9B0C8004F5594 /* LaunchScreen.storyboard in Resources */,
 				043EAC4022E9B0C8004F5594 /* Assets.xcassets in Resources */,
+				04B231DD22F1625A002824F4 /* YoutubeCell1.xib in Resources */,
 				043EAC3E22E9B0C6004F5594 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +382,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-testProject/Pods-testProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -365,6 +406,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -397,12 +439,16 @@
 				04B231CF22F12C20002824F4 /* YoutubeCollectionViewCell.swift in Sources */,
 				04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */,
 				043EAC5522E9B458004F5594 /* MainPresenter.swift in Sources */,
+				04B231E422F166A8002824F4 /* UITableView+.swift in Sources */,
 				043EAC3B22E9B0C6004F5594 /* ViewController.swift in Sources */,
 				043EAC5122E9B2D2004F5594 /* PresentationAssembly.swift in Sources */,
 				04B231D322F13200002824F4 /* HomeViewController.swift in Sources */,
 				043EAC5722E9B49F004F5594 /* BaseView.swift in Sources */,
 				043EAC3922E9B0C6004F5594 /* AppDelegate.swift in Sources */,
 				04B231C322F124D5002824F4 /* LoginVViewController.swift in Sources */,
+				04B231E622F1682F002824F4 /* String+.swift in Sources */,
+				04B231E222F1656F002824F4 /* ToWatchViewController.swift in Sources */,
+				04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */,
 				043EAC4F22E9B289004F5594 /* AppAssembler.swift in Sources */,
 				04B231DA22F13651002824F4 /* UICollectionView+.swift in Sources */,
 				04B231D622F1349C002824F4 /* VideosModel.swift in Sources */,

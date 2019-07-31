@@ -13,18 +13,54 @@
         <!--To Watch-->
         <scene sceneID="A9c-ae-6WP">
             <objects>
-                <viewController id="tmy-9i-wDY" sceneMemberID="viewController">
+                <viewController id="tmy-9i-wDY" customClass="ToWatchViewController" customModule="testProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Hd-kX-OXj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1e9-Md-tIc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="OIy-K1-3cK"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EfR-FF-fKQ">
+                                <rect key="frame" x="0.0" y="86" width="375" height="532"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tdk-VQ-qbc">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tdk-VQ-qbc" id="Pvw-58-kSC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1e9-Md-tIc" firstAttribute="top" secondItem="oVC-g1-LnL" secondAttribute="top" id="0tA-ug-EV4"/>
+                            <constraint firstItem="1e9-Md-tIc" firstAttribute="trailing" secondItem="oVC-g1-LnL" secondAttribute="trailing" id="1wn-oZ-o6N"/>
+                            <constraint firstItem="EfR-FF-fKQ" firstAttribute="leading" secondItem="oVC-g1-LnL" secondAttribute="leading" id="PbO-q8-Ob7"/>
+                            <constraint firstItem="1e9-Md-tIc" firstAttribute="leading" secondItem="oVC-g1-LnL" secondAttribute="leading" id="hav-v7-zgq"/>
+                            <constraint firstItem="EfR-FF-fKQ" firstAttribute="trailing" secondItem="oVC-g1-LnL" secondAttribute="trailing" id="vXs-WI-onU"/>
+                            <constraint firstItem="EfR-FF-fKQ" firstAttribute="top" secondItem="1e9-Md-tIc" secondAttribute="bottom" constant="10" id="wNV-i4-MGi"/>
+                            <constraint firstItem="EfR-FF-fKQ" firstAttribute="bottom" secondItem="oVC-g1-LnL" secondAttribute="bottom" id="z3L-Dd-J0r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oVC-g1-LnL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="To Watch" id="rVZ-VL-5bf"/>
+                    <connections>
+                        <outlet property="sbVideo" destination="1e9-Md-tIc" id="x7x-b4-uzV"/>
+                        <outlet property="videoTV" destination="EfR-FF-fKQ" id="f3D-Ss-ENi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hls-Q9-fEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1041" y="1314"/>
+            <point key="canvasLocation" x="1040.8" y="1313.793103448276"/>
         </scene>
         <!--Home-->
         <scene sceneID="trY-nz-bXE">
