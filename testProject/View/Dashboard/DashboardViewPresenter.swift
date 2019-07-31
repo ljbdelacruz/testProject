@@ -12,7 +12,8 @@ import BaseCodeAPI
 
 protocol DashboardView: BaseView {
     func successCoreData()
-    func failedCoreData()
+    func successFetch(videos:[VideosModel])
+    func error();
 }
 class MainPresenter: BasePresenter {
     let context=(UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext;
@@ -24,7 +25,18 @@ class MainPresenter: BasePresenter {
     init(repository: CategoryRepository) {
         self.repository = repository
         self.disposeBag = DisposeBag()
-    }    
+    }
+    func LoadData(request:NSFetchRequest<VideosModel> = Category.fetchRequest(), addOnPredicate:NSPredicate? = nil){
+        request.predicate=addOnPredicate != nil ? addOnPredicate : nil;
+        do{
+            var videos=context.fetch(request)
+            self.getView()?.successFetch(videos: videos);
+            
+        }catch{
+            print("\(error.localizedDescription)");
+        }
+    }
+    
     func SaveData(name:String){
         let newTask=Category(context: self.context);
         newTask.set(name: name);
@@ -36,7 +48,7 @@ class MainPresenter: BasePresenter {
             try context.save();
             self.getView()?.successCoreData();
         }catch{
-            self.getView()?.failedCoreData();
+            self.getView()?.error();
         }
     }
     
