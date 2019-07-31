@@ -9,11 +9,27 @@ import UIKit
 
 class LoginVViewController: UIViewController {
 
+    
+    @IBOutlet weak var usernameTF: UITextField!
+    
+    var user:UserModel=UserModel();
+        
+    @IBOutlet weak var passwordTF: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }    
+    @IBAction func loginOnClick(_ sender: Any) {
+        performSegue(withIdentifier: "toDashboard", sender: nil);
     }
+    @IBAction func forgotOnClick(_ sender: Any) {
+        performSegue(withIdentifier: "forgotPasswordSegue", sender: nil);
+    }
+    
     
     
     

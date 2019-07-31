@@ -40,6 +40,10 @@ class HomeViewController: UIViewController {
         Videos.reloadData();
     }
     
+    @IBAction func backOnClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension HomeViewController:UICollectionViewDelegate{

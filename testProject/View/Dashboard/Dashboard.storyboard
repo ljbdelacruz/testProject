@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1e9-Md-tIc">
-                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="OIy-K1-3cK"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EfR-FF-fKQ">
-                                <rect key="frame" x="0.0" y="86" width="375" height="532"/>
+                                <rect key="frame" x="0.0" y="126" width="375" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tdk-VQ-qbc">
@@ -39,13 +39,22 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHg-xA-mle">
+                                <rect key="frame" x="16" y="20" width="40" height="30"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <action selector="backOnClick:" destination="tmy-9i-wDY" eventType="touchDown" id="Gds-IQ-k5R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1e9-Md-tIc" firstAttribute="top" secondItem="oVC-g1-LnL" secondAttribute="top" id="0tA-ug-EV4"/>
+                            <constraint firstItem="1e9-Md-tIc" firstAttribute="top" secondItem="oVC-g1-LnL" secondAttribute="top" constant="40" id="0tA-ug-EV4"/>
                             <constraint firstItem="1e9-Md-tIc" firstAttribute="trailing" secondItem="oVC-g1-LnL" secondAttribute="trailing" id="1wn-oZ-o6N"/>
+                            <constraint firstItem="PHg-xA-mle" firstAttribute="leading" secondItem="oVC-g1-LnL" secondAttribute="leading" constant="16" id="8yM-aw-3Jo"/>
                             <constraint firstItem="EfR-FF-fKQ" firstAttribute="leading" secondItem="oVC-g1-LnL" secondAttribute="leading" id="PbO-q8-Ob7"/>
                             <constraint firstItem="1e9-Md-tIc" firstAttribute="leading" secondItem="oVC-g1-LnL" secondAttribute="leading" id="hav-v7-zgq"/>
+                            <constraint firstItem="PHg-xA-mle" firstAttribute="top" secondItem="oVC-g1-LnL" secondAttribute="top" id="sHj-54-mW9"/>
                             <constraint firstItem="EfR-FF-fKQ" firstAttribute="trailing" secondItem="oVC-g1-LnL" secondAttribute="trailing" id="vXs-WI-onU"/>
                             <constraint firstItem="EfR-FF-fKQ" firstAttribute="top" secondItem="1e9-Md-tIc" secondAttribute="bottom" constant="10" id="wNV-i4-MGi"/>
                             <constraint firstItem="EfR-FF-fKQ" firstAttribute="bottom" secondItem="oVC-g1-LnL" secondAttribute="bottom" id="z3L-Dd-J0r"/>
@@ -97,11 +106,20 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5m-Lv-xeC">
+                                <rect key="frame" x="12" y="20" width="40" height="30"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <action selector="backOnClick:" destination="mDb-ib-Qvt" eventType="touchDown" id="CMF-27-CTQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="R5m-Lv-xeC" firstAttribute="top" secondItem="XYC-sE-b87" secondAttribute="top" id="6VQ-OY-6S8"/>
                             <constraint firstItem="Pyi-2t-aFD" firstAttribute="trailing" secondItem="XYC-sE-b87" secondAttribute="trailing" id="CBo-K7-dPj"/>
                             <constraint firstItem="Pyi-2t-aFD" firstAttribute="bottom" secondItem="XYC-sE-b87" secondAttribute="bottom" id="Cnw-7u-CQl"/>
+                            <constraint firstItem="R5m-Lv-xeC" firstAttribute="leading" secondItem="XYC-sE-b87" secondAttribute="leading" constant="12" id="G8E-qN-XbN"/>
                             <constraint firstItem="Pyi-2t-aFD" firstAttribute="leading" secondItem="XYC-sE-b87" secondAttribute="leading" id="Gzb-gU-Cc1"/>
                             <constraint firstItem="QNv-jv-2GV" firstAttribute="leading" secondItem="XYC-sE-b87" secondAttribute="leading" constant="16" id="kHq-EW-TNu"/>
                             <constraint firstItem="Pyi-2t-aFD" firstAttribute="top" secondItem="QNv-jv-2GV" secondAttribute="bottom" constant="8" id="kIT-Ib-FJw"/>

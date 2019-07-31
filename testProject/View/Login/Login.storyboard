@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="75j-iU-xAJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Dashboard-->
+        <scene sceneID="xCW-Fu-rmR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard" id="qBp-ck-jHG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQF-up-Bur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="-399"/>
+        </scene>
         <!--LoginV View Controller-->
         <scene sceneID="yK7-Wf-6Ti">
             <objects>
@@ -46,6 +54,9 @@
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginOnClick:" destination="75j-iU-xAJ" eventType="touchDown" id="XbL-7h-sY9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydH-T8-ue3">
                                 <rect key="frame" x="126" y="354" width="123" height="30"/>
@@ -53,6 +64,9 @@
                                     <constraint firstAttribute="width" constant="123" id="O1c-CH-tmg"/>
                                 </constraints>
                                 <state key="normal" title="Forgot Password?"/>
+                                <connections>
+                                    <action selector="forgotOnClick:" destination="75j-iU-xAJ" eventType="touchDown" id="Fp7-3r-8hx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,12 +87,15 @@
                         <viewLayoutGuide key="safeArea" id="MHG-oq-kqA"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTF" destination="YAF-QT-yhJ" id="B1v-d5-eQL"/>
+                        <outlet property="usernameTF" destination="MTQ-6a-QBS" id="Pt4-ws-pOr"/>
                         <segue destination="kSS-T3-7sm" kind="show" identifier="forgotPasswordSegue" id="iv4-tn-dO7"/>
+                        <segue destination="qBp-ck-jHG" kind="show" identifier="toDashboard" id="EQg-KX-xEz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0v0-VV-0dT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-221.59999999999999" y="232.53373313343329"/>
+            <point key="canvasLocation" x="-1006" y="311"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="n8k-B0-eDB">
@@ -87,9 +104,23 @@
                     <view key="view" contentMode="scaleToFill" id="4MD-Uj-6Bz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6H-LH-nnA">
+                                <rect key="frame" x="20" y="32" width="40" height="30"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <action selector="backOnClick:" destination="kSS-T3-7sm" eventType="touchDown" id="WqN-gS-DHF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s6H-LH-nnA" firstAttribute="top" secondItem="VWr-Qf-Go8" secondAttribute="top" constant="12" id="5dO-IZ-dzr"/>
+                            <constraint firstItem="s6H-LH-nnA" firstAttribute="leading" secondItem="VWr-Qf-Go8" secondAttribute="leading" constant="20" id="8VW-i7-XnZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VWr-Qf-Go8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ss3-AF-M8U"/>
                     <connections>
                         <segue destination="75j-iU-xAJ" kind="show" identifier="backSegue" id="4Hh-dL-np2"/>
                     </connections>
@@ -99,7 +130,4 @@
             <point key="canvasLocation" x="769" y="170"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="iv4-tn-dO7"/>
-    </inferredMetricsTieBreakers>
 </document>

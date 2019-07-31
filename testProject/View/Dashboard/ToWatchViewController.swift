@@ -43,6 +43,10 @@ class ToWatchViewController: UIViewController {
         filteredVideos=videos;
         videoTV.reloadData();
     }
+    @IBAction func backOnClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil);
+    }
+    
 }
 
 extension ToWatchViewController:UITableViewDelegate{}
