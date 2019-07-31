@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class CoreDataHelpers{
+    
+    public static func addEntityCategory(){
+        guard let entity = NSEntityDescription.entityForName() else {
+            
+        }
+    }
+    
+}
