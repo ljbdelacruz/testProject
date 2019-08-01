@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import SwiftKeychainWrapper
+
+
+class KeychainHelpers{
+    init(){}
+    
+}
+
+extension KeychainHelpers{
+//    func skwSave(key:String, value:Any){
+//        return KeychainWrapper.standard.set
+//    }
+}
+
