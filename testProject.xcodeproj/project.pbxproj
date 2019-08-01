@@ -41,7 +41,6 @@
 		672445BC98DDEB5339045398 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBCBC1A150BDDA4616AB22D /* Pods_testProject.framework */; };
 		EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */; };
 		EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */; };
-		EE42E8E122F24C1200C469CC /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8E022F24C1200C469CC /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,7 +94,6 @@
 		69CFB9901955EB8B4A4FEABF /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
 		EE42E8DC22F2467B00C469CC /* CoreDataEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataEntity.xcdatamodel; sourceTree = "<group>"; };
 		EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewPresenter.swift; sourceTree = "<group>"; };
-		EE42E8E022F24C1200C469CC /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +236,6 @@
 			children = (
 				04B231D522F1349C002824F4 /* VideosModel.swift */,
 				04B231F122F19210002824F4 /* UserModel.swift */,
-				EE42E8E022F24C1200C469CC /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +279,13 @@
 			path = helpers;
 			sourceTree = "<group>";
 		};
+		04B231FB22F26EC1002824F4 /* CoreEntityModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreEntityModel;
+			sourceTree = "<group>";
+		};
 		1E6DAD004D2949CF03848663 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +306,7 @@
 		EE42E8DA22F2465B00C469CC /* CoreDataEntity */ = {
 			isa = PBXGroup;
 			children = (
+				04B231FB22F26EC1002824F4 /* CoreEntityModel */,
 				EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */,
 			);
 			path = CoreDataEntity;
@@ -481,7 +486,6 @@
 				04B231F222F19210002824F4 /* UserModel.swift in Sources */,
 				043EAC3922E9B0C6004F5594 /* AppDelegate.swift in Sources */,
 				04B231C322F124D5002824F4 /* LoginVViewController.swift in Sources */,
-				EE42E8E122F24C1200C469CC /* CategoryModel.swift in Sources */,
 				04B231E622F1682F002824F4 /* String+.swift in Sources */,
 				EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */,
 				04B231E222F1656F002824F4 /* ToWatchViewController.swift in Sources */,
@@ -639,7 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				DEVELOPMENT_TEAM = FTF953N9JJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testProject/sdk",
@@ -662,7 +666,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				DEVELOPMENT_TEAM = FTF953N9JJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testProject/sdk",

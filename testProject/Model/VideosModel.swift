@@ -19,7 +19,6 @@ class VideosModel: Mappable {
     
     init() {
     }
-    
     required init?(map: Map) {
     }
     
