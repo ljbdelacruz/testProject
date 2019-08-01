@@ -14,6 +14,7 @@ import BaseCodeAPI
 class PresentationAssembly: Assembly {
     func assemble(container: Container) {
         container.autoregister(MainPresenter.self, initializer: MainPresenter.init)
+        container.autoregister(DashboardPresenter.self, initializer: DashboardPresenter.init)
     }
 }
 
@@ -22,6 +23,10 @@ extension SwinjectStoryboard {
     public static func setup() {
         defaultContainer.storyboardInitCompleted(ViewController.self) { r, c in
             c.presenter = r.resolve(MainPresenter.self)
+            //set here
+        }
+        defaultContainer.storyboardInitCompleted(HomeViewController.self) { r, c in
+            c.presenter = r.resolve(DashboardPresenter.self)
             //set here
         }
 

@@ -279,13 +279,6 @@
 			path = helpers;
 			sourceTree = "<group>";
 		};
-		04B231FB22F26EC1002824F4 /* CoreEntityModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreEntityModel;
-			sourceTree = "<group>";
-		};
 		1E6DAD004D2949CF03848663 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,7 +299,6 @@
 		EE42E8DA22F2465B00C469CC /* CoreDataEntity */ = {
 			isa = PBXGroup;
 			children = (
-				04B231FB22F26EC1002824F4 /* CoreEntityModel */,
 				EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */,
 			);
 			path = CoreDataEntity;

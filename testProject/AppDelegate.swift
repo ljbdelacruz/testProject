@@ -21,21 +21,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Constants.baseURL="http://192.168.88.23:8080";
         self.initIQKeyboardManager();
-//        self.initWindow();
+        self.initWindow();
+        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+        print(paths[0])
         return true
     }
     func initIQKeyboardManager() {
         IQKeyboardManager.shared.enable = true
     }
-    func initWindow() {
+    func initWindow(){
         window = UIWindow(frame: UIScreen.main.bounds)
         let vc = assembler.initialViewController()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
-
-    
-    
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        // Saves changes in the application's managed object context before the application terminates.
+        self.saveContext()
+    }
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "CoreDataEntity")
@@ -53,9 +57,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 //MARK - Core Data
 extension AppDelegate{
-    func applicationWillTerminate(_ application: UIApplication) {
-        self.saveContext()
-    }
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -68,7 +69,6 @@ extension AppDelegate{
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
-    }
-}
+    }}
 
 

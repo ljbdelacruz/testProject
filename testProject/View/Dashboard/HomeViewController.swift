@@ -13,10 +13,16 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var Videos: UICollectionView!
     @IBOutlet weak var lasbel: UILabel!
     var videos:[VideosModel]=[];
+    var presenter:DashboardPresenter!;
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presenter.attachView(view: self);
+//        presenter.saveData();
+        presenter.fetchData()
+        
         self.initVideosCV();
         self.setupValue();
     }
@@ -73,4 +79,19 @@ extension HomeViewController:UICollectionViewDataSource{
     }
     
     
+}
+extension HomeViewController:DashboardView{
+    func successCoreData() {
+        print("Success saving");
+        
+    }
+    func successFetch(categories: [Category]) {
+        categories.forEach({ (cat) in
+            print(cat.name)
+        })
+    }
+    
+    func error() {
+        print("Error");
+    }
 }

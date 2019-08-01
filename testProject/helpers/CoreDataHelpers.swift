@@ -9,9 +9,19 @@
 import Foundation
 import CoreData
 
+
+protocol  CoreDataHelpersProtocol {
+    func successSave();
+    func errorSave();
+}
+
 class CoreDataHelpers{
     var context:NSPersistentContainer?;
-    public init(context:NSPersistentContainer){
+    var myprotocol:CoreDataHelpersProtocol?;
+    init(){
+    }
+    public convenience init(context:NSPersistentContainer){
+        self.init();
         self.context=context;
     }
     //MARK: saving access
@@ -25,24 +35,21 @@ class CoreDataHelpers{
     public func addProperties(table:NSManagedObject, key:String, value:Any){
         table.setValue(value, forKey: key);
     }
-    public func saveContext()->(Bool, Error?){
+    public func saveContext(){
         do {
             try context?.viewContext.save()
-            return (true, nil);
+            myprotocol?.successSave();
         } catch let error as NSError {
-            return (false, error);
+            myprotocol?.errorSave();
         }
     }
-        
     //MARK: getting access on coredata
-    public func fetchRequestTable(table:String)->(Bool, [NSManagedObject]?){
+    public func fetchRequestTable(table:String)->Any{
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: table);
         do {
-            let data=try context?.viewContext.fetch(fetchRequest)
-            return (true, data);
+            return try context!.viewContext.fetch(fetchRequest)
         } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-            return (false, []);
+            return error;
         }
     }
     
