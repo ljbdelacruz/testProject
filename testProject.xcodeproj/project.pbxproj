@@ -272,6 +272,7 @@
 		04B231E722F1697B002824F4 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				04B2320322F2E866002824F4 /* RealmEntities */,
 				EE42E8DA22F2465B00C469CC /* CoreDataEntity */,
 				04B231F322F19A30002824F4 /* CoreDataHelpers.swift */,
 				04B231F522F19A3E002824F4 /* RealmHelpers.swift */,
@@ -280,6 +281,13 @@
 				04B231FF22F2D07B002824F4 /* AlamofireHelper.swift */,
 			);
 			path = helpers;
+			sourceTree = "<group>";
+		};
+		04B2320322F2E866002824F4 /* RealmEntities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RealmEntities;
 			sourceTree = "<group>";
 		};
 		1E6DAD004D2949CF03848663 /* Frameworks */ = {
