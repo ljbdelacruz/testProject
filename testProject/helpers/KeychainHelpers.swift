@@ -11,13 +11,15 @@ import SwiftKeychainWrapper
 
 
 class KeychainHelpers{
-    init(){}
-    
+    init(){
+        
+    }
 }
 
 extension KeychainHelpers{
-//    func skwSave(key:String, value:Any){
-//        return KeychainWrapper.standard.set
-//    }
+    
+    func skwSave(key:String, value:Data){
+        return KeychainWrapper.standard.set(value, forKey: key);
+    }
 }
 

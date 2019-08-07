@@ -8,8 +8,11 @@
 
 import Foundation
 
+
+
+
+//MARK: youtube sub functions
 extension String{
-    
     public static func convertViews(views:Int)->String{
         if(views > 999){
             return String(String(views).prefix(1))+"K Views";
