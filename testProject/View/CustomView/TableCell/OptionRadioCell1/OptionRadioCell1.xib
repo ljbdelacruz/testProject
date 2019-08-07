@@ -31,13 +31,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8i-61-XX5">
+                        <rect key="frame" x="345" y="22" width="51" height="31"/>
+                    </switch>
                 </subviews>
                 <constraints>
                     <constraint firstItem="tUY-dC-7zT" firstAttribute="top" secondItem="PHB-8f-aAw" secondAttribute="top" id="7Ac-Rt-Dmj"/>
+                    <constraint firstAttribute="trailing" secondItem="n8i-61-XX5" secondAttribute="trailing" constant="20" id="PoZ-5j-PcH"/>
                     <constraint firstItem="HVw-SB-mWc" firstAttribute="top" secondItem="PHB-8f-aAw" secondAttribute="top" constant="27" id="Re3-a5-dty"/>
                     <constraint firstItem="tUY-dC-7zT" firstAttribute="leading" secondItem="PHB-8f-aAw" secondAttribute="leading" id="Ugg-WZ-AMS"/>
                     <constraint firstAttribute="bottom" secondItem="tUY-dC-7zT" secondAttribute="bottom" id="WIf-lZ-DHm"/>
+                    <constraint firstItem="n8i-61-XX5" firstAttribute="top" secondItem="PHB-8f-aAw" secondAttribute="top" constant="22" id="Zbd-6r-jds"/>
                     <constraint firstAttribute="bottom" secondItem="HVw-SB-mWc" secondAttribute="bottom" constant="26.5" id="fRK-Es-eYg"/>
+                    <constraint firstItem="n8i-61-XX5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HVw-SB-mWc" secondAttribute="trailing" constant="5" id="jb3-vg-1LS"/>
+                    <constraint firstAttribute="bottom" secondItem="n8i-61-XX5" secondAttribute="bottom" constant="21.5" id="lGX-RK-H7Y"/>
                     <constraint firstItem="HVw-SB-mWc" firstAttribute="leading" secondItem="tUY-dC-7zT" secondAttribute="trailing" constant="8" id="pQS-Tn-9ci"/>
                 </constraints>
             </tableViewCellContentView>
