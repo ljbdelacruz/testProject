@@ -20,6 +20,7 @@
 		043EAC5822E9BB54004F5594 /* BaseCodeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043EAC4B22E9B131004F5594 /* BaseCodeAPI.framework */; };
 		043EAC5922E9BB54004F5594 /* BaseCodeAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 043EAC4B22E9B131004F5594 /* BaseCodeAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		046FC8AA22FBE99E00C1C805 /* SQLiteHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8A922FBE99E00C1C805 /* SQLiteHelpers.swift */; };
+		046FC8AD22FD408800C1C805 /* CategoryRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8AC22FD408800C1C805 /* CategoryRModel.swift */; };
 		04B231C322F124D5002824F4 /* LoginVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231C222F124D5002824F4 /* LoginVViewController.swift */; };
 		04B231C522F124F3002824F4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B231C422F124F3002824F4 /* Login.storyboard */; };
 		04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231C622F12521002824F4 /* ForgotPasswordViewController.swift */; };
@@ -73,6 +74,7 @@
 		043EAC5422E9B458004F5594 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		043EAC5622E9B49F004F5594 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		046FC8A922FBE99E00C1C805 /* SQLiteHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteHelpers.swift; sourceTree = "<group>"; };
+		046FC8AC22FD408800C1C805 /* CategoryRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRModel.swift; sourceTree = "<group>"; };
 		04B231C222F124D5002824F4 /* LoginVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVViewController.swift; sourceTree = "<group>"; };
 		04B231C422F124F3002824F4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		04B231C622F12521002824F4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 		04B2320322F2E866002824F4 /* RealmEntities */ = {
 			isa = PBXGroup;
 			children = (
+				046FC8AC22FD408800C1C805 /* CategoryRModel.swift */,
 			);
 			path = RealmEntities;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				04B231C322F124D5002824F4 /* LoginVViewController.swift in Sources */,
 				04B231E622F1682F002824F4 /* String+.swift in Sources */,
 				EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */,
+				046FC8AD22FD408800C1C805 /* CategoryRModel.swift in Sources */,
 				04B231E222F1656F002824F4 /* ToWatchViewController.swift in Sources */,
 				04B2320022F2D07B002824F4 /* AlamofireHelper.swift in Sources */,
 				04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */,

@@ -11,10 +11,9 @@ import RealmSwift
 
 
 public class RealmHelpers{
-    let realm = try! Realm()
+    public let realm = try! Realm()
     init(){
     }
-    
     func saveObject(object:Object){
         try! realm.write {
             realm.add(object)
