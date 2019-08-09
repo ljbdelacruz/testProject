@@ -42,8 +42,13 @@
 		04B231FA22F19A5B002824F4 /* KeychainHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231F922F19A5B002824F4 /* KeychainHelpers.swift */; };
 		04B2320022F2D07B002824F4 /* AlamofireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231FF22F2D07B002824F4 /* AlamofireHelper.swift */; };
 		672445BC98DDEB5339045398 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBCBC1A150BDDA4616AB22D /* Pods_testProject.framework */; };
+		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
+		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
+		EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */; };
+		EE3FA2CD22FB1D4E004400A6 /* OptionRadioCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2CC22FB1D4E004400A6 /* OptionRadioCell1.xib */; };
 		EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */; };
 		EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */; };
+		EE42E8E922F38E2900C469CC /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE42E8E822F38E2900C469CC /* Notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,8 +103,13 @@
 		5ABC0CAFA648EC058186F6F4 /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5DBCBC1A150BDDA4616AB22D /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CFB9901955EB8B4A4FEABF /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
+		EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell1.xib; sourceTree = "<group>"; };
+		EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell1.swift; sourceTree = "<group>"; };
+		EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRadioCell1.swift; sourceTree = "<group>"; };
+		EE3FA2CC22FB1D4E004400A6 /* OptionRadioCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionRadioCell1.xib; sourceTree = "<group>"; };
 		EE42E8DC22F2467B00C469CC /* CoreDataEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataEntity.xcdatamodel; sourceTree = "<group>"; };
 		EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewPresenter.swift; sourceTree = "<group>"; };
+		EE42E8E822F38E2900C469CC /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,7 @@
 		043EAC3722E9B0C6004F5594 /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				EE42E8E722F38E1A00C469CC /* Notes */,
 				04B231E722F1697B002824F4 /* helpers */,
 				04B231D822F13642002824F4 /* extensions */,
 				04B231D422F13486002824F4 /* Model */,
@@ -268,6 +279,8 @@
 		04B231E022F16299002824F4 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
+				EE3FA2C922FB1D22004400A6 /* OptionRadioCell1 */,
+				EE3FA2C322FAE403004400A6 /* TransactionCell1 */,
 				04B231DB22F1623B002824F4 /* YoutubeCell1 */,
 			);
 			path = TableCell;
@@ -313,12 +326,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EE3FA2C322FAE403004400A6 /* TransactionCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */,
+				EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */,
+			);
+			path = TransactionCell1;
+			sourceTree = "<group>";
+		};
+		EE3FA2C922FB1D22004400A6 /* OptionRadioCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */,
+				EE3FA2CC22FB1D4E004400A6 /* OptionRadioCell1.xib */,
+			);
+			path = OptionRadioCell1;
+			sourceTree = "<group>";
+		};
 		EE42E8DA22F2465B00C469CC /* CoreDataEntity */ = {
 			isa = PBXGroup;
 			children = (
 				EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */,
 			);
 			path = CoreDataEntity;
+			sourceTree = "<group>";
+		};
+		EE42E8E722F38E1A00C469CC /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				EE42E8E822F38E2900C469CC /* Notes.txt */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,8 +423,11 @@
 			files = (
 				04B231C522F124F3002824F4 /* Login.storyboard in Resources */,
 				04B231D122F12C33002824F4 /* YoutubeCell.xib in Resources */,
+				EE3FA2CD22FB1D4E004400A6 /* OptionRadioCell1.xib in Resources */,
 				04B231CA22F12A79002824F4 /* Dashboard.storyboard in Resources */,
 				043EAC4322E9B0C8004F5594 /* LaunchScreen.storyboard in Resources */,
+				EE42E8E922F38E2900C469CC /* Notes.txt in Resources */,
+				EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */,
 				043EAC4022E9B0C8004F5594 /* Assets.xcassets in Resources */,
 				04B231DD22F1625A002824F4 /* YoutubeCell1.xib in Resources */,
 				043EAC3E22E9B0C6004F5594 /* Main.storyboard in Resources */,
@@ -423,56 +465,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-testProject/Pods-testProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftEventBus/SwiftEventBus.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-testProject/Pods-testProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEventBus.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-testProject/Pods-testProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testProject/Pods-testProject-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testProject/Pods-testProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -502,7 +503,9 @@
 				04B231E222F1656F002824F4 /* ToWatchViewController.swift in Sources */,
 				04B2320022F2D07B002824F4 /* AlamofireHelper.swift in Sources */,
 				04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */,
+				EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */,
 				043EAC4F22E9B289004F5594 /* AppAssembler.swift in Sources */,
+				EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */,
 				04B231F822F19A48002824F4 /* UserDefaultsHelpers.swift in Sources */,
 				04B231FA22F19A5B002824F4 /* KeychainHelpers.swift in Sources */,
 				04B231DA22F13651002824F4 /* UICollectionView+.swift in Sources */,
@@ -655,7 +658,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FTF953N9JJ;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testProject/sdk",
@@ -678,7 +681,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FTF953N9JJ;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testProject/sdk",
