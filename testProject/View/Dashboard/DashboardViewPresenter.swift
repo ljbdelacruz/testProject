@@ -10,6 +10,7 @@ import Foundation
 import CoreData
 import BaseCodeAPI
 import RxSwift
+import RealmSwift
 
 protocol DashboardView: BaseView {
     func successCoreData()
@@ -54,6 +55,25 @@ extension DashboardPresenter:CoreDataHelpersProtocol{
     func errorSave() {
         self.getView()?.error();
     }
-    
-    
+}
+
+//MARK: Cache Data
+extension DashboardPresenter{
+    func cacheCategory(categories:[CategoryModel]){
+        let realm = try! Realm()
+        categories.map({item in
+            try! realm.write() {
+                var category = realm.create(CategoryRModel.self)
+                category.id=item.id!;
+                category.name=item.name!;
+                category.parent=item.parent!;
+                realm.add(category, update: true);
+            }
+        })
+    }
+    func loadCacheCategory()->[CategoryModel]{
+        
+        
+        return [];
+    }
 }

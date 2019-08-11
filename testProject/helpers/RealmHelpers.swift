@@ -7,10 +7,19 @@
 //
 
 import Foundation
-class RealmHelpers{
-    init(){}
-    func save(){
-        
+import RealmSwift
+
+
+public class RealmHelpers{
+    public let realm = try! Realm()
+    init(){
     }
+    func saveObject(object:Object){
+        try! realm.write {
+            realm.add(object)
+        }
+    }
+
+    
 }
 
