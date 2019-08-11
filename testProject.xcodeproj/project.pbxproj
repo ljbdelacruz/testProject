@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,6 +44,8 @@
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
 		EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */; };
 		EE3FA2CD22FB1D4E004400A6 /* OptionRadioCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2CC22FB1D4E004400A6 /* OptionRadioCell1.xib */; };
+		EE3FA2D022FFC33C004400A6 /* AdsCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2CF22FFC33C004400A6 /* AdsCell1.xib */; };
+		EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D122FFC34B004400A6 /* AdsCell1.swift */; };
 		EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */; };
 		EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */; };
 		EE42E8E922F38E2900C469CC /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE42E8E822F38E2900C469CC /* Notes.txt */; };
@@ -103,6 +105,8 @@
 		EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell1.swift; sourceTree = "<group>"; };
 		EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRadioCell1.swift; sourceTree = "<group>"; };
 		EE3FA2CC22FB1D4E004400A6 /* OptionRadioCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionRadioCell1.xib; sourceTree = "<group>"; };
+		EE3FA2CF22FFC33C004400A6 /* AdsCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsCell1.xib; sourceTree = "<group>"; };
+		EE3FA2D122FFC34B004400A6 /* AdsCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCell1.swift; sourceTree = "<group>"; };
 		EE42E8DC22F2467B00C469CC /* CoreDataEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataEntity.xcdatamodel; sourceTree = "<group>"; };
 		EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewPresenter.swift; sourceTree = "<group>"; };
 		EE42E8E822F38E2900C469CC /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
@@ -275,6 +279,7 @@
 		04B231E022F16299002824F4 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
+				EE3FA2CE22FFC327004400A6 /* AdsCell1 */,
 				EE3FA2C922FB1D22004400A6 /* OptionRadioCell1 */,
 				EE3FA2C322FAE403004400A6 /* TransactionCell1 */,
 				04B231DB22F1623B002824F4 /* YoutubeCell1 */,
@@ -328,6 +333,15 @@
 				EE3FA2CC22FB1D4E004400A6 /* OptionRadioCell1.xib */,
 			);
 			path = OptionRadioCell1;
+			sourceTree = "<group>";
+		};
+		EE3FA2CE22FFC327004400A6 /* AdsCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				EE3FA2CF22FFC33C004400A6 /* AdsCell1.xib */,
+				EE3FA2D122FFC34B004400A6 /* AdsCell1.swift */,
+			);
+			path = AdsCell1;
 			sourceTree = "<group>";
 		};
 		EE42E8DA22F2465B00C469CC /* CoreDataEntity */ = {
@@ -417,6 +431,7 @@
 				043EAC4022E9B0C8004F5594 /* Assets.xcassets in Resources */,
 				04B231DD22F1625A002824F4 /* YoutubeCell1.xib in Resources */,
 				043EAC3E22E9B0C6004F5594 /* Main.storyboard in Resources */,
+				EE3FA2D022FFC33C004400A6 /* AdsCell1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +489,7 @@
 				043EAC5522E9B458004F5594 /* MainPresenter.swift in Sources */,
 				04B231E422F166A8002824F4 /* UITableView+.swift in Sources */,
 				043EAC3B22E9B0C6004F5594 /* ViewController.swift in Sources */,
+				EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */,
 				043EAC5122E9B2D2004F5594 /* PresentationAssembly.swift in Sources */,
 				04B231F422F19A30002824F4 /* CoreDataHelpers.swift in Sources */,
 				04B231D322F13200002824F4 /* HomeViewController.swift in Sources */,

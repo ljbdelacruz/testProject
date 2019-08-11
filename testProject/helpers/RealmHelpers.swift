@@ -7,9 +7,6 @@
 //
 
 import Foundation
-
-
-
 class RealmHelpers{
     init(){}
     func save(){
