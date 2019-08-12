@@ -12,5 +12,11 @@ class CategoryRModel: Object {
     @objc dynamic var id:Int=0
     @objc dynamic var name:String?;
     @objc dynamic var parent:String?;
+    
+    func setValue(id:Int, name:String, parent:String){
+        self.id=id;
+        self.name=name;
+        self.parent=parent;
+    }
 }
 

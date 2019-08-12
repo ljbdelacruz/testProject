@@ -26,7 +26,43 @@ public class RealmHelpers{
     func getRealmPath()->String{
         return Realm.Configuration.defaultConfiguration.fileURL!.absoluteString;
     }
-
     
+    
+    
+}
+
+
+
+//MARK: sample Implementation for Realm
+extension RealmHelpers{
+    func sampleImplementationsAdd(){
+        let category=CategoryRModel();
+        category.setValue(id: 1, name: "House", parent: "0")
+        try! realm.write {
+            realm.add(category);
+        }
+    }
+    func sampleImplementationRead(){
+        //retrieves data with filter
+        let results=realm.objects(CategoryRModel.self).filter("name == 'House'");
+        print(results.count);
+        //retrieves all without filter
+        //        let results=realm.objects(CategoryRModel.self);
+    }
+    func sampleImplementationUpdate(){
+        let results=realm.objects(CategoryRModel.self).filter("name == 'House'");
+        try! realm.write {
+            results[0].parent = "2";
+        }
+    }
+    func sampleImplementationRemove(){
+        let results=realm.objects(CategoryRModel.self).filter("name == 'House'");
+        try! realm.write {
+            //if you want to delete by each element
+            realm.delete(results[0]);
+            //if you want to delete by list
+            realm.delete(results);
+        }
+    }
 }
 
