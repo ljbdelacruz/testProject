@@ -48,6 +48,8 @@
 		EE3FA2CD22FB1D4E004400A6 /* OptionRadioCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2CC22FB1D4E004400A6 /* OptionRadioCell1.xib */; };
 		EE3FA2D022FFC33C004400A6 /* AdsCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2CF22FFC33C004400A6 /* AdsCell1.xib */; };
 		EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D122FFC34B004400A6 /* AdsCell1.swift */; };
+		EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D423012CEF004400A6 /* Constants.swift */; };
+		EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D723012D28004400A6 /* StripeIntegration.swift */; };
 		EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */; };
 		EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */; };
 		EE42E8E922F38E2900C469CC /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE42E8E822F38E2900C469CC /* Notes.txt */; };
@@ -111,6 +113,8 @@
 		EE3FA2CC22FB1D4E004400A6 /* OptionRadioCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionRadioCell1.xib; sourceTree = "<group>"; };
 		EE3FA2CF22FFC33C004400A6 /* AdsCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsCell1.xib; sourceTree = "<group>"; };
 		EE3FA2D122FFC34B004400A6 /* AdsCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCell1.swift; sourceTree = "<group>"; };
+		EE3FA2D423012CEF004400A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE3FA2D723012D28004400A6 /* StripeIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeIntegration.swift; sourceTree = "<group>"; };
 		EE42E8DC22F2467B00C469CC /* CoreDataEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataEntity.xcdatamodel; sourceTree = "<group>"; };
 		EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewPresenter.swift; sourceTree = "<group>"; };
 		EE42E8E822F38E2900C469CC /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 		043EAC3722E9B0C6004F5594 /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				EE3FA2D623012D18004400A6 /* integrations */,
+				EE3FA2D323012CE1004400A6 /* config */,
 				EE42E8E722F38E1A00C469CC /* Notes */,
 				04B231E722F1697B002824F4 /* helpers */,
 				04B231D822F13642002824F4 /* extensions */,
@@ -358,6 +364,22 @@
 			path = AdsCell1;
 			sourceTree = "<group>";
 		};
+		EE3FA2D323012CE1004400A6 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				EE3FA2D423012CEF004400A6 /* Constants.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		EE3FA2D623012D18004400A6 /* integrations */ = {
+			isa = PBXGroup;
+			children = (
+				EE3FA2D723012D28004400A6 /* StripeIntegration.swift */,
+			);
+			path = integrations;
+			sourceTree = "<group>";
+		};
 		EE42E8DA22F2465B00C469CC /* CoreDataEntity */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,9 +522,11 @@
 			files = (
 				04B231CF22F12C20002824F4 /* YoutubeCollectionViewCell.swift in Sources */,
 				04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */,
+				EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */,
 				043EAC5522E9B458004F5594 /* MainPresenter.swift in Sources */,
 				04B231E422F166A8002824F4 /* UITableView+.swift in Sources */,
 				043EAC3B22E9B0C6004F5594 /* ViewController.swift in Sources */,
+				EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */,
 				EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */,
 				043EAC5122E9B2D2004F5594 /* PresentationAssembly.swift in Sources */,
 				04B231F422F19A30002824F4 /* CoreDataHelpers.swift in Sources */,
