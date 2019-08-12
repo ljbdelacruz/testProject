@@ -35,6 +35,9 @@ target 'testProject' do
   pod 'RxRealm', '0.7.6'
   
   
+  # QR Code Reader
+  pod 'QRCodeReader.swift', '~> 10.1.0'
+  
   #UI
   
 end

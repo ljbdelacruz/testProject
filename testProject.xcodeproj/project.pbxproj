@@ -50,6 +50,8 @@
 		EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D122FFC34B004400A6 /* AdsCell1.swift */; };
 		EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D423012CEF004400A6 /* Constants.swift */; };
 		EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D723012D28004400A6 /* StripeIntegration.swift */; };
+		EE3FA2DD23013842004400A6 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2DC23013842004400A6 /* QRScanner.swift */; };
+		EE3FA2E723015F1A004400A6 /* MVisaQRParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */; };
 		EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */; };
 		EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */; };
 		EE42E8E922F38E2900C469CC /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE42E8E822F38E2900C469CC /* Notes.txt */; };
@@ -115,6 +117,8 @@
 		EE3FA2D122FFC34B004400A6 /* AdsCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCell1.swift; sourceTree = "<group>"; };
 		EE3FA2D423012CEF004400A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE3FA2D723012D28004400A6 /* StripeIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeIntegration.swift; sourceTree = "<group>"; };
+		EE3FA2DC23013842004400A6 /* QRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
+		EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaQRParser.framework; sourceTree = "<group>"; };
 		EE42E8DC22F2467B00C469CC /* CoreDataEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataEntity.xcdatamodel; sourceTree = "<group>"; };
 		EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewPresenter.swift; sourceTree = "<group>"; };
 		EE42E8E822F38E2900C469CC /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				043EAC4C22E9B131004F5594 /* BaseCodeAPI.framework in Frameworks */,
 				043EAC5822E9BB54004F5594 /* BaseCodeAPI.framework in Frameworks */,
 				672445BC98DDEB5339045398 /* Pods_testProject.framework in Frameworks */,
+				EE3FA2E723015F1A004400A6 /* MVisaQRParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +160,7 @@
 		043EAC3722E9B0C6004F5594 /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				EE3FA2DB23013833004400A6 /* hardware */,
 				EE3FA2D623012D18004400A6 /* integrations */,
 				EE3FA2D323012CE1004400A6 /* config */,
 				EE42E8E722F38E1A00C469CC /* Notes */,
@@ -175,6 +181,7 @@
 		043EAC4A22E9B0D3004F5594 /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */,
 				043EAC4B22E9B131004F5594 /* BaseCodeAPI.framework */,
 			);
 			path = sdk;
@@ -380,6 +387,14 @@
 			path = integrations;
 			sourceTree = "<group>";
 		};
+		EE3FA2DB23013833004400A6 /* hardware */ = {
+			isa = PBXGroup;
+			children = (
+				EE3FA2DC23013842004400A6 /* QRScanner.swift */,
+			);
+			path = hardware;
+			sourceTree = "<group>";
+		};
 		EE42E8DA22F2465B00C469CC /* CoreDataEntity */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +558,7 @@
 				04B231E222F1656F002824F4 /* ToWatchViewController.swift in Sources */,
 				04B2320022F2D07B002824F4 /* AlamofireHelper.swift in Sources */,
 				04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */,
+				EE3FA2DD23013842004400A6 /* QRScanner.swift in Sources */,
 				EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */,
 				043EAC4F22E9B289004F5594 /* AppAssembler.swift in Sources */,
 				EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */,
