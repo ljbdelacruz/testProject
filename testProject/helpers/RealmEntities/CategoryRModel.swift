@@ -10,7 +10,7 @@ import RealmSwift
 // Dog model
 class CategoryRModel: Object {
     @objc dynamic var id:Int=0
-    @objc dynamic var name:String="";
-    @objc dynamic var parent:String="";
+    @objc dynamic var name:String?;
+    @objc dynamic var parent:String?;
 }
 

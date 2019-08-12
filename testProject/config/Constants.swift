@@ -14,7 +14,7 @@ public class Constants{
     
     
     public static var baseURL:String="http://192.168.88.23:8080";
-    
+    public static var realm:RealmHelpers?
     //MARK: Strip config
     public static var stripePerishKey:String="pk_test_DDGi6KsUGJIg3lQUCA9Gdmyw00zeTFsAnh";
     

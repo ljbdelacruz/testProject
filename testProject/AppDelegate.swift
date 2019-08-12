@@ -21,8 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.initIQKeyboardManager();
         self.initWindow();
-        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-        print(paths[0])
+        initRealm();
         return true
     }
     func initIQKeyboardManager() {
@@ -34,6 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
+    func initRealm(){
+        Constants.realm=RealmHelpers();
+        print("Realm Path");
+        print(Constants.realm!.getRealmPath())
+    }
+    
+    
+    
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.

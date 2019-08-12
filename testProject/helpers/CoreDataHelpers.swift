@@ -52,9 +52,9 @@ class CoreDataHelpers{
             return error;
         }
     }
-    public func getCoreDataPath(){
+    public func getCoreDataPath()->String{
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-        print(paths[0])
+        return paths[0];
     }
     
 }
