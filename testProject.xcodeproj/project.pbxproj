@@ -52,6 +52,7 @@
 		EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D723012D28004400A6 /* StripeIntegration.swift */; };
 		EE3FA2DD23013842004400A6 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2DC23013842004400A6 /* QRScanner.swift */; };
 		EE3FA2E723015F1A004400A6 /* MVisaQRParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */; };
+		EE3FA2E9230233CB004400A6 /* PushNotificationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2E8230233CB004400A6 /* PushNotificationHelpers.swift */; };
 		EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */; };
 		EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */; };
 		EE42E8E922F38E2900C469CC /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE42E8E822F38E2900C469CC /* Notes.txt */; };
@@ -119,6 +120,7 @@
 		EE3FA2D723012D28004400A6 /* StripeIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeIntegration.swift; sourceTree = "<group>"; };
 		EE3FA2DC23013842004400A6 /* QRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
 		EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaQRParser.framework; sourceTree = "<group>"; };
+		EE3FA2E8230233CB004400A6 /* PushNotificationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationHelpers.swift; sourceTree = "<group>"; };
 		EE42E8DC22F2467B00C469CC /* CoreDataEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataEntity.xcdatamodel; sourceTree = "<group>"; };
 		EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewPresenter.swift; sourceTree = "<group>"; };
 		EE42E8E822F38E2900C469CC /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				04B231F922F19A5B002824F4 /* KeychainHelpers.swift */,
 				04B231FF22F2D07B002824F4 /* AlamofireHelper.swift */,
 				046FC8A922FBE99E00C1C805 /* SQLiteHelpers.swift */,
+				EE3FA2E8230233CB004400A6 /* PushNotificationHelpers.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				043EAC4F22E9B289004F5594 /* AppAssembler.swift in Sources */,
 				EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */,
 				04B231F822F19A48002824F4 /* UserDefaultsHelpers.swift in Sources */,
+				EE3FA2E9230233CB004400A6 /* PushNotificationHelpers.swift in Sources */,
 				04B231FA22F19A5B002824F4 /* KeychainHelpers.swift in Sources */,
 				04B231DA22F13651002824F4 /* UICollectionView+.swift in Sources */,
 				04B231D622F1349C002824F4 /* VideosModel.swift in Sources */,
