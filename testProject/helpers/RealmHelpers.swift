@@ -19,8 +19,6 @@ public class RealmHelpers{
             realm.add(object)
         }
     }
-    
-    
     //this will get the path to your realm file so you can access the file
     //to verify if the object you are saving is there
     func getRealmPath()->String{

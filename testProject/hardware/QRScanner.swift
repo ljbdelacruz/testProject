@@ -143,7 +143,7 @@ public class QRScannerHelper{
     func parse(tlv:String){
         
         
-        
+        //in order for this to work compile this in xcode 10 compiling it on xcode 10.2 does not seem to work and shit like that due to swift 5.0 compilation
         
         QRCodeParser.parseQRData(qrCodeString: tlv) { (parserResponse) in
             if let r = parserResponse!.qrCodeData {
