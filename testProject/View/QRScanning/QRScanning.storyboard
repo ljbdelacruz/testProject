@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="giV-PD-hBM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanning View Controller-->
+        <scene sceneID="v3n-DN-G1D">
+            <objects>
+                <viewController id="giV-PD-hBM" customClass="QRScanningViewController" customModule="testProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tEK-VK-L9R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnV-Wp-qZD">
+                                <rect key="frame" x="0.0" y="52" width="375" height="236"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfK-ZI-OtZ">
+                                        <rect key="frame" x="138" y="68" width="99" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eov-aI-mxk">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.19012200339999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4941176471" green="0.3411764706" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pfK-ZI-OtZ" secondAttribute="bottom" constant="68" id="Mqv-w9-Jfb"/>
+                                    <constraint firstAttribute="trailing" secondItem="pfK-ZI-OtZ" secondAttribute="trailing" constant="138" id="NVW-lO-Gq7"/>
+                                    <constraint firstItem="pfK-ZI-OtZ" firstAttribute="centerY" secondItem="FnV-Wp-qZD" secondAttribute="centerY" id="Raq-1u-BnU"/>
+                                    <constraint firstAttribute="height" constant="236" id="XMu-UN-tNa"/>
+                                    <constraint firstItem="pfK-ZI-OtZ" firstAttribute="top" secondItem="FnV-Wp-qZD" secondAttribute="top" constant="68" id="b7H-qF-2pm"/>
+                                    <constraint firstItem="pfK-ZI-OtZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FnV-Wp-qZD" secondAttribute="leading" constant="138" id="eGE-Rd-oh8"/>
+                                    <constraint firstItem="pfK-ZI-OtZ" firstAttribute="centerX" secondItem="FnV-Wp-qZD" secondAttribute="centerX" id="rsd-Jb-nUQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FnV-Wp-qZD" firstAttribute="leading" secondItem="tEK-VK-L9R" secondAttribute="leading" id="2yJ-YB-y25"/>
+                            <constraint firstAttribute="trailing" secondItem="FnV-Wp-qZD" secondAttribute="trailing" id="kkc-ZW-P5J"/>
+                            <constraint firstItem="FnV-Wp-qZD" firstAttribute="top" secondItem="qlE-AH-sw9" secondAttribute="top" constant="32" id="xpU-TH-a3g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qlE-AH-sw9"/>
+                    </view>
+                    <connections>
+                        <outlet property="scanningArea" destination="pfK-ZI-OtZ" id="7lb-sv-Jlt"/>
+                        <outlet property="videoArea" destination="FnV-Wp-qZD" id="b8z-UJ-obM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSL-1b-8Cq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="331.48425787106447"/>
+        </scene>
+    </scenes>
+</document>

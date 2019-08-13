@@ -34,6 +34,9 @@ target 'testProject' do
   #local data storage
   pod 'RxRealm', '0.7.6'
   
+  # Images
+  pod 'Fusuma'
+  
   
   # QR Code Reader
 #  pod 'QRCodeReader.swift', '~> 10.1.0'

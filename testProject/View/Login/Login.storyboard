@@ -18,6 +18,14 @@
             </objects>
             <point key="canvasLocation" x="11" y="-399"/>
         </scene>
+        <!--QRScanning-->
+        <scene sceneID="0yx-qX-niH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QRScanning" id="nEZ-uZ-jl2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3W-qm-jWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="-36"/>
+        </scene>
         <!--LoginV View Controller-->
         <scene sceneID="yK7-Wf-6Ti">
             <objects>
@@ -91,6 +99,7 @@
                         <outlet property="usernameTF" destination="MTQ-6a-QBS" id="Pt4-ws-pOr"/>
                         <segue destination="kSS-T3-7sm" kind="show" identifier="forgotPasswordSegue" id="iv4-tn-dO7"/>
                         <segue destination="qBp-ck-jHG" kind="show" identifier="toDashboard" id="EQg-KX-xEz"/>
+                        <segue destination="nEZ-uZ-jl2" kind="show" identifier="qrScanningSegue" id="RT7-2s-DUP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0v0-VV-0dT" userLabel="First Responder" sceneMemberID="firstResponder"/>

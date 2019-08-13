@@ -15,7 +15,8 @@ import MVisaQRParser
 
 public protocol IQRScannerHelper{
     func successProcessTLV(qrData:QRCodeData)
-    func error();
+    func setupComplete()
+    func error(Error:Any, type:Int);
 }
 
 
@@ -32,6 +33,7 @@ public class QRScannerHelper{
     lazy var scanRect: CGRect?={
         return self.videoArea.frame;
     }();
+    //#Step1 init this
     init(videoArea:UIView, ca:UIView, responseHandler:IQRScannerHelper){
 //        self.scanRect=videoArea.frame;
         self.videoArea=videoArea;
@@ -39,6 +41,8 @@ public class QRScannerHelper{
         self.responseHandler=responseHandler;
     }
     
+    
+    //#Step2 setup this
     func viewDidLoad(proto:AVCaptureMetadataOutputObjectsDelegate){
         #if (arch(i386) || arch(x86_64)) && os(iOS)
         print("WARNING: Camera not available in the simulator!")
@@ -74,8 +78,10 @@ public class QRScannerHelper{
         case .authorized:
             //begin session
             beginSession(parent: proto)
+            break;
         case .notDetermined:
             //not allowed in permission
+            beginSession(parent: proto)
             break
         default:
             //unspecified
@@ -87,29 +93,33 @@ public class QRScannerHelper{
         //Creating session
         session = AVCaptureSession()
         //Define capture devcie
-        let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
+        let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back)
+        
+        //        let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
+        let captureDevice = deviceDiscoverySession.devices.first
         do
         {
             let input = try AVCaptureDeviceInput(device: captureDevice!)
+            // Set the input device on the capture session.
             session.addInput(input)
+            let captureMetadataOutput = AVCaptureMetadataOutput()
+            session.addOutput(captureMetadataOutput)
+            captureMetadataOutput.setMetadataObjectsDelegate(parent, queue: DispatchQueue.main)
+            captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
         }
         catch
         {
             print ("ERROR")
             return
         }
-        session.addOutput(output)
-        output.setMetadataObjectsDelegate(parent, queue: DispatchQueue.main)
-        output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
-        defineCaptureArea()
-        
-        video = AVCaptureVideoPreviewLayer(session: session)
-        video.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        videoArea.layer.addSublayer(video)
-//        maskViews.forEach { videoArea.bringSubviewToFront($0) }
-//        [captureArea, instruction, torchToggleButton, torchToggleImageView].forEach { videoArea.bringSubviewToFront($0) }
+        defineCaptureArea();
+        let videoPreviewLayer = AVCaptureVideoPreviewLayer(session: session)
+        videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        videoPreviewLayer.frame = self.videoArea.bounds
+        videoPreviewLayer.frame.size.width=self.videoArea.frame.width+50;
+        videoArea.layer.addSublayer(videoPreviewLayer)
         session.startRunning()
-        setupCaptureArea()
+        
     }
     
     
@@ -149,14 +159,13 @@ public class QRScannerHelper{
             if let r = parserResponse!.qrCodeData {
                 print("QR Code Data: \n" + r.description + "\n")
                 if r.mVisaMerchantID == nil {
-                    responseHandler?.error();
+                    responseHandler?.error(Error:parserResponse!.qrCodeError, type:1);
                 } else {
                     responseHandler?.successProcessTLV(qrData: r);
                 }
-                
             } else {
 //                print("Error Code: \n" + parserResponse!.qrCodeError!.description + "\n")
-                responseHandler?.error();
+                responseHandler?.error(Error:parserResponse!.qrCodeError, type:1);
             }
         }
         

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,10 @@
 		043EAC5922E9BB54004F5594 /* BaseCodeAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 043EAC4B22E9B131004F5594 /* BaseCodeAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		046FC8AA22FBE99E00C1C805 /* SQLiteHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8A922FBE99E00C1C805 /* SQLiteHelpers.swift */; };
 		046FC8AD22FD408800C1C805 /* CategoryRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8AC22FD408800C1C805 /* CategoryRModel.swift */; };
+		046FC8CB2302564400C1C805 /* QRScanning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046FC8CA2302564400C1C805 /* QRScanning.storyboard */; };
+		046FC8CD2302565600C1C805 /* QRScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8CC2302565600C1C805 /* QRScanningViewController.swift */; };
+		046FC8D62302610F00C1C805 /* MVisaQRParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */; };
+		046FC8D72302610F00C1C805 /* MVisaQRParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04B231C322F124D5002824F4 /* LoginVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231C222F124D5002824F4 /* LoginVViewController.swift */; };
 		04B231C522F124F3002824F4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B231C422F124F3002824F4 /* Login.storyboard */; };
 		04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231C622F12521002824F4 /* ForgotPasswordViewController.swift */; };
@@ -66,6 +70,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				043EAC5922E9BB54004F5594 /* BaseCodeAPI.framework in Embed Frameworks */,
+				046FC8D72302610F00C1C805 /* MVisaQRParser.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +92,8 @@
 		043EAC5622E9B49F004F5594 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		046FC8A922FBE99E00C1C805 /* SQLiteHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteHelpers.swift; sourceTree = "<group>"; };
 		046FC8AC22FD408800C1C805 /* CategoryRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRModel.swift; sourceTree = "<group>"; };
+		046FC8CA2302564400C1C805 /* QRScanning.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRScanning.storyboard; sourceTree = "<group>"; };
+		046FC8CC2302565600C1C805 /* QRScanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanningViewController.swift; sourceTree = "<group>"; };
 		04B231C222F124D5002824F4 /* LoginVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVViewController.swift; sourceTree = "<group>"; };
 		04B231C422F124F3002824F4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		04B231C622F12521002824F4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043EAC4C22E9B131004F5594 /* BaseCodeAPI.framework in Frameworks */,
+				046FC8D62302610F00C1C805 /* MVisaQRParser.framework in Frameworks */,
 				043EAC5822E9BB54004F5594 /* BaseCodeAPI.framework in Frameworks */,
 				EE3FA2E723015F1A004400A6 /* MVisaQRParser.framework in Frameworks */,
 				820E273619AD4D3D50598658 /* Pods_testProject.framework in Frameworks */,
@@ -209,6 +217,7 @@
 		043EAC5222E9B432004F5594 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				046FC8C92302563100C1C805 /* QRScanning */,
 				04B231CB22F12BC7002824F4 /* CustomView */,
 				04B231C822F12A69002824F4 /* Dashboard */,
 				04B231C122F1248A002824F4 /* Login */,
@@ -226,6 +235,15 @@
 				043EAC5422E9B458004F5594 /* MainPresenter.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		046FC8C92302563100C1C805 /* QRScanning */ = {
+			isa = PBXGroup;
+			children = (
+				046FC8CA2302564400C1C805 /* QRScanning.storyboard */,
+				046FC8CC2302565600C1C805 /* QRScanningViewController.swift */,
+			);
+			path = QRScanning;
 			sourceTree = "<group>";
 		};
 		04B231C122F1248A002824F4 /* Login */ = {
@@ -479,6 +497,7 @@
 				04B231D122F12C33002824F4 /* YoutubeCell.xib in Resources */,
 				EE3FA2CD22FB1D4E004400A6 /* OptionRadioCell1.xib in Resources */,
 				04B231CA22F12A79002824F4 /* Dashboard.storyboard in Resources */,
+				046FC8CB2302564400C1C805 /* QRScanning.storyboard in Resources */,
 				043EAC4322E9B0C8004F5594 /* LaunchScreen.storyboard in Resources */,
 				EE42E8E922F38E2900C469CC /* Notes.txt in Resources */,
 				EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */,
@@ -524,6 +543,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-testProject/Pods-testProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Fusuma/Fusuma.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -548,6 +568,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fusuma.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -591,6 +612,7 @@
 				04B231F422F19A30002824F4 /* CoreDataHelpers.swift in Sources */,
 				04B231D322F13200002824F4 /* HomeViewController.swift in Sources */,
 				046FC8AA22FBE99E00C1C805 /* SQLiteHelpers.swift in Sources */,
+				046FC8CD2302565600C1C805 /* QRScanningViewController.swift in Sources */,
 				043EAC5722E9B49F004F5594 /* BaseView.swift in Sources */,
 				EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */,
 				04B231F222F19210002824F4 /* UserModel.swift in Sources */,

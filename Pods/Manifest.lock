@@ -34,6 +34,7 @@ PODS:
     - GoogleUtilities/Reachability (~> 6.0)
     - GoogleUtilities/UserDefaults (~> 6.0)
     - Protobuf (~> 3.1)
+  - Fusuma (1.3.3)
   - GoogleAppMeasurement (6.0.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -105,6 +106,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
+  - Fusuma
   - IQKeyboardManagerSwift (from `https://github.com/hackiftekhar/IQKeyboardManager.git`, tag `v6.0.4`)
   - Moya (= 12.0.1)
   - Moya-ObjectMapper/RxSwift (= 2.8)
@@ -128,6 +130,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseInstanceID
     - FirebaseMessaging
+    - Fusuma
     - GoogleAppMeasurement
     - GoogleUtilities
     - Moya
@@ -169,6 +172,7 @@ SPEC CHECKSUMS:
   FirebaseCore: 66bdef3b310a026880e2a5bc8aa586ab62ce4543
   FirebaseInstanceID: 27bed93a59b6685f5c3e0c028a878a764fd75c33
   FirebaseMessaging: 31377e05331d16dc6c9fd82554f9a5c49aa70aed
+  Fusuma: 3bd08c8c5341ec60c0074fa28570fea8765966f0
   GoogleAppMeasurement: 51d8d9ea48f0ca44484d29cfbdef976fbd4fc336
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
   IQKeyboardManagerSwift: 36dbe324b4f9793f5f41ba5227f3e7c76dfefd50
@@ -189,6 +193,6 @@ SPEC CHECKSUMS:
   SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
   SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: 609a9a7dba040825352886ca7c18e0a97a0121b6
+PODFILE CHECKSUM: f5e677d000ecfe5d62c82b7c915d5a26b4760ef4
 
 COCOAPODS: 1.5.3

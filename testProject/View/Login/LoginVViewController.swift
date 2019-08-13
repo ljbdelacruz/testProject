@@ -8,12 +8,8 @@
 import UIKit
 
 class LoginVViewController: UIViewController {
-
-    
     @IBOutlet weak var usernameTF: UITextField!
-    
     var user:UserModel=UserModel();
-        
     @IBOutlet weak var passwordTF: UITextField!
     
     
@@ -24,15 +20,13 @@ class LoginVViewController: UIViewController {
         // Do any additional setup after loading the view.
     }    
     @IBAction func loginOnClick(_ sender: Any) {
-        performSegue(withIdentifier: "toDashboard", sender: nil);
+//        performSegue(withIdentifier: "toDashboard", sender: nil);
+        performSegue(withIdentifier: "qrScanningSegue", sender: nil)
     }
     @IBAction func forgotOnClick(_ sender: Any) {
         performSegue(withIdentifier: "forgotPasswordSegue", sender: nil);
     }
-    
-    
-    
-    
+
 }
 
 
