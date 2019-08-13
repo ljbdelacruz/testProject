@@ -9,12 +9,13 @@
 import Foundation
 import AVFoundation
 import UIKit
-//import MVisaQRParser
-import QRCodeReader
+//this module is required when using this helper
+import MVisaQRParser
 
 
-protocol IQRScannerHelper{
-    func successProcessTLV()
+public protocol IQRScannerHelper{
+    func successProcessTLV(qrData:QRCodeData)
+    func error();
 }
 
 
@@ -23,18 +24,19 @@ public class QRScannerHelper{
     public var video = AVCaptureVideoPreviewLayer()
     public var output = AVCaptureMetadataOutput()
     public var scanEnabled: Bool? = false
-    
+    public var responseHandler:IQRScannerHelper?
     
     var videoArea:UIView;
     var captureArea:UIView;
     
-    lazy var scanRect: CGRect={
+    lazy var scanRect: CGRect?={
         return self.videoArea.frame;
     }();
-    init(videoArea:UIView, ca:UIView){
-        self.scanRect=videoArea.frame;
+    init(videoArea:UIView, ca:UIView, responseHandler:IQRScannerHelper){
+//        self.scanRect=videoArea.frame;
         self.videoArea=videoArea;
         self.captureArea=ca;
+        self.responseHandler=responseHandler;
     }
     
     func viewDidLoad(proto:AVCaptureMetadataOutputObjectsDelegate){
@@ -116,7 +118,7 @@ public class QRScannerHelper{
         NotificationCenter.default.addObserver(self, selector: selector, name: NSNotification.Name.AVCaptureInputPortFormatDescriptionDidChange, object: nil)
     }
     @objc func avCaptureInputPortFormatDescriptionDidChangeNotification(notification: NSNotification) {
-        output.rectOfInterest = video.metadataOutputRectConverted(fromLayerRect: scanRect)
+        output.rectOfInterest = video.metadataOutputRectConverted(fromLayerRect: scanRect!)
     }
     private func setupCaptureArea() {
         captureArea.layer.borderWidth=2;
@@ -141,23 +143,20 @@ public class QRScannerHelper{
         }
     }
     func parse(tlv:String){
-        
-        
         //in order for this to work compile this in xcode 10 compiling it on xcode 10.2 does not seem to work and shit like that due to swift 5.0 compilation
         
         QRCodeParser.parseQRData(qrCodeString: tlv) { (parserResponse) in
             if let r = parserResponse!.qrCodeData {
                 print("QR Code Data: \n" + r.description + "\n")
-                
                 if r.mVisaMerchantID == nil {
-                    showErrorPopUp()
+                    responseHandler?.error();
                 } else {
-                    
-                    qrCodeData = r
+                    responseHandler?.successProcessTLV(qrData: r);
                 }
                 
             } else {
-                print("Error Code: \n" + parserResponse!.qrCodeError!.description + "\n")
+//                print("Error Code: \n" + parserResponse!.qrCodeError!.description + "\n")
+                responseHandler?.error();
             }
         }
         
