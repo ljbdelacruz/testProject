@@ -26,23 +26,35 @@ public class QRScannerHelper{
     public var output = AVCaptureMetadataOutput()
     public var scanEnabled: Bool? = false
     public var responseHandler:IQRScannerHelper?
-    
     var videoArea:UIView;
     var captureArea:UIView;
+    private let supportedCodeTypes = [AVMetadataObject.ObjectType.upce,
+                                      AVMetadataObject.ObjectType.code39,
+                                      AVMetadataObject.ObjectType.code39Mod43,
+                                      AVMetadataObject.ObjectType.code93,
+                                      AVMetadataObject.ObjectType.code128,
+                                      AVMetadataObject.ObjectType.ean8,
+                                      AVMetadataObject.ObjectType.ean13,
+                                      AVMetadataObject.ObjectType.aztec,
+                                      AVMetadataObject.ObjectType.pdf417,
+                                      AVMetadataObject.ObjectType.itf14,
+                                      AVMetadataObject.ObjectType.dataMatrix,
+                                      AVMetadataObject.ObjectType.interleaved2of5,
+                                      AVMetadataObject.ObjectType.qr]
     
-    lazy var scanRect: CGRect?={
-        return self.videoArea.frame;
-    }();
+    
+    var scanRect: CGRect?
     //#Step1 init this
     init(videoArea:UIView, ca:UIView, responseHandler:IQRScannerHelper){
 //        self.scanRect=videoArea.frame;
         self.videoArea=videoArea;
         self.captureArea=ca;
         self.responseHandler=responseHandler;
+        self.scanRect=videoArea.frame;
     }
     
     
-    //#Step2 setup this
+    //#Step2 setup this in viewDidLoad
     func viewDidLoad(proto:AVCaptureMetadataOutputObjectsDelegate){
         #if (arch(i386) || arch(x86_64)) && os(iOS)
         print("WARNING: Camera not available in the simulator!")
@@ -51,6 +63,15 @@ public class QRScannerHelper{
         setupCamera(proto: proto)
         #endif
     }
+    //#Step3 setup this in viewDidAppear
+    func viewDidAppear(){
+        if let _session = session {
+            _session.startRunning()
+        }
+    }
+    
+    
+    
     func setupCamera(proto:AVCaptureMetadataOutputObjectsDelegate){
         self.initScanSession(proto: proto);
         self.initToggleTorchButton();
@@ -95,30 +116,33 @@ public class QRScannerHelper{
         //Define capture devcie
         let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back)
         
-        //        let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
-        let captureDevice = deviceDiscoverySession.devices.first
+        let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
+        
+        
         do
         {
             let input = try AVCaptureDeviceInput(device: captureDevice!)
-            // Set the input device on the capture session.
             session.addInput(input)
-            let captureMetadataOutput = AVCaptureMetadataOutput()
-            session.addOutput(captureMetadataOutput)
-            captureMetadataOutput.setMetadataObjectsDelegate(parent, queue: DispatchQueue.main)
-            captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+            output = AVCaptureMetadataOutput()
+            session.addOutput(output)
+//            output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+            output.metadataObjectTypes = supportedCodeTypes
+            output.setMetadataObjectsDelegate(parent, queue: DispatchQueue.main)
+            defineCaptureArea();
+            video = AVCaptureVideoPreviewLayer(session: session)
+            video.videoGravity = AVLayerVideoGravity.resizeAspectFill
+            video.frame = self.videoArea.bounds
+            video.frame.size.width=self.videoArea.frame.width+50;
+            videoArea.layer.addSublayer(video)
+            session.startRunning()
+            self.setupCaptureArea()
+            self.responseHandler?.setupComplete();
         }
         catch
         {
             print ("ERROR")
             return
         }
-        defineCaptureArea();
-        let videoPreviewLayer = AVCaptureVideoPreviewLayer(session: session)
-        videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        videoPreviewLayer.frame = self.videoArea.bounds
-        videoPreviewLayer.frame.size.width=self.videoArea.frame.width+50;
-        videoArea.layer.addSublayer(videoPreviewLayer)
-        session.startRunning()
         
     }
     
@@ -138,13 +162,13 @@ public class QRScannerHelper{
         output.rectOfInterest = rectOfInterest
     }
     
-    
+    // set this on metadataOutput so you can scan qr codes
     func setMetaDataObject(metadataObjects: [AVMetadataObject]){
         if metadataObjects != nil && metadataObjects.count != 0
         {
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject
             {
-                if object.type == AVMetadataObject.ObjectType.qr && scanEnabled ?? false
+                if object.type == AVMetadataObject.ObjectType.qr
                 {
                     session.stopRunning()
                     parse(tlv: object.stringValue!)

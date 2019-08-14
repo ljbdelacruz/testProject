@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>NSAppleMusicUsageDescription</key>
+    <string>We would like to use this feature for our app</string>
+    <key>NSCameraUsageDescription</key>
+    <string>We would like to use your camera for QR Code Scanning</string>
+    
 	<key>NSCameraUsageDescription</key>
 	<string>I want to use your camera please allow me!</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -64,5 +69,9 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>remote-notification</string>
+    </array>
 </dict>
 </plist>

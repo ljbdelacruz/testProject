@@ -18,30 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnV-Wp-qZD">
-                                <rect key="frame" x="0.0" y="52" width="375" height="236"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfK-ZI-OtZ">
-                                        <rect key="frame" x="138" y="68" width="99" height="100"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eov-aI-mxk">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.19012200339999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnV-Wp-qZD" customClass="QRScannerView" customModule="testProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="52" width="375" height="343"/>
                                 <color key="backgroundColor" red="0.4941176471" green="0.3411764706" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="pfK-ZI-OtZ" secondAttribute="bottom" constant="68" id="Mqv-w9-Jfb"/>
-                                    <constraint firstAttribute="trailing" secondItem="pfK-ZI-OtZ" secondAttribute="trailing" constant="138" id="NVW-lO-Gq7"/>
-                                    <constraint firstItem="pfK-ZI-OtZ" firstAttribute="centerY" secondItem="FnV-Wp-qZD" secondAttribute="centerY" id="Raq-1u-BnU"/>
-                                    <constraint firstAttribute="height" constant="236" id="XMu-UN-tNa"/>
-                                    <constraint firstItem="pfK-ZI-OtZ" firstAttribute="top" secondItem="FnV-Wp-qZD" secondAttribute="top" constant="68" id="b7H-qF-2pm"/>
-                                    <constraint firstItem="pfK-ZI-OtZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FnV-Wp-qZD" secondAttribute="leading" constant="138" id="eGE-Rd-oh8"/>
-                                    <constraint firstItem="pfK-ZI-OtZ" firstAttribute="centerX" secondItem="FnV-Wp-qZD" secondAttribute="centerX" id="rsd-Jb-nUQ"/>
+                                    <constraint firstAttribute="height" constant="343" id="6i3-U1-DSt"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -54,8 +35,7 @@
                         <viewLayoutGuide key="safeArea" id="qlE-AH-sw9"/>
                     </view>
                     <connections>
-                        <outlet property="scanningArea" destination="pfK-ZI-OtZ" id="7lb-sv-Jlt"/>
-                        <outlet property="videoArea" destination="FnV-Wp-qZD" id="b8z-UJ-obM"/>
+                        <outlet property="qrScannerView" destination="FnV-Wp-qZD" id="T4u-FU-J0K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSL-1b-8Cq" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -25,6 +25,9 @@
 		046FC8CD2302565600C1C805 /* QRScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8CC2302565600C1C805 /* QRScanningViewController.swift */; };
 		046FC8D62302610F00C1C805 /* MVisaQRParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */; };
 		046FC8D72302610F00C1C805 /* MVisaQRParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		046FC8ED230394F600C1C805 /* QRScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046FC8EC230394F600C1C805 /* QRScannerView.xib */; };
+		046FC8EF2303950F00C1C805 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8EE2303950F00C1C805 /* QRScannerView.swift */; };
+		046FC8FB2303BF4E00C1C805 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8FA2303BF4E00C1C805 /* UIView+.swift */; };
 		04B231C322F124D5002824F4 /* LoginVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231C222F124D5002824F4 /* LoginVViewController.swift */; };
 		04B231C522F124F3002824F4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B231C422F124F3002824F4 /* Login.storyboard */; };
 		04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231C622F12521002824F4 /* ForgotPasswordViewController.swift */; };
@@ -94,6 +97,9 @@
 		046FC8AC22FD408800C1C805 /* CategoryRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRModel.swift; sourceTree = "<group>"; };
 		046FC8CA2302564400C1C805 /* QRScanning.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRScanning.storyboard; sourceTree = "<group>"; };
 		046FC8CC2302565600C1C805 /* QRScanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanningViewController.swift; sourceTree = "<group>"; };
+		046FC8EC230394F600C1C805 /* QRScannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRScannerView.xib; sourceTree = "<group>"; };
+		046FC8EE2303950F00C1C805 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		046FC8FA2303BF4E00C1C805 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		04B231C222F124D5002824F4 /* LoginVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVViewController.swift; sourceTree = "<group>"; };
 		04B231C422F124F3002824F4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		04B231C622F12521002824F4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 		043EAC3722E9B0C6004F5594 /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				046FC8EA230394DC00C1C805 /* Components */,
 				EE3FA2DB23013833004400A6 /* hardware */,
 				EE3FA2D623012D18004400A6 /* integrations */,
 				EE3FA2D323012CE1004400A6 /* config */,
@@ -244,6 +251,24 @@
 				046FC8CC2302565600C1C805 /* QRScanningViewController.swift */,
 			);
 			path = QRScanning;
+			sourceTree = "<group>";
+		};
+		046FC8EA230394DC00C1C805 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				046FC8EB230394E600C1C805 /* QRScannerView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		046FC8EB230394E600C1C805 /* QRScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				046FC8EC230394F600C1C805 /* QRScannerView.xib */,
+				046FC8EE2303950F00C1C805 /* QRScannerView.swift */,
+				046FC8FA2303BF4E00C1C805 /* UIView+.swift */,
+			);
+			path = QRScannerView;
 			sourceTree = "<group>";
 		};
 		04B231C122F1248A002824F4 /* Login */ = {
@@ -504,6 +529,7 @@
 				043EAC4022E9B0C8004F5594 /* Assets.xcassets in Resources */,
 				04B231DD22F1625A002824F4 /* YoutubeCell1.xib in Resources */,
 				043EAC3E22E9B0C6004F5594 /* Main.storyboard in Resources */,
+				046FC8ED230394F600C1C805 /* QRScannerView.xib in Resources */,
 				EE3FA2D022FFC33C004400A6 /* AdsCell1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +630,7 @@
 				04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */,
 				EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */,
 				043EAC5522E9B458004F5594 /* MainPresenter.swift in Sources */,
+				046FC8EF2303950F00C1C805 /* QRScannerView.swift in Sources */,
 				04B231E422F166A8002824F4 /* UITableView+.swift in Sources */,
 				043EAC3B22E9B0C6004F5594 /* ViewController.swift in Sources */,
 				EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */,
@@ -623,6 +650,7 @@
 				046FC8AD22FD408800C1C805 /* CategoryRModel.swift in Sources */,
 				04B231E222F1656F002824F4 /* ToWatchViewController.swift in Sources */,
 				04B2320022F2D07B002824F4 /* AlamofireHelper.swift in Sources */,
+				046FC8FB2303BF4E00C1C805 /* UIView+.swift in Sources */,
 				04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */,
 				EE3FA2DD23013842004400A6 /* QRScanner.swift in Sources */,
 				EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */,
