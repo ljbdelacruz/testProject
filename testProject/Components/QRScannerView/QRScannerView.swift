@@ -57,6 +57,12 @@ public class QRScannerView: UIView {
     public func viewDidAppearInit(){
         helpers!.viewDidAppear();        
     }
+    public func setMetaObject(metadataObjects: [AVMetadataObject]){
+        self.helpers?.setMetaDataObject(metadataObjects: metadataObjects);
+    }
+    public func startSession(){
+        self.helpers?.continueSession();
+    }
 }
 
 //Mark: IQScannerHelper

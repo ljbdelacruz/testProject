@@ -21,6 +21,10 @@ class QRScanningViewController: UIViewController {
         qrScannerView.setupView(vcH: self, vc:self);
         qrScannerView.viewDidAppearInit();
     }
+    @IBAction func backOnClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 
@@ -28,15 +32,15 @@ extension QRScanningViewController:IQRScannerView{
     func successReceive(qrData: QRCodeData) {
         print("Data");
         print(qrData.merchantName);
+        qrScannerView.startSession();
     }
     func failed(error: Error) {
-        
     }
 }
 extension QRScanningViewController:AVCaptureMetadataOutputObjectsDelegate{
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         // Check if the metadataObjects array is not nil and it contains at least one object.
-        qrScannerView.helpers!.setMetaDataObject(metadataObjects: metadataObjects);
+        qrScannerView.setMetaObject(metadataObjects: metadataObjects);
     }
     func showErrorPopUp() {
         print("Error");

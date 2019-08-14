@@ -125,8 +125,8 @@ public class QRScannerHelper{
             session.addInput(input)
             output = AVCaptureMetadataOutput()
             session.addOutput(output)
-//            output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
-            output.metadataObjectTypes = supportedCodeTypes
+            output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+//            output.metadataObjectTypes = supportedCodeTypes
             output.setMetadataObjectsDelegate(parent, queue: DispatchQueue.main)
             defineCaptureArea();
             video = AVCaptureVideoPreviewLayer(session: session)
@@ -193,5 +193,8 @@ public class QRScannerHelper{
             }
         }
         
+    }
+    func continueSession(){
+        session.startRunning();
     }
 }

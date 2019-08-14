@@ -25,10 +25,19 @@
                                     <constraint firstAttribute="height" constant="343" id="6i3-U1-DSt"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqh-zd-eHB">
+                                <rect key="frame" x="16" y="403" width="40" height="30"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <action selector="backOnClick:" destination="giV-PD-hBM" eventType="touchDown" id="Z73-jR-c1a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FnV-Wp-qZD" firstAttribute="leading" secondItem="tEK-VK-L9R" secondAttribute="leading" id="2yJ-YB-y25"/>
+                            <constraint firstItem="mqh-zd-eHB" firstAttribute="leading" secondItem="qlE-AH-sw9" secondAttribute="leading" constant="16" id="KHj-Sn-7jc"/>
+                            <constraint firstItem="mqh-zd-eHB" firstAttribute="top" secondItem="FnV-Wp-qZD" secondAttribute="bottom" constant="8" id="h7K-4L-Egj"/>
                             <constraint firstAttribute="trailing" secondItem="FnV-Wp-qZD" secondAttribute="trailing" id="kkc-ZW-P5J"/>
                             <constraint firstItem="FnV-Wp-qZD" firstAttribute="top" secondItem="qlE-AH-sw9" secondAttribute="top" constant="32" id="xpU-TH-a3g"/>
                         </constraints>
