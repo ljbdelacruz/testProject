@@ -27,7 +27,6 @@ class QRScanningViewController: UIViewController {
     
 }
 
-
 extension QRScanningViewController:IQRScannerView{
     func successReceive(qrData: QRCodeData) {
         print("Data");
