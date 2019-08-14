@@ -24,6 +24,9 @@ class QRScanningViewController: UIViewController {
     @IBAction func backOnClick(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        qrScannerView.helpers?.stopSession();
+    }
     
 }
 

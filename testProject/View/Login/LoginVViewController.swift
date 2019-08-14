@@ -9,7 +9,7 @@ import UIKit
 
 class LoginVViewController: UIViewController {
     @IBOutlet weak var usernameTF: UITextField!
-    var user:UserModel=UserModel();
+    weak var user:UserModel?=UserModel();
     @IBOutlet weak var passwordTF: UITextField!
     
     

@@ -197,4 +197,7 @@ public class QRScannerHelper{
     func continueSession(){
         session.startRunning();
     }
+    func stopSession(){
+        session.stopRunning();
+    }
 }

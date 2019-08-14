@@ -264,6 +264,7 @@
 		046FC8EB230394E600C1C805 /* QRScannerView */ = {
 			isa = PBXGroup;
 			children = (
+				EE3FA2DC23013842004400A6 /* QRScanner.swift */,
 				046FC8EC230394F600C1C805 /* QRScannerView.xib */,
 				046FC8EE2303950F00C1C805 /* QRScannerView.swift */,
 				046FC8FA2303BF4E00C1C805 /* UIView+.swift */,
@@ -436,7 +437,6 @@
 		EE3FA2DB23013833004400A6 /* hardware */ = {
 			isa = PBXGroup;
 			children = (
-				EE3FA2DC23013842004400A6 /* QRScanner.swift */,
 			);
 			path = hardware;
 			sourceTree = "<group>";
