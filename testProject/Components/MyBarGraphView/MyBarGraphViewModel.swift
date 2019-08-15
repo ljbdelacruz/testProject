@@ -16,11 +16,11 @@ class MyBarGraphViewModel{
         let chartData = BarChartData(dataSets: dataSets)
         let groupSpace = 0.08
         let barSpace = 0.06
-        let barWidth = 0.4
+        let barWidth = dataSets.count < 3 ? 0.4 : 0.4 - (0.05 * (Double(dataSets.count)))
         chartData.barWidth = barWidth
         barChart.leftAxis.axisMinimum = 0
         barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: self.labels)
-        barChart.xAxis.axisMaximum = Double(12)
+        barChart.xAxis.axisMaximum = Double(10)
         chartData.groupBars(fromX: 0, groupSpace: groupSpace, barSpace: barSpace)
         barChart.data = chartData
         barChart.animate(xAxisDuration: 1.5, yAxisDuration: 1.5, easingOption: .linear)
@@ -32,10 +32,6 @@ class MyBarGraphViewModel{
 class MyBarGraphFieldsViewModel{
     var fieldNames:String?
     var content:MyBarGraphContentViewModel?
-    
-//    func getDataSet(formatter:IValueFormatter)->BarChartDataSet{
-//        return content!.createBarCharDataEntry(data: content!.numbers!, label: fieldNames!, color: content!.barColor, formatter: formatter)
-//    }
 }
 class MyBarGraphContentViewModel{
     var numbers:[Double]?

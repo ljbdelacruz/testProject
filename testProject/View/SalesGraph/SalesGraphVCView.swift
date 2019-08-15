@@ -14,12 +14,6 @@ class SalesGraphVCView: UIViewController {
     @IBOutlet weak var myBGraphView: MyBarGraph!
     override func viewDidLoad() {
         super.viewDidLoad()
-        myBGraphView.setData(vm: MyBarGraph.initDummyData(), formatter: self);
+        myBGraphView.setData(vm: MyBarGraph.initDummyData());
     }
-}
-extension SalesGraphVCView: IValueFormatter {
-    func stringForValue(_ value: Double, entry: ChartDataEntry, dataSetIndex: Int, viewPortHandler: ViewPortHandler?) -> String {
-        return String(String(value).characters.dropLast().dropLast())
-    }
-    
 }

@@ -26,11 +26,10 @@ class MyBarGraph: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         cView.fixInView(self)
     }
-    func setData(vm:MyBarGraphViewModel, formatter:IValueFormatter){
+    func setData(vm:MyBarGraphViewModel){
         self.setupBarChart(barChart: self.barGraph);
-        self.barChartUpdate(self.barGraph, vm:vm, formatter: formatter);
+        self.barChartUpdate(self.barGraph, vm:vm);
     }
-    
 }
 
 
@@ -58,7 +57,7 @@ extension MyBarGraph{
         xaxis.centerAxisLabelsEnabled = true
         xaxis.granularity = 1
         xaxis.labelTextColor = UIColor.white
-        
+                
         let leftAxisFormatter = NumberFormatter()
         leftAxisFormatter.maximumFractionDigits = 1
         
@@ -78,10 +77,9 @@ extension MyBarGraph{
         barChart.extraTopOffset = 40.0
         barChart.extraBottomOffset = 5.0
     }
-    func barChartUpdate(_ barChart: BarChartView, vm:MyBarGraphViewModel, formatter:IValueFormatter) {
+    func barChartUpdate(_ barChart: BarChartView, vm:MyBarGraphViewModel) {
         var charDataSets:[BarChartDataSet]=[]
         for i in 0 ..< vm.fields.count{
-            
             let set=vm.fields[i].content!.createBarCharDataEntry(label: vm.fields[i].fieldNames!, formatter: self)
             charDataSets.append(set)
         }
@@ -105,28 +103,28 @@ extension MyBarGraph: IValueFormatter {
 extension MyBarGraph{
     static func initDummyData()->MyBarGraphViewModel{
         let tempVM=MyBarGraphViewModel();
-        tempVM.labels=["Jan", "Feb", "Mar", "Apr"];
+        tempVM.labels=["Jan", "Feb", "Mar", "Apr", "May"];
         let temp=MyBarGraphFieldsViewModel();
         temp.fieldNames="Nintendo Switch";
         temp.content=MyBarGraphContentViewModel();
-        temp.content!.numbers=[0.2,2,1,3]
+        temp.content!.numbers=[0.2,2,1,3,12]
         temp.content!.barColor=UIColor.red;
         tempVM.fields.append(temp);
         
         let temp2=MyBarGraphFieldsViewModel();
         temp2.fieldNames="PS4";
         temp2.content=MyBarGraphContentViewModel();
-        temp2.content!.numbers=[1,1,1,4]
+        temp2.content!.numbers=[1,1,1,4,10]
         temp2.content!.barColor=UIColor.blue;
         tempVM.fields.append(temp2);
         
         
-//        let temp3=MyBarGraphFieldsViewModel();
-//        temp3.fieldNames="Xbox One";
-//        temp3.content=MyBarGraphContentViewModel();
-//        temp3.content!.numbers=[2,3,1,0]
-//        temp3.content!.barColor=UIColor.green;
-//        tempVM.fields.append(temp3);
+        let temp3=MyBarGraphFieldsViewModel();
+        temp3.fieldNames="Xbox One";
+        temp3.content=MyBarGraphContentViewModel();
+        temp3.content!.numbers=[2,3,1,2,5]
+        temp3.content!.barColor=UIColor.green;
+        tempVM.fields.append(temp3);
         return tempVM;
         
     }
