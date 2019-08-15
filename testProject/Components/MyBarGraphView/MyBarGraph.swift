@@ -119,12 +119,19 @@ extension MyBarGraph{
         tempVM.fields.append(temp2);
         
         
-        let temp3=MyBarGraphFieldsViewModel();
-        temp3.fieldNames="Xbox One";
-        temp3.content=MyBarGraphContentViewModel();
-        temp3.content!.numbers=[2,3,1,2,5]
-        temp3.content!.barColor=UIColor.green;
-        tempVM.fields.append(temp3);
+//        let temp3=MyBarGraphFieldsViewModel();
+//        temp3.fieldNames="Xbox One";
+//        temp3.content=MyBarGraphContentViewModel();
+//        temp3.content!.numbers=[2,3,1,2,5]
+//        temp3.content!.barColor=UIColor.green;
+//        tempVM.fields.append(temp3);
+        
+//        let temp4=MyBarGraphFieldsViewModel();
+//        temp4.fieldNames="PS VITA";
+//        temp4.content=MyBarGraphContentViewModel();
+//        temp4.content!.numbers=[2,3,1,2,5]
+//        temp4.content!.barColor=UIColor.gray;
+//        tempVM.fields.append(temp4);
         return tempVM;
         
     }

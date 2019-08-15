@@ -16,7 +16,7 @@ class MyBarGraphViewModel{
         let chartData = BarChartData(dataSets: dataSets)
         let groupSpace = 0.08
         let barSpace = 0.06
-        let barWidth = dataSets.count < 3 ? 0.4 : 0.4 - (0.05 * (Double(dataSets.count)))
+        let barWidth = dataSets.count < 3 ? 0.4 : 0.4 - (0.050 * (Double(dataSets.count)))
         chartData.barWidth = barWidth
         barChart.leftAxis.axisMinimum = 0
         barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: self.labels)
