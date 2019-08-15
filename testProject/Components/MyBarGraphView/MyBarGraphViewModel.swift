@@ -50,6 +50,7 @@ class MyBarGraphContentViewModel{
         let set1=BarChartDataSet(values: list, label: label)
         set1.valueFormatter = formatter
         set1.valueFont = UIFont.systemFont(ofSize: 14)
+        set1.valueTextColor=UIColor.white;
         set1.colors = [barColor]
         return set1
     }
