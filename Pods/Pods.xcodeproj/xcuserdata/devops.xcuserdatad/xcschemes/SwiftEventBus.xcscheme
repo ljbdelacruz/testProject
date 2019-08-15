@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "448FAEC618EC06A18737A4682B3ACBD1"
+               BlueprintIdentifier = "6AD4C0D0C6108CA3829716B7B13D1F23"
+               BuildableName = "SwiftEventBus.framework"
                BlueprintName = "SwiftEventBus"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftEventBus.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

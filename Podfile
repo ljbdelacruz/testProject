@@ -37,6 +37,10 @@ target 'testProject' do
   # Images
   pod 'Fusuma'
   
+  # Charts
+  pod 'Charts', '3.2.1'
+  
+  
   
   # QR Code Reader
 #  pod 'QRCodeReader.swift', '~> 10.1.0'

@@ -28,6 +28,11 @@
 		046FC8ED230394F600C1C805 /* QRScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046FC8EC230394F600C1C805 /* QRScannerView.xib */; };
 		046FC8EF2303950F00C1C805 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8EE2303950F00C1C805 /* QRScannerView.swift */; };
 		046FC8FB2303BF4E00C1C805 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC8FA2303BF4E00C1C805 /* UIView+.swift */; };
+		046FC9032304F85400C1C805 /* SalesGraph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046FC9022304F85400C1C805 /* SalesGraph.storyboard */; };
+		046FC908230505AB00C1C805 /* MyBarGraph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046FC907230505AB00C1C805 /* MyBarGraph.xib */; };
+		046FC90A230505F800C1C805 /* MyBarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC909230505F800C1C805 /* MyBarGraph.swift */; };
+		046FC90C2305064E00C1C805 /* MyBarGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC90B2305064E00C1C805 /* MyBarGraphViewModel.swift */; };
+		046FC90E2305126200C1C805 /* SalesGraphVCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FC90D2305126200C1C805 /* SalesGraphVCView.swift */; };
 		04B231C322F124D5002824F4 /* LoginVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231C222F124D5002824F4 /* LoginVViewController.swift */; };
 		04B231C522F124F3002824F4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B231C422F124F3002824F4 /* Login.storyboard */; };
 		04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B231C622F12521002824F4 /* ForgotPasswordViewController.swift */; };
@@ -57,7 +62,7 @@
 		EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D122FFC34B004400A6 /* AdsCell1.swift */; };
 		EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D423012CEF004400A6 /* Constants.swift */; };
 		EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2D723012D28004400A6 /* StripeIntegration.swift */; };
-		EE3FA2DD23013842004400A6 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2DC23013842004400A6 /* QRScanner.swift */; };
+		EE3FA2DD23013842004400A6 /* QRScannerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2DC23013842004400A6 /* QRScannerHelper.swift */; };
 		EE3FA2E723015F1A004400A6 /* MVisaQRParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */; };
 		EE3FA2E9230233CB004400A6 /* PushNotificationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2E8230233CB004400A6 /* PushNotificationHelpers.swift */; };
 		EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */; };
@@ -100,6 +105,11 @@
 		046FC8EC230394F600C1C805 /* QRScannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRScannerView.xib; sourceTree = "<group>"; };
 		046FC8EE2303950F00C1C805 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		046FC8FA2303BF4E00C1C805 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		046FC9022304F85400C1C805 /* SalesGraph.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SalesGraph.storyboard; sourceTree = "<group>"; };
+		046FC907230505AB00C1C805 /* MyBarGraph.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBarGraph.xib; sourceTree = "<group>"; };
+		046FC909230505F800C1C805 /* MyBarGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBarGraph.swift; sourceTree = "<group>"; };
+		046FC90B2305064E00C1C805 /* MyBarGraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBarGraphViewModel.swift; sourceTree = "<group>"; };
+		046FC90D2305126200C1C805 /* SalesGraphVCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesGraphVCView.swift; sourceTree = "<group>"; };
 		04B231C222F124D5002824F4 /* LoginVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVViewController.swift; sourceTree = "<group>"; };
 		04B231C422F124F3002824F4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		04B231C622F12521002824F4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +141,7 @@
 		EE3FA2D122FFC34B004400A6 /* AdsCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCell1.swift; sourceTree = "<group>"; };
 		EE3FA2D423012CEF004400A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE3FA2D723012D28004400A6 /* StripeIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeIntegration.swift; sourceTree = "<group>"; };
-		EE3FA2DC23013842004400A6 /* QRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
+		EE3FA2DC23013842004400A6 /* QRScannerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerHelper.swift; sourceTree = "<group>"; };
 		EE3FA2E623015F1A004400A6 /* MVisaQRParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaQRParser.framework; sourceTree = "<group>"; };
 		EE3FA2E8230233CB004400A6 /* PushNotificationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationHelpers.swift; sourceTree = "<group>"; };
 		EE42E8DC22F2467B00C469CC /* CoreDataEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataEntity.xcdatamodel; sourceTree = "<group>"; };
@@ -224,6 +234,8 @@
 		043EAC5222E9B432004F5594 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				046FC9012304F84000C1C805 /* SalesGraph */,
+				046FC9002304F82C00C1C805 /* LocalPushNotification */,
 				046FC8C92302563100C1C805 /* QRScanning */,
 				04B231CB22F12BC7002824F4 /* CustomView */,
 				04B231C822F12A69002824F4 /* Dashboard */,
@@ -256,6 +268,7 @@
 		046FC8EA230394DC00C1C805 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				046FC9062305030100C1C805 /* MyBarGraphView */,
 				046FC8EB230394E600C1C805 /* QRScannerView */,
 			);
 			path = Components;
@@ -264,12 +277,38 @@
 		046FC8EB230394E600C1C805 /* QRScannerView */ = {
 			isa = PBXGroup;
 			children = (
-				EE3FA2DC23013842004400A6 /* QRScanner.swift */,
+				EE3FA2DC23013842004400A6 /* QRScannerHelper.swift */,
 				046FC8EC230394F600C1C805 /* QRScannerView.xib */,
 				046FC8EE2303950F00C1C805 /* QRScannerView.swift */,
 				046FC8FA2303BF4E00C1C805 /* UIView+.swift */,
 			);
 			path = QRScannerView;
+			sourceTree = "<group>";
+		};
+		046FC9002304F82C00C1C805 /* LocalPushNotification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalPushNotification;
+			sourceTree = "<group>";
+		};
+		046FC9012304F84000C1C805 /* SalesGraph */ = {
+			isa = PBXGroup;
+			children = (
+				046FC9022304F85400C1C805 /* SalesGraph.storyboard */,
+				046FC90D2305126200C1C805 /* SalesGraphVCView.swift */,
+			);
+			path = SalesGraph;
+			sourceTree = "<group>";
+		};
+		046FC9062305030100C1C805 /* MyBarGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				046FC907230505AB00C1C805 /* MyBarGraph.xib */,
+				046FC909230505F800C1C805 /* MyBarGraph.swift */,
+				046FC90B2305064E00C1C805 /* MyBarGraphViewModel.swift */,
+			);
+			path = MyBarGraphView;
 			sourceTree = "<group>";
 		};
 		04B231C122F1248A002824F4 /* Login */ = {
@@ -518,11 +557,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046FC9032304F85400C1C805 /* SalesGraph.storyboard in Resources */,
 				04B231C522F124F3002824F4 /* Login.storyboard in Resources */,
 				04B231D122F12C33002824F4 /* YoutubeCell.xib in Resources */,
 				EE3FA2CD22FB1D4E004400A6 /* OptionRadioCell1.xib in Resources */,
 				04B231CA22F12A79002824F4 /* Dashboard.storyboard in Resources */,
 				046FC8CB2302564400C1C805 /* QRScanning.storyboard in Resources */,
+				046FC908230505AB00C1C805 /* MyBarGraph.xib in Resources */,
 				043EAC4322E9B0C8004F5594 /* LaunchScreen.storyboard in Resources */,
 				EE42E8E922F38E2900C469CC /* Notes.txt in Resources */,
 				EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */,
@@ -569,6 +610,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-testProject/Pods-testProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Fusuma/Fusuma.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
@@ -594,6 +636,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fusuma.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
@@ -633,6 +676,7 @@
 				046FC8EF2303950F00C1C805 /* QRScannerView.swift in Sources */,
 				04B231E422F166A8002824F4 /* UITableView+.swift in Sources */,
 				043EAC3B22E9B0C6004F5594 /* ViewController.swift in Sources */,
+				046FC90E2305126200C1C805 /* SalesGraphVCView.swift in Sources */,
 				EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */,
 				EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */,
 				043EAC5122E9B2D2004F5594 /* PresentationAssembly.swift in Sources */,
@@ -652,13 +696,15 @@
 				04B2320022F2D07B002824F4 /* AlamofireHelper.swift in Sources */,
 				046FC8FB2303BF4E00C1C805 /* UIView+.swift in Sources */,
 				04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */,
-				EE3FA2DD23013842004400A6 /* QRScanner.swift in Sources */,
+				046FC90C2305064E00C1C805 /* MyBarGraphViewModel.swift in Sources */,
+				EE3FA2DD23013842004400A6 /* QRScannerHelper.swift in Sources */,
 				EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */,
 				043EAC4F22E9B289004F5594 /* AppAssembler.swift in Sources */,
 				EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */,
 				04B231F822F19A48002824F4 /* UserDefaultsHelpers.swift in Sources */,
 				EE3FA2E9230233CB004400A6 /* PushNotificationHelpers.swift in Sources */,
 				04B231FA22F19A5B002824F4 /* KeychainHelpers.swift in Sources */,
+				046FC90A230505F800C1C805 /* MyBarGraph.swift in Sources */,
 				04B231DA22F13651002824F4 /* UICollectionView+.swift in Sources */,
 				04B231D622F1349C002824F4 /* VideosModel.swift in Sources */,
 				04B231F622F19A3E002824F4 /* RealmHelpers.swift in Sources */,

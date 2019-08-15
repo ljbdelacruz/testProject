@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C522DFE2DBF55863027FE7BB6FEBEB9"
+               BlueprintIdentifier = "CE5948CA83E27945C8EE716B6D314046"
+               BuildableName = "SwinjectStoryboard.framework"
                BlueprintName = "SwinjectStoryboard"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwinjectStoryboard.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

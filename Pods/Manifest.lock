@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.8.2)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
   - Firebase/Core (6.1.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 6.0.1)
@@ -104,6 +107,7 @@ PODS:
     - Swinject (~> 2.5)
 
 DEPENDENCIES:
+  - Charts (= 3.2.1)
   - Firebase/Core
   - Firebase/Messaging
   - Fusuma
@@ -124,6 +128,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Charts
     - Firebase
     - FirebaseAnalytics
     - FirebaseAnalyticsInterop
@@ -166,6 +171,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   Firebase: 8d77bb33624ae9b62d745d82ec023de5f70f7e4f
   FirebaseAnalytics: 629301c2b9925f3537d4093a17a72751ae5b7084
   FirebaseAnalyticsInterop: efbe45c8385ec626e29f9525e5ebd38520dfb6c1
@@ -193,6 +199,6 @@ SPEC CHECKSUMS:
   SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
   SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: f5e677d000ecfe5d62c82b7c915d5a26b4760ef4
+PODFILE CHECKSUM: 99185d01417e35a3416217631fca82e20c932595
 
 COCOAPODS: 1.5.3

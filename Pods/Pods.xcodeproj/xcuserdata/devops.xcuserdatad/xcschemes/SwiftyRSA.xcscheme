@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0EDE3583BC5C6DD8C08998FE16B93AE9"
+               BlueprintIdentifier = "4124B8168616188DBC3BE093133D9DB3"
+               BuildableName = "SwiftyRSA.framework"
                BlueprintName = "SwiftyRSA"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftyRSA.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

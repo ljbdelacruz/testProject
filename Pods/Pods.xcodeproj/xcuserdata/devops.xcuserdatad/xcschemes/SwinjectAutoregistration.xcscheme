@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7BB8F1F41BF2E59440351082DFFF0144"
+               BlueprintIdentifier = "1612D7972F8B3708E32BB9087E6A547A"
+               BuildableName = "SwinjectAutoregistration.framework"
                BlueprintName = "SwinjectAutoregistration"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwinjectAutoregistration.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

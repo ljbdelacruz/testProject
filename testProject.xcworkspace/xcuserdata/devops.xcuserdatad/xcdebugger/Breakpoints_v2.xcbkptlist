@@ -346,7 +346,7 @@
                   moduleName = "testProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/devops/Desktop/aeon/aeon/personal/my/testProject/testProject/View/Dashboard/DashboardViewPresenter.swift"
-                  timestampString = "587463747.606665"
+                  timestampString = "587555838.133514"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -361,7 +361,7 @@
                   moduleName = "testProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/devops/Desktop/aeon/aeon/personal/my/testProject/testProject/View/Dashboard/DashboardViewPresenter.swift"
-                  timestampString = "587463747.609269"
+                  timestampString = "587555838.135105"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -538,11 +538,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testProject/View/QRScanning/QRScanningViewController.swift"
-            timestampString = "587469424.496763"
+            timestampString = "587555837.705847"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "successReceive(qrData:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -682,7 +682,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testProject/Components/QRScannerView/QRScannerView.swift"
-            timestampString = "587469424.497615"
+            timestampString = "587555837.706062"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -896,6 +896,70 @@
             startingLineNumber = "193"
             endingLineNumber = "193"
             landmarkName = "parse(tlv:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testProject/View/SalesGraph/MyBarGraphViewController.swift"
+            timestampString = "587555679.053578"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "stringForValue(_:entry:dataSetIndex:viewPortHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testProject/View/SalesGraph/SalesGraphVC.swift"
+            timestampString = "587555837.706362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "initViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testProject/View/SalesGraph/SalesGraphVC.swift"
+            timestampString = "587555837.706694"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "initViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testProject/View/SalesGraph/SalesGraphVC.swift"
+            timestampString = "587555837.706949"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "barChartUpdate(_:label1:label2:days:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

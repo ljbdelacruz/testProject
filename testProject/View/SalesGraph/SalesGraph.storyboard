@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2R2-pd-9NI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sales GraphVC View-->
+        <scene sceneID="aJc-XI-ny6">
+            <objects>
+                <viewController id="2R2-pd-9NI" customClass="SalesGraphVCView" customModule="testProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PBk-xF-duk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7R-4eR" customClass="MyBarGraph" customModule="testProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="39" width="375" height="281"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gsR-7R-4eR" firstAttribute="leading" secondItem="Mx2-aa-Elt" secondAttribute="leading" id="H3F-n8-xeu"/>
+                            <constraint firstItem="gsR-7R-4eR" firstAttribute="trailing" secondItem="Mx2-aa-Elt" secondAttribute="trailing" id="VQP-7t-bf4"/>
+                            <constraint firstItem="gsR-7R-4eR" firstAttribute="top" secondItem="Mx2-aa-Elt" secondAttribute="top" constant="19" id="opd-RO-9CL"/>
+                            <constraint firstItem="Mx2-aa-Elt" firstAttribute="bottom" secondItem="gsR-7R-4eR" secondAttribute="bottom" constant="426" id="skR-3k-8jb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mx2-aa-Elt"/>
+                    </view>
+                    <connections>
+                        <outlet property="myBGraphView" destination="gsR-7R-4eR" id="leu-CP-Yua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yb9-YL-NRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="949.47526236881572"/>
+        </scene>
+    </scenes>
+</document>
