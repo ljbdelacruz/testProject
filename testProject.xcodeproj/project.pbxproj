@@ -61,6 +61,11 @@
 		04FDC7FD230669710038CCFE /* CalendarPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC7FC230669710038CCFE /* CalendarPicker.xib */; };
 		04FDC7FF230669950038CCFE /* CalendarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC7FE230669950038CCFE /* CalendarPicker.swift */; };
 		04FDC8012306845F0038CCFE /* CalendarPickerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8002306845F0038CCFE /* CalendarPickerVM.swift */; };
+		04FDC804230692BC0038CCFE /* OverViewTransactionList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC803230692BC0038CCFE /* OverViewTransactionList.xib */; };
+		04FDC8062306941C0038CCFE /* OverViewTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8052306941C0038CCFE /* OverViewTransactionList.swift */; };
+		04FDC8082306951A0038CCFE /* OverviewTransactionListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8072306951A0038CCFE /* OverviewTransactionListVM.swift */; };
+		04FDC80A2306976D0038CCFE /* TransactionCell1VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8092306976D0038CCFE /* TransactionCell1VM.swift */; };
+		04FDC80C230699CE0038CCFE /* TransactionListDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC80B230699CE0038CCFE /* TransactionListDisplayVC.swift */; };
 		820E273619AD4D3D50598658 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937D178DA7757B92CAF0986B /* Pods_testProject.framework */; };
 		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
@@ -146,6 +151,11 @@
 		04FDC7FC230669710038CCFE /* CalendarPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarPicker.xib; sourceTree = "<group>"; };
 		04FDC7FE230669950038CCFE /* CalendarPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPicker.swift; sourceTree = "<group>"; };
 		04FDC8002306845F0038CCFE /* CalendarPickerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerVM.swift; sourceTree = "<group>"; };
+		04FDC803230692BC0038CCFE /* OverViewTransactionList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverViewTransactionList.xib; sourceTree = "<group>"; };
+		04FDC8052306941C0038CCFE /* OverViewTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverViewTransactionList.swift; sourceTree = "<group>"; };
+		04FDC8072306951A0038CCFE /* OverviewTransactionListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewTransactionListVM.swift; sourceTree = "<group>"; };
+		04FDC8092306976D0038CCFE /* TransactionCell1VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell1VM.swift; sourceTree = "<group>"; };
+		04FDC80B230699CE0038CCFE /* TransactionListDisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListDisplayVC.swift; sourceTree = "<group>"; };
 		87B22A2428AC50EE8255C12E /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
 		937D178DA7757B92CAF0986B /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB05308FCF4F82BDBFAEF5E /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -285,6 +295,7 @@
 		046FC8EA230394DC00C1C805 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				04FDC802230692A20038CCFE /* OverViewTransactionList */,
 				04FDC7FB230669590038CCFE /* CalendarPicker */,
 				046FC9162306446900C1C805 /* TogglabbleOptions */,
 				046FC9062305030100C1C805 /* MyBarGraphView */,
@@ -335,6 +346,7 @@
 			children = (
 				046FC9122306426000C1C805 /* TransactionList.storyboard */,
 				046FC914230642A100C1C805 /* TransactionListVC.swift */,
+				04FDC80B230699CE0038CCFE /* TransactionListDisplayVC.swift */,
 			);
 			path = TransactionList;
 			sourceTree = "<group>";
@@ -469,6 +481,16 @@
 			path = CalendarPicker;
 			sourceTree = "<group>";
 		};
+		04FDC802230692A20038CCFE /* OverViewTransactionList */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC803230692BC0038CCFE /* OverViewTransactionList.xib */,
+				04FDC8052306941C0038CCFE /* OverViewTransactionList.swift */,
+				04FDC8072306951A0038CCFE /* OverviewTransactionListVM.swift */,
+			);
+			path = OverViewTransactionList;
+			sourceTree = "<group>";
+		};
 		447F8475878E4ADBC085A178 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +505,7 @@
 			children = (
 				EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */,
 				EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */,
+				04FDC8092306976D0038CCFE /* TransactionCell1VM.swift */,
 			);
 			path = TransactionCell1;
 			sourceTree = "<group>";
@@ -613,6 +636,7 @@
 				046FC9182306449100C1C805 /* TogglabbleOptions.xib in Resources */,
 				04B231CA22F12A79002824F4 /* Dashboard.storyboard in Resources */,
 				046FC8CB2302564400C1C805 /* QRScanning.storyboard in Resources */,
+				04FDC804230692BC0038CCFE /* OverViewTransactionList.xib in Resources */,
 				046FC908230505AB00C1C805 /* MyBarGraph.xib in Resources */,
 				04FDC7FD230669710038CCFE /* CalendarPicker.xib in Resources */,
 				043EAC4322E9B0C8004F5594 /* LaunchScreen.storyboard in Resources */,
@@ -723,14 +747,17 @@
 				04B231CF22F12C20002824F4 /* YoutubeCollectionViewCell.swift in Sources */,
 				04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */,
 				EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */,
+				04FDC80A2306976D0038CCFE /* TransactionCell1VM.swift in Sources */,
 				043EAC5522E9B458004F5594 /* MainPresenter.swift in Sources */,
 				046FC8EF2303950F00C1C805 /* QRScannerView.swift in Sources */,
 				046FC915230642A100C1C805 /* TransactionListVC.swift in Sources */,
 				04B231E422F166A8002824F4 /* UITableView+.swift in Sources */,
+				04FDC8062306941C0038CCFE /* OverViewTransactionList.swift in Sources */,
 				043EAC3B22E9B0C6004F5594 /* ViewController.swift in Sources */,
 				046FC90E2305126200C1C805 /* SalesGraphVCView.swift in Sources */,
 				EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */,
 				EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */,
+				04FDC8082306951A0038CCFE /* OverviewTransactionListVM.swift in Sources */,
 				043EAC5122E9B2D2004F5594 /* PresentationAssembly.swift in Sources */,
 				046FC91C2306472200C1C805 /* TogglabbleOptionsVM.swift in Sources */,
 				04B231F422F19A30002824F4 /* CoreDataHelpers.swift in Sources */,
@@ -743,6 +770,7 @@
 				04B231F222F19210002824F4 /* UserModel.swift in Sources */,
 				043EAC3922E9B0C6004F5594 /* AppDelegate.swift in Sources */,
 				04B231C322F124D5002824F4 /* LoginVViewController.swift in Sources */,
+				04FDC80C230699CE0038CCFE /* TransactionListDisplayVC.swift in Sources */,
 				04B231E622F1682F002824F4 /* String+.swift in Sources */,
 				EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */,
 				046FC8AD22FD408800C1C805 /* CategoryRModel.swift in Sources */,

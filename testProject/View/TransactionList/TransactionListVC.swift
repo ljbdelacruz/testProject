@@ -40,7 +40,6 @@ class TransactionListVC: UIViewController {
         calendarUI.setupOverview(view: overViewLayout, parentView: calendarUI)
         calendarUI.setupVM(vm: self.fromDate!);
     }
-    
     @IBAction func toggleOnClick(_ sender: Any) {
         toggleOptions.myShow();
     }

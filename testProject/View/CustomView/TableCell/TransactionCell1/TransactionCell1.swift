@@ -16,6 +16,8 @@ public class TransactionCell1: UITableViewCell {
     @IBOutlet weak var cellName: UILabel!
     @IBOutlet weak var cellDate: UILabel!
     @IBOutlet weak var cellPrice: UILabel!
+    var vm:TransactionCell1VM?;
+    
     public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,17 +26,11 @@ public class TransactionCell1: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    //MARK: set properties
-    public func setImage(image:UIImage){
-        self.cellImage.image=image;
+    public func setData(vm:TransactionCell1VM){
+        self.cellImage.image=vm.image;
+        self.cellName.text=vm.label;
+        self.cellDate.text=vm.subDesc
+        self.cellPrice.text="\(vm.price!)"
     }
-    public func setCellName(name:String){
-        self.cellName.text=name;
-    }
-    public func setDate(date:String){
-        self.cellDate.text=date;
-    }
-    public func setCellPrice(price:String){
-        self.cellPrice.text=price;
-    }
+
 }
