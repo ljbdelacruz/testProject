@@ -11,6 +11,7 @@ import UIKit
 public protocol ICalendarPicker{
     func cancelOnClick();
     func okOnClick(vm:CalendarPickerVM);
+    func hideOverlay();
 }
 
 class CalendarPicker: UIView {
@@ -51,6 +52,7 @@ class CalendarPicker: UIView {
     }
     @objc func didHideOverlayView() {
         self.myHide();
+        handler?.hideOverlay();
     }
     public func myHide(){
         self.parentView?.isHidden=true;
@@ -73,6 +75,7 @@ class CalendarPicker: UIView {
         handler?.cancelOnClick();
     }
     @IBAction func okOnClick(_ sender: Any) {
+        vm?.dateSelected=datePicker.date;
         handler?.okOnClick(vm:vm!);
     }
 }

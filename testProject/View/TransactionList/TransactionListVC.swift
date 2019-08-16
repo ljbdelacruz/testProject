@@ -9,9 +9,13 @@
 import UIKit
 
 class TransactionListVC: UIViewController {
-    @IBOutlet weak var toggleOptions: TogglabbleOptions!
     @IBOutlet weak var overViewLayout: UIView!
+    
+    //MARK: Toggle Options
+    @IBOutlet weak var toggleOptions: TogglabbleOptions!
     var options:[TogglabbleOptionsVM]=[];
+
+    //MARK: CalendarPicker variables
     @IBOutlet weak var calendarUI: CalendarPicker!
     var fromDate:CalendarPickerVM?;
     var toDate:CalendarPickerVM?;
@@ -63,6 +67,11 @@ extension TransactionListVC:ITogglabbleOption{
 
 //MARK: ICalendar Delegate
 extension TransactionListVC:ICalendarPicker{
+    func hideOverlay() {
+        self.calenderPickercount=1;
+        self.calendarUI.setupVM(vm: fromDate!);
+    }
+    
     func okOnClick(vm: CalendarPickerVM) {
         calenderPickercount+=1;
         print(vm.dateSelected!.description)
