@@ -66,6 +66,8 @@
 		04FDC8082306951A0038CCFE /* OverviewTransactionListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8072306951A0038CCFE /* OverviewTransactionListVM.swift */; };
 		04FDC80A2306976D0038CCFE /* TransactionCell1VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8092306976D0038CCFE /* TransactionCell1VM.swift */; };
 		04FDC80C230699CE0038CCFE /* TransactionListDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC80B230699CE0038CCFE /* TransactionListDisplayVC.swift */; };
+		04FDC80F2306BD590038CCFE /* TransactionList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC80E2306BD590038CCFE /* TransactionList.xib */; };
+		04FDC8112306BD6A0038CCFE /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8102306BD6A0038CCFE /* TransactionList.swift */; };
 		820E273619AD4D3D50598658 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937D178DA7757B92CAF0986B /* Pods_testProject.framework */; };
 		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
@@ -156,6 +158,8 @@
 		04FDC8072306951A0038CCFE /* OverviewTransactionListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewTransactionListVM.swift; sourceTree = "<group>"; };
 		04FDC8092306976D0038CCFE /* TransactionCell1VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell1VM.swift; sourceTree = "<group>"; };
 		04FDC80B230699CE0038CCFE /* TransactionListDisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListDisplayVC.swift; sourceTree = "<group>"; };
+		04FDC80E2306BD590038CCFE /* TransactionList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionList.xib; sourceTree = "<group>"; };
+		04FDC8102306BD6A0038CCFE /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
 		87B22A2428AC50EE8255C12E /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
 		937D178DA7757B92CAF0986B /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB05308FCF4F82BDBFAEF5E /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -295,6 +299,7 @@
 		046FC8EA230394DC00C1C805 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				04FDC80D2306BD360038CCFE /* TransactionList */,
 				04FDC802230692A20038CCFE /* OverViewTransactionList */,
 				04FDC7FB230669590038CCFE /* CalendarPicker */,
 				046FC9162306446900C1C805 /* TogglabbleOptions */,
@@ -491,6 +496,15 @@
 			path = OverViewTransactionList;
 			sourceTree = "<group>";
 		};
+		04FDC80D2306BD360038CCFE /* TransactionList */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC80E2306BD590038CCFE /* TransactionList.xib */,
+				04FDC8102306BD6A0038CCFE /* TransactionList.swift */,
+			);
+			path = TransactionList;
+			sourceTree = "<group>";
+		};
 		447F8475878E4ADBC085A178 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,6 +652,7 @@
 				046FC8CB2302564400C1C805 /* QRScanning.storyboard in Resources */,
 				04FDC804230692BC0038CCFE /* OverViewTransactionList.xib in Resources */,
 				046FC908230505AB00C1C805 /* MyBarGraph.xib in Resources */,
+				04FDC80F2306BD590038CCFE /* TransactionList.xib in Resources */,
 				04FDC7FD230669710038CCFE /* CalendarPicker.xib in Resources */,
 				043EAC4322E9B0C8004F5594 /* LaunchScreen.storyboard in Resources */,
 				EE42E8E922F38E2900C469CC /* Notes.txt in Resources */,
@@ -754,6 +769,7 @@
 				04B231E422F166A8002824F4 /* UITableView+.swift in Sources */,
 				04FDC8062306941C0038CCFE /* OverViewTransactionList.swift in Sources */,
 				043EAC3B22E9B0C6004F5594 /* ViewController.swift in Sources */,
+				04FDC8112306BD6A0038CCFE /* TransactionList.swift in Sources */,
 				046FC90E2305126200C1C805 /* SalesGraphVCView.swift in Sources */,
 				EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */,
 				EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */,
