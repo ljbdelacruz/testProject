@@ -34,6 +34,14 @@
             </objects>
             <point key="canvasLocation" x="53" y="-282"/>
         </scene>
+        <!--TransactionList-->
+        <scene sceneID="3Xu-ls-qwD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TransactionList" id="BxU-Sh-Aqm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7HZ-hm-xkq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="-220"/>
+        </scene>
         <!--LoginV View Controller-->
         <scene sceneID="yK7-Wf-6Ti">
             <objects>
@@ -109,6 +117,7 @@
                         <segue destination="qBp-ck-jHG" kind="show" identifier="toDashboard" id="EQg-KX-xEz"/>
                         <segue destination="nEZ-uZ-jl2" kind="show" identifier="qrScanningSegue" id="RT7-2s-DUP"/>
                         <segue destination="D4E-Ts-Mdh" kind="show" identifier="salesGraphSegue" id="g9O-Md-s5x"/>
+                        <segue destination="BxU-Sh-Aqm" kind="show" identifier="transactionListSegue" id="Xr5-Ln-nGo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0v0-VV-0dT" userLabel="First Responder" sceneMemberID="firstResponder"/>
