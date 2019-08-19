@@ -70,6 +70,14 @@
 		04FDC8112306BD6A0038CCFE /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8102306BD6A0038CCFE /* TransactionList.swift */; };
 		04FDC813230A2D0B0038CCFE /* TransactionListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC812230A2D0B0038CCFE /* TransactionListVM.swift */; };
 		04FDC815230A3D840038CCFE /* AllTransactionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC814230A3D840038CCFE /* AllTransactionListVC.swift */; };
+		04FDC81A230A7B960038CCFE /* SelectLanguage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC819230A7B960038CCFE /* SelectLanguage.xib */; };
+		04FDC81C230A7BCD0038CCFE /* SelectLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC81B230A7BCD0038CCFE /* SelectLanguage.swift */; };
+		04FDC81E230A7C880038CCFE /* SelectLanguageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC81D230A7C880038CCFE /* SelectLanguageVM.swift */; };
+		04FDC823230A7D900038CCFE /* SelectLanguageCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC822230A7D900038CCFE /* SelectLanguageCell1.xib */; };
+		04FDC827230A7E8C0038CCFE /* SelectLanguageCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC826230A7E8C0038CCFE /* SelectLanguageCell1.swift */; };
+		04FDC829230A7F460038CCFE /* SelectLanguageCell1VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC828230A7F460038CCFE /* SelectLanguageCell1VM.swift */; };
+		04FDC82C230A99400038CCFE /* SelectLanguage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC82B230A99400038CCFE /* SelectLanguage.storyboard */; };
+		04FDC82E230A998B0038CCFE /* SelectLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC82D230A998B0038CCFE /* SelectLanguageVC.swift */; };
 		820E273619AD4D3D50598658 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937D178DA7757B92CAF0986B /* Pods_testProject.framework */; };
 		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
@@ -164,6 +172,14 @@
 		04FDC8102306BD6A0038CCFE /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
 		04FDC812230A2D0B0038CCFE /* TransactionListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListVM.swift; sourceTree = "<group>"; };
 		04FDC814230A3D840038CCFE /* AllTransactionListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactionListVC.swift; sourceTree = "<group>"; };
+		04FDC819230A7B960038CCFE /* SelectLanguage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectLanguage.xib; sourceTree = "<group>"; };
+		04FDC81B230A7BCD0038CCFE /* SelectLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguage.swift; sourceTree = "<group>"; };
+		04FDC81D230A7C880038CCFE /* SelectLanguageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageVM.swift; sourceTree = "<group>"; };
+		04FDC822230A7D900038CCFE /* SelectLanguageCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectLanguageCell1.xib; sourceTree = "<group>"; };
+		04FDC826230A7E8C0038CCFE /* SelectLanguageCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageCell1.swift; sourceTree = "<group>"; };
+		04FDC828230A7F460038CCFE /* SelectLanguageCell1VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageCell1VM.swift; sourceTree = "<group>"; };
+		04FDC82B230A99400038CCFE /* SelectLanguage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectLanguage.storyboard; sourceTree = "<group>"; };
+		04FDC82D230A998B0038CCFE /* SelectLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageVC.swift; sourceTree = "<group>"; };
 		87B22A2428AC50EE8255C12E /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
 		937D178DA7757B92CAF0986B /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB05308FCF4F82BDBFAEF5E /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -268,6 +284,7 @@
 		043EAC5222E9B432004F5594 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04FDC82A230A99310038CCFE /* SelectLanguage */,
 				046FC9112306424200C1C805 /* TransactionList */,
 				046FC9012304F84000C1C805 /* SalesGraph */,
 				046FC9002304F82C00C1C805 /* LocalPushNotification */,
@@ -303,8 +320,8 @@
 		046FC8EA230394DC00C1C805 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				04FDC80D2306BD360038CCFE /* TransactionList */,
-				04FDC802230692A20038CCFE /* OverViewTransactionList */,
+				04FDC820230A7D730038CCFE /* Language */,
+				04FDC81F230A7D300038CCFE /* TransDisplay */,
 				04FDC7FB230669590038CCFE /* CalendarPicker */,
 				046FC9162306446900C1C805 /* TogglabbleOptions */,
 				046FC9062305030100C1C805 /* MyBarGraphView */,
@@ -451,7 +468,6 @@
 			children = (
 				EE3FA2CE22FFC327004400A6 /* AdsCell1 */,
 				EE3FA2C922FB1D22004400A6 /* OptionRadioCell1 */,
-				EE3FA2C322FAE403004400A6 /* TransactionCell1 */,
 				04B231DB22F1623B002824F4 /* YoutubeCell1 */,
 			);
 			path = TableCell;
@@ -509,6 +525,54 @@
 				04FDC812230A2D0B0038CCFE /* TransactionListVM.swift */,
 			);
 			path = TransactionList;
+			sourceTree = "<group>";
+		};
+		04FDC818230A7B820038CCFE /* SelectLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC819230A7B960038CCFE /* SelectLanguage.xib */,
+				04FDC81B230A7BCD0038CCFE /* SelectLanguage.swift */,
+				04FDC81D230A7C880038CCFE /* SelectLanguageVM.swift */,
+			);
+			path = SelectLanguage;
+			sourceTree = "<group>";
+		};
+		04FDC81F230A7D300038CCFE /* TransDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				EE3FA2C322FAE403004400A6 /* TransactionCell1 */,
+				04FDC802230692A20038CCFE /* OverViewTransactionList */,
+				04FDC80D2306BD360038CCFE /* TransactionList */,
+			);
+			path = TransDisplay;
+			sourceTree = "<group>";
+		};
+		04FDC820230A7D730038CCFE /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC821230A7D7C0038CCFE /* SelectLanguageCell1 */,
+				04FDC818230A7B820038CCFE /* SelectLanguage */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		04FDC821230A7D7C0038CCFE /* SelectLanguageCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC822230A7D900038CCFE /* SelectLanguageCell1.xib */,
+				04FDC826230A7E8C0038CCFE /* SelectLanguageCell1.swift */,
+				04FDC828230A7F460038CCFE /* SelectLanguageCell1VM.swift */,
+			);
+			path = SelectLanguageCell1;
+			sourceTree = "<group>";
+		};
+		04FDC82A230A99310038CCFE /* SelectLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC82B230A99400038CCFE /* SelectLanguage.storyboard */,
+				04FDC82D230A998B0038CCFE /* SelectLanguageVC.swift */,
+			);
+			path = SelectLanguage;
 			sourceTree = "<group>";
 		};
 		447F8475878E4ADBC085A178 /* Pods */ = {
@@ -650,10 +714,12 @@
 			files = (
 				046FC9032304F85400C1C805 /* SalesGraph.storyboard in Resources */,
 				04B231C522F124F3002824F4 /* Login.storyboard in Resources */,
+				04FDC81A230A7B960038CCFE /* SelectLanguage.xib in Resources */,
 				04B231D122F12C33002824F4 /* YoutubeCell.xib in Resources */,
 				046FC9132306426000C1C805 /* TransactionList.storyboard in Resources */,
 				EE3FA2CD22FB1D4E004400A6 /* OptionRadioCell1.xib in Resources */,
 				046FC9182306449100C1C805 /* TogglabbleOptions.xib in Resources */,
+				04FDC823230A7D900038CCFE /* SelectLanguageCell1.xib in Resources */,
 				04B231CA22F12A79002824F4 /* Dashboard.storyboard in Resources */,
 				046FC8CB2302564400C1C805 /* QRScanning.storyboard in Resources */,
 				04FDC804230692BC0038CCFE /* OverViewTransactionList.xib in Resources */,
@@ -662,6 +728,7 @@
 				04FDC7FD230669710038CCFE /* CalendarPicker.xib in Resources */,
 				043EAC4322E9B0C8004F5594 /* LaunchScreen.storyboard in Resources */,
 				EE42E8E922F38E2900C469CC /* Notes.txt in Resources */,
+				04FDC82C230A99400038CCFE /* SelectLanguage.storyboard in Resources */,
 				EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */,
 				043EAC4022E9B0C8004F5594 /* Assets.xcassets in Resources */,
 				04B231DD22F1625A002824F4 /* YoutubeCell1.xib in Resources */,
@@ -779,7 +846,9 @@
 				04FDC8112306BD6A0038CCFE /* TransactionList.swift in Sources */,
 				046FC90E2305126200C1C805 /* SalesGraphVCView.swift in Sources */,
 				EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */,
+				04FDC82E230A998B0038CCFE /* SelectLanguageVC.swift in Sources */,
 				EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */,
+				04FDC827230A7E8C0038CCFE /* SelectLanguageCell1.swift in Sources */,
 				04FDC8082306951A0038CCFE /* OverviewTransactionListVM.swift in Sources */,
 				043EAC5122E9B2D2004F5594 /* PresentationAssembly.swift in Sources */,
 				046FC91C2306472200C1C805 /* TogglabbleOptionsVM.swift in Sources */,
@@ -788,6 +857,8 @@
 				046FC8AA22FBE99E00C1C805 /* SQLiteHelpers.swift in Sources */,
 				046FC8CD2302565600C1C805 /* QRScanningViewController.swift in Sources */,
 				043EAC5722E9B49F004F5594 /* BaseView.swift in Sources */,
+				04FDC829230A7F460038CCFE /* SelectLanguageCell1VM.swift in Sources */,
+				04FDC81E230A7C880038CCFE /* SelectLanguageVM.swift in Sources */,
 				EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */,
 				046FC91A230644A700C1C805 /* TogglabbleOptions.swift in Sources */,
 				04B231F222F19210002824F4 /* UserModel.swift in Sources */,
@@ -812,6 +883,7 @@
 				04B231F822F19A48002824F4 /* UserDefaultsHelpers.swift in Sources */,
 				EE3FA2E9230233CB004400A6 /* PushNotificationHelpers.swift in Sources */,
 				04B231FA22F19A5B002824F4 /* KeychainHelpers.swift in Sources */,
+				04FDC81C230A7BCD0038CCFE /* SelectLanguage.swift in Sources */,
 				046FC90A230505F800C1C805 /* MyBarGraph.swift in Sources */,
 				04B231DA22F13651002824F4 /* UICollectionView+.swift in Sources */,
 				04B231D622F1349C002824F4 /* VideosModel.swift in Sources */,

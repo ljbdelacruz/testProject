@@ -23,7 +23,8 @@ class LoginVViewController: UIViewController {
 //        performSegue(withIdentifier: "toDashboard", sender: nil);
 //        performSegue(withIdentifier: "qrScanningSegue", sender: nil)
 //          performSegue(withIdentifier: "salesGraphSegue", sender: nil)
-        performSegue(withIdentifier: "transactionListSegue", sender: nil)
+//        performSegue(withIdentifier: "transactionListSegue", sender: nil)
+        performSegue(withIdentifier: "SelectLanguageSegue", sender: nil)
         
     }
     @IBAction func forgotOnClick(_ sender: Any) {

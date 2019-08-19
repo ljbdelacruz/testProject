@@ -42,6 +42,14 @@
             </objects>
             <point key="canvasLocation" x="72" y="-220"/>
         </scene>
+        <!--SelectLanguage-->
+        <scene sceneID="SFx-yD-r6U">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelectLanguage" id="V5x-lS-jNM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZB4-mp-TzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="-104"/>
+        </scene>
         <!--LoginV View Controller-->
         <scene sceneID="yK7-Wf-6Ti">
             <objects>
@@ -118,6 +126,7 @@
                         <segue destination="nEZ-uZ-jl2" kind="show" identifier="qrScanningSegue" id="RT7-2s-DUP"/>
                         <segue destination="D4E-Ts-Mdh" kind="show" identifier="salesGraphSegue" id="g9O-Md-s5x"/>
                         <segue destination="BxU-Sh-Aqm" kind="show" identifier="transactionListSegue" id="Xr5-Ln-nGo"/>
+                        <segue destination="V5x-lS-jNM" kind="show" identifier="SelectLanguageSegue" id="1pA-Er-cYn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0v0-VV-0dT" userLabel="First Responder" sceneMemberID="firstResponder"/>

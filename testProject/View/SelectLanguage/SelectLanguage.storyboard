@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vpd-07-kJ8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select LanguageVC-->
+        <scene sceneID="SOS-5N-rXQ">
+            <objects>
+                <viewController id="vpd-07-kJ8" customClass="SelectLanguageVC" customModule="testProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8gH-W6-VWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IqV-UO-Aai" customClass="SelectLanguage" customModule="testProject" customModuleProvider="target">
+                                <rect key="frame" x="16" y="174" width="343" height="223"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IqV-UO-Aai" firstAttribute="top" secondItem="ZVy-pa-mIB" secondAttribute="top" constant="154" id="2Sy-tc-9Oh"/>
+                            <constraint firstItem="ZVy-pa-mIB" firstAttribute="bottom" secondItem="IqV-UO-Aai" secondAttribute="bottom" constant="270" id="UjA-Tg-p2p"/>
+                            <constraint firstItem="IqV-UO-Aai" firstAttribute="leading" secondItem="ZVy-pa-mIB" secondAttribute="leading" constant="16" id="XOa-cA-vI1"/>
+                            <constraint firstItem="ZVy-pa-mIB" firstAttribute="trailing" secondItem="IqV-UO-Aai" secondAttribute="trailing" constant="16" id="nvf-8m-8Aa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZVy-pa-mIB"/>
+                    </view>
+                    <connections>
+                        <outlet property="selectLanguage" destination="IqV-UO-Aai" id="ftg-1i-59n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqd-UT-Do5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="57.121439280359823"/>
+        </scene>
+    </scenes>
+</document>
