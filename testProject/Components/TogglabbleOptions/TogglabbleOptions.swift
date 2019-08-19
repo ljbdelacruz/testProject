@@ -37,8 +37,8 @@ class TogglabbleOptions: UIView {
         cView.fixInView(self)
     }
     public func myHide(){
-        self.parentView?.isHidden=true;
-        self.overViewLayout?.isHidden=true;
+        self.parentView!.isHidden=true;
+        self.overViewLayout!.isHidden=true;
     }
     public func myShow(){
         self.parentView?.isHidden=false;
@@ -51,13 +51,16 @@ class TogglabbleOptions: UIView {
     
     //#MARK: Step 2 Initialize Recognizer
     public func setupRecognizer(view:UIView, parentView:UIView){
+        
         let hideOverlayView = UITapGestureRecognizer(target: self, action: #selector(self.didHideOverlayView))
         view.addGestureRecognizer(hideOverlayView)
         self.overViewLayout=view;
         self.parentView=parentView;
+        
         self.myHide();
     }
     @objc func didHideOverlayView() {
+        print("Hide Overlay")
         self.myHide();
     }
     //#MARK Step 3 Intialize buttons with

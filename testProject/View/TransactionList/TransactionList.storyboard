@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Sl-rq-BvI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OkE-Ty-jXo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -33,6 +33,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.059663955479452052" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7J-zC-kdT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.059663955480000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Glp-xo-Rca" customClass="TogglabbleOptions" customModule="testProject" customModuleProvider="target">
                                 <rect key="frame" x="16" y="58" width="343" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -51,15 +55,19 @@
                             <constraint firstItem="7qc-4F-p5t" firstAttribute="top" secondItem="wXN-C2-NX9" secondAttribute="top" id="3Id-XW-Kln"/>
                             <constraint firstItem="99h-u3-ro3" firstAttribute="top" secondItem="Glp-xo-Rca" secondAttribute="bottom" constant="83" id="4MF-58-TH9"/>
                             <constraint firstItem="wXN-C2-NX9" firstAttribute="trailing" secondItem="Glp-xo-Rca" secondAttribute="trailing" constant="16" id="6CP-jK-dMJ"/>
+                            <constraint firstItem="Y7J-zC-kdT" firstAttribute="bottom" secondItem="wXN-C2-NX9" secondAttribute="bottom" id="7on-TK-8xv"/>
+                            <constraint firstItem="Y7J-zC-kdT" firstAttribute="leading" secondItem="wXN-C2-NX9" secondAttribute="leading" id="9n4-Ua-eiU"/>
                             <constraint firstItem="Glp-xo-Rca" firstAttribute="top" secondItem="lR1-CG-87n" secondAttribute="top" id="Cmx-B4-bQ1"/>
                             <constraint firstItem="wXN-C2-NX9" firstAttribute="bottom" secondItem="99h-u3-ro3" secondAttribute="bottom" constant="226" id="DFs-8P-sF7"/>
                             <constraint firstItem="lR1-CG-87n" firstAttribute="top" secondItem="EO9-TF-lno" secondAttribute="top" id="GMx-uO-e31"/>
+                            <constraint firstItem="Y7J-zC-kdT" firstAttribute="trailing" secondItem="wXN-C2-NX9" secondAttribute="trailing" id="Hwi-gs-fyw"/>
                             <constraint firstItem="lR1-CG-87n" firstAttribute="bottom" secondItem="wXN-C2-NX9" secondAttribute="bottom" id="Jf9-SJ-0BW"/>
                             <constraint firstItem="wXN-C2-NX9" firstAttribute="trailing" secondItem="7qc-4F-p5t" secondAttribute="trailing" constant="25" id="KF5-ng-EAL"/>
                             <constraint firstItem="wXN-C2-NX9" firstAttribute="trailing" secondItem="99h-u3-ro3" secondAttribute="trailing" constant="68" id="LBs-Du-boU"/>
                             <constraint firstItem="lR1-CG-87n" firstAttribute="leading" secondItem="wXN-C2-NX9" secondAttribute="leading" id="Npe-WQ-oPf"/>
                             <constraint firstItem="Glp-xo-Rca" firstAttribute="leading" secondItem="wXN-C2-NX9" secondAttribute="leading" constant="16" id="OhW-KM-7J9"/>
                             <constraint firstItem="99h-u3-ro3" firstAttribute="leading" secondItem="wXN-C2-NX9" secondAttribute="leading" constant="63" id="fei-ZW-00g"/>
+                            <constraint firstItem="Y7J-zC-kdT" firstAttribute="top" secondItem="EO9-TF-lno" secondAttribute="top" id="gGp-Nv-KWI"/>
                             <constraint firstItem="lR1-CG-87n" firstAttribute="trailing" secondItem="wXN-C2-NX9" secondAttribute="trailing" id="jrJ-51-3KG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wXN-C2-NX9"/>
@@ -67,6 +75,7 @@
                     <connections>
                         <outlet property="calendarUI" destination="99h-u3-ro3" id="5Wm-GA-8DU"/>
                         <outlet property="overViewLayout" destination="lR1-CG-87n" id="1dE-jX-OrE"/>
+                        <outlet property="overViewLayout2" destination="Y7J-zC-kdT" id="4Va-YT-Mr5"/>
                         <outlet property="toggleOptions" destination="Glp-xo-Rca" id="cmN-ly-FgJ"/>
                     </connections>
                 </viewController>
@@ -102,6 +111,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zW9-zR-wQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="76" y="929.68515742128943"/>
+        </scene>
+        <!--All Transaction ListVC-->
+        <scene sceneID="UOp-AI-854">
+            <objects>
+                <viewController id="rVV-2X-487" customClass="AllTransactionListVC" customModule="testProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tpe-QH-xMR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfX-c6-IQi" customClass="TransactionList" customModule="testProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EfX-c6-IQi" firstAttribute="bottom" secondItem="4wI-At-gHy" secondAttribute="bottom" id="8nj-5Q-UYo"/>
+                            <constraint firstItem="EfX-c6-IQi" firstAttribute="top" secondItem="4wI-At-gHy" secondAttribute="top" constant="100" id="PIv-YS-isX"/>
+                            <constraint firstItem="EfX-c6-IQi" firstAttribute="trailing" secondItem="4wI-At-gHy" secondAttribute="trailing" id="bVH-vM-9rd"/>
+                            <constraint firstItem="EfX-c6-IQi" firstAttribute="leading" secondItem="4wI-At-gHy" secondAttribute="leading" id="qq6-st-dqe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4wI-At-gHy"/>
+                    </view>
+                    <connections>
+                        <outlet property="tlTableView" destination="EfX-c6-IQi" id="ian-Gk-arv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awa-kF-cq6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="1630.4347826086957"/>
         </scene>
     </scenes>
 </document>

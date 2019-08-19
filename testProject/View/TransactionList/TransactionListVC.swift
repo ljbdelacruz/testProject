@@ -10,6 +10,7 @@ import UIKit
 
 class TransactionListVC: UIViewController {
     @IBOutlet weak var overViewLayout: UIView!
+    @IBOutlet weak var overViewLayout2: UIView!
     
     //MARK: Toggle Options
     @IBOutlet weak var toggleOptions: TogglabbleOptions!
@@ -37,7 +38,7 @@ class TransactionListVC: UIViewController {
     }
     func initCalendar(){
         calendarUI.setup(handler: self)
-        calendarUI.setupOverview(view: overViewLayout, parentView: calendarUI)
+        calendarUI.setupOverview(view: overViewLayout2, parentView: calendarUI)
         calendarUI.setupVM(vm: self.fromDate!);
     }
     @IBAction func toggleOnClick(_ sender: Any) {
@@ -51,6 +52,7 @@ extension TransactionListVC:ITogglabbleOption{
         print(value);
         switch value {
         case 1:
+            toggleOptions.myHide();
             break;
         case 2:
             toggleOptions.myHide();
@@ -94,7 +96,7 @@ extension TransactionListVC:ICalendarPicker{
     }
 }
 
-
+//MARK: Dummy account
 extension TransactionListVC{
     func initDummyDataToggleOptions(){
         let option1=TogglabbleOptionsVM();

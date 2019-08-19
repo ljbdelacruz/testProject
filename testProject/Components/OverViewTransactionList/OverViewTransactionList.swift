@@ -70,6 +70,4 @@ extension OverViewTransactionList:UITableViewDataSource{
         cell.setData(vm: vm!.transactions![indexPath.row]);
         return cell;
     }
-    
-    
 }

@@ -68,6 +68,8 @@
 		04FDC80C230699CE0038CCFE /* TransactionListDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC80B230699CE0038CCFE /* TransactionListDisplayVC.swift */; };
 		04FDC80F2306BD590038CCFE /* TransactionList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC80E2306BD590038CCFE /* TransactionList.xib */; };
 		04FDC8112306BD6A0038CCFE /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8102306BD6A0038CCFE /* TransactionList.swift */; };
+		04FDC813230A2D0B0038CCFE /* TransactionListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC812230A2D0B0038CCFE /* TransactionListVM.swift */; };
+		04FDC815230A3D840038CCFE /* AllTransactionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC814230A3D840038CCFE /* AllTransactionListVC.swift */; };
 		820E273619AD4D3D50598658 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937D178DA7757B92CAF0986B /* Pods_testProject.framework */; };
 		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
@@ -160,6 +162,8 @@
 		04FDC80B230699CE0038CCFE /* TransactionListDisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListDisplayVC.swift; sourceTree = "<group>"; };
 		04FDC80E2306BD590038CCFE /* TransactionList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionList.xib; sourceTree = "<group>"; };
 		04FDC8102306BD6A0038CCFE /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
+		04FDC812230A2D0B0038CCFE /* TransactionListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListVM.swift; sourceTree = "<group>"; };
+		04FDC814230A3D840038CCFE /* AllTransactionListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactionListVC.swift; sourceTree = "<group>"; };
 		87B22A2428AC50EE8255C12E /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
 		937D178DA7757B92CAF0986B /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB05308FCF4F82BDBFAEF5E /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -352,6 +356,7 @@
 				046FC9122306426000C1C805 /* TransactionList.storyboard */,
 				046FC914230642A100C1C805 /* TransactionListVC.swift */,
 				04FDC80B230699CE0038CCFE /* TransactionListDisplayVC.swift */,
+				04FDC814230A3D840038CCFE /* AllTransactionListVC.swift */,
 			);
 			path = TransactionList;
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 			children = (
 				04FDC80E2306BD590038CCFE /* TransactionList.xib */,
 				04FDC8102306BD6A0038CCFE /* TransactionList.swift */,
+				04FDC812230A2D0B0038CCFE /* TransactionListVM.swift */,
 			);
 			path = TransactionList;
 			sourceTree = "<group>";
@@ -761,6 +767,7 @@
 			files = (
 				04B231CF22F12C20002824F4 /* YoutubeCollectionViewCell.swift in Sources */,
 				04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */,
+				04FDC815230A3D840038CCFE /* AllTransactionListVC.swift in Sources */,
 				EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */,
 				04FDC80A2306976D0038CCFE /* TransactionCell1VM.swift in Sources */,
 				043EAC5522E9B458004F5594 /* MainPresenter.swift in Sources */,
@@ -784,6 +791,7 @@
 				EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */,
 				046FC91A230644A700C1C805 /* TogglabbleOptions.swift in Sources */,
 				04B231F222F19210002824F4 /* UserModel.swift in Sources */,
+				04FDC813230A2D0B0038CCFE /* TransactionListVM.swift in Sources */,
 				043EAC3922E9B0C6004F5594 /* AppDelegate.swift in Sources */,
 				04B231C322F124D5002824F4 /* LoginVViewController.swift in Sources */,
 				04FDC80C230699CE0038CCFE /* TransactionListDisplayVC.swift in Sources */,
