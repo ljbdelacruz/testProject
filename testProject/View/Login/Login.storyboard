@@ -50,6 +50,14 @@
             </objects>
             <point key="canvasLocation" x="92" y="-104"/>
         </scene>
+        <!--RestLocalization-->
+        <scene sceneID="GUI-Yt-pKx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RestLocalization" id="Py0-jV-7ig" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8C-dg-dvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="-51"/>
+        </scene>
         <!--LoginV View Controller-->
         <scene sceneID="yK7-Wf-6Ti">
             <objects>
@@ -127,6 +135,7 @@
                         <segue destination="D4E-Ts-Mdh" kind="show" identifier="salesGraphSegue" id="g9O-Md-s5x"/>
                         <segue destination="BxU-Sh-Aqm" kind="show" identifier="transactionListSegue" id="Xr5-Ln-nGo"/>
                         <segue destination="V5x-lS-jNM" kind="show" identifier="SelectLanguageSegue" id="1pA-Er-cYn"/>
+                        <segue destination="Py0-jV-7ig" kind="show" identifier="restLocalizationSegue" id="jJg-lR-Ejt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0v0-VV-0dT" userLabel="First Responder" sceneMemberID="firstResponder"/>

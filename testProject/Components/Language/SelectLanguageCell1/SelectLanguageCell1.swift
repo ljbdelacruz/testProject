@@ -19,7 +19,6 @@ class SelectLanguageCell1: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(vm!.selected, animated: true)
         // Configure the view for the selected state
@@ -30,5 +29,5 @@ class SelectLanguageCell1: UITableViewCell {
         self.myIcon.image=vm.image;
         self.checkMark.isHidden = !vm.selected
     }
-
+    
 }

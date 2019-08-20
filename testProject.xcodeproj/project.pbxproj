@@ -78,6 +78,18 @@
 		04FDC829230A7F460038CCFE /* SelectLanguageCell1VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC828230A7F460038CCFE /* SelectLanguageCell1VM.swift */; };
 		04FDC82C230A99400038CCFE /* SelectLanguage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC82B230A99400038CCFE /* SelectLanguage.storyboard */; };
 		04FDC82E230A998B0038CCFE /* SelectLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC82D230A998B0038CCFE /* SelectLanguageVC.swift */; };
+		04FDC85F230B9FF70038CCFE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC85E230B9FF70038CCFE /* API.swift */; };
+		04FDC862230BA15B0038CCFE /* CLAppVersionRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC861230BA15B0038CCFE /* CLAppVersionRepo.swift */; };
+		04FDC865230BA2F60038CCFE /* CLAppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC864230BA2F60038CCFE /* CLAppVersion.swift */; };
+		04FDC867230BA3650038CCFE /* CLLJLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC866230BA3650038CCFE /* CLLJLocalization.swift */; };
+		04FDC86A230BA4E90038CCFE /* Observable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC869230BA4E90038CCFE /* Observable+.swift */; };
+		04FDC86C230BA7A10038CCFE /* CLLocalizationRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC86B230BA7A10038CCFE /* CLLocalizationRepo.swift */; };
+		04FDC86F230BA8C90038CCFE /* CLUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC86E230BA8C90038CCFE /* CLUtility.swift */; };
+		04FDC871230BAB1B0038CCFE /* CLUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC870230BAB1B0038CCFE /* CLUserDefaults.swift */; };
+		04FDC873230BBB910038CCFE /* MainCLLLocalizationLJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC872230BBB910038CCFE /* MainCLLLocalizationLJ.swift */; };
+		04FDC876230BBEE50038CCFE /* RestLocalization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC875230BBEE50038CCFE /* RestLocalization.storyboard */; };
+		04FDC878230BBF050038CCFE /* RestLocalizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC877230BBF050038CCFE /* RestLocalizationVC.swift */; };
+		04FDC87D230BC3B40038CCFE /* CLLRealmLJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC87C230BC3B40038CCFE /* CLLRealmLJ.swift */; };
 		820E273619AD4D3D50598658 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937D178DA7757B92CAF0986B /* Pods_testProject.framework */; };
 		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
@@ -180,6 +192,18 @@
 		04FDC828230A7F460038CCFE /* SelectLanguageCell1VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageCell1VM.swift; sourceTree = "<group>"; };
 		04FDC82B230A99400038CCFE /* SelectLanguage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectLanguage.storyboard; sourceTree = "<group>"; };
 		04FDC82D230A998B0038CCFE /* SelectLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageVC.swift; sourceTree = "<group>"; };
+		04FDC85E230B9FF70038CCFE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		04FDC861230BA15B0038CCFE /* CLAppVersionRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAppVersionRepo.swift; sourceTree = "<group>"; };
+		04FDC864230BA2F60038CCFE /* CLAppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAppVersion.swift; sourceTree = "<group>"; };
+		04FDC866230BA3650038CCFE /* CLLJLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLJLocalization.swift; sourceTree = "<group>"; };
+		04FDC869230BA4E90038CCFE /* Observable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+.swift"; sourceTree = "<group>"; };
+		04FDC86B230BA7A10038CCFE /* CLLocalizationRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocalizationRepo.swift; sourceTree = "<group>"; };
+		04FDC86E230BA8C90038CCFE /* CLUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLUtility.swift; sourceTree = "<group>"; };
+		04FDC870230BAB1B0038CCFE /* CLUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLUserDefaults.swift; sourceTree = "<group>"; };
+		04FDC872230BBB910038CCFE /* MainCLLLocalizationLJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCLLLocalizationLJ.swift; sourceTree = "<group>"; };
+		04FDC875230BBEE50038CCFE /* RestLocalization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestLocalization.storyboard; sourceTree = "<group>"; };
+		04FDC877230BBF050038CCFE /* RestLocalizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestLocalizationVC.swift; sourceTree = "<group>"; };
+		04FDC87C230BC3B40038CCFE /* CLLRealmLJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLRealmLJ.swift; sourceTree = "<group>"; };
 		87B22A2428AC50EE8255C12E /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
 		937D178DA7757B92CAF0986B /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB05308FCF4F82BDBFAEF5E /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +268,7 @@
 		043EAC3722E9B0C6004F5594 /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				04FDC85B230B9F830038CCFE /* Frameworks */,
 				046FC8EA230394DC00C1C805 /* Components */,
 				EE3FA2DB23013833004400A6 /* hardware */,
 				EE3FA2D623012D18004400A6 /* integrations */,
@@ -284,6 +309,7 @@
 		043EAC5222E9B432004F5594 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04FDC874230BBE590038CCFE /* RestLocalization */,
 				04FDC82A230A99310038CCFE /* SelectLanguage */,
 				046FC9112306424200C1C805 /* TransactionList */,
 				046FC9012304F84000C1C805 /* SalesGraph */,
@@ -575,6 +601,88 @@
 			path = SelectLanguage;
 			sourceTree = "<group>";
 		};
+		04FDC85B230B9F830038CCFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC85C230B9F890038CCFE /* CLLocalizationLJ */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		04FDC85C230B9F890038CCFE /* CLLocalizationLJ */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC879230BC3550038CCFE /* Realm */,
+				04FDC85D230B9FEC0038CCFE /* Rest */,
+				04FDC872230BBB910038CCFE /* MainCLLLocalizationLJ.swift */,
+			);
+			path = CLLocalizationLJ;
+			sourceTree = "<group>";
+		};
+		04FDC85D230B9FEC0038CCFE /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC86D230BA8B10038CCFE /* util */,
+				04FDC868230BA4DB0038CCFE /* ext */,
+				04FDC863230BA2C30038CCFE /* Model */,
+				04FDC860230BA1030038CCFE /* Repo */,
+				04FDC85E230B9FF70038CCFE /* API.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		04FDC860230BA1030038CCFE /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC861230BA15B0038CCFE /* CLAppVersionRepo.swift */,
+				04FDC86B230BA7A10038CCFE /* CLLocalizationRepo.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		04FDC863230BA2C30038CCFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC864230BA2F60038CCFE /* CLAppVersion.swift */,
+				04FDC866230BA3650038CCFE /* CLLJLocalization.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04FDC868230BA4DB0038CCFE /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC869230BA4E90038CCFE /* Observable+.swift */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		04FDC86D230BA8B10038CCFE /* util */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC86E230BA8C90038CCFE /* CLUtility.swift */,
+				04FDC870230BAB1B0038CCFE /* CLUserDefaults.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		04FDC874230BBE590038CCFE /* RestLocalization */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC875230BBEE50038CCFE /* RestLocalization.storyboard */,
+				04FDC877230BBF050038CCFE /* RestLocalizationVC.swift */,
+			);
+			path = RestLocalization;
+			sourceTree = "<group>";
+		};
+		04FDC879230BC3550038CCFE /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC87C230BC3B40038CCFE /* CLLRealmLJ.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		447F8475878E4ADBC085A178 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -713,6 +821,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046FC9032304F85400C1C805 /* SalesGraph.storyboard in Resources */,
+				04FDC876230BBEE50038CCFE /* RestLocalization.storyboard in Resources */,
 				04B231C522F124F3002824F4 /* Login.storyboard in Resources */,
 				04FDC81A230A7B960038CCFE /* SelectLanguage.xib in Resources */,
 				04B231D122F12C33002824F4 /* YoutubeCell.xib in Resources */,
@@ -833,7 +942,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B231CF22F12C20002824F4 /* YoutubeCollectionViewCell.swift in Sources */,
+				04FDC85F230B9FF70038CCFE /* API.swift in Sources */,
 				04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */,
+				04FDC86C230BA7A10038CCFE /* CLLocalizationRepo.swift in Sources */,
+				04FDC87D230BC3B40038CCFE /* CLLRealmLJ.swift in Sources */,
 				04FDC815230A3D840038CCFE /* AllTransactionListVC.swift in Sources */,
 				EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */,
 				04FDC80A2306976D0038CCFE /* TransactionCell1VM.swift in Sources */,
@@ -841,13 +953,19 @@
 				046FC8EF2303950F00C1C805 /* QRScannerView.swift in Sources */,
 				046FC915230642A100C1C805 /* TransactionListVC.swift in Sources */,
 				04B231E422F166A8002824F4 /* UITableView+.swift in Sources */,
+				04FDC878230BBF050038CCFE /* RestLocalizationVC.swift in Sources */,
+				04FDC86F230BA8C90038CCFE /* CLUtility.swift in Sources */,
+				04FDC873230BBB910038CCFE /* MainCLLLocalizationLJ.swift in Sources */,
 				04FDC8062306941C0038CCFE /* OverViewTransactionList.swift in Sources */,
 				043EAC3B22E9B0C6004F5594 /* ViewController.swift in Sources */,
+				04FDC865230BA2F60038CCFE /* CLAppVersion.swift in Sources */,
 				04FDC8112306BD6A0038CCFE /* TransactionList.swift in Sources */,
 				046FC90E2305126200C1C805 /* SalesGraphVCView.swift in Sources */,
+				04FDC86A230BA4E90038CCFE /* Observable+.swift in Sources */,
 				EE3FA2D523012CEF004400A6 /* Constants.swift in Sources */,
 				04FDC82E230A998B0038CCFE /* SelectLanguageVC.swift in Sources */,
 				EE3FA2D222FFC34B004400A6 /* AdsCell1.swift in Sources */,
+				04FDC871230BAB1B0038CCFE /* CLUserDefaults.swift in Sources */,
 				04FDC827230A7E8C0038CCFE /* SelectLanguageCell1.swift in Sources */,
 				04FDC8082306951A0038CCFE /* OverviewTransactionListVM.swift in Sources */,
 				043EAC5122E9B2D2004F5594 /* PresentationAssembly.swift in Sources */,
@@ -861,6 +979,7 @@
 				04FDC81E230A7C880038CCFE /* SelectLanguageVM.swift in Sources */,
 				EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */,
 				046FC91A230644A700C1C805 /* TogglabbleOptions.swift in Sources */,
+				04FDC867230BA3650038CCFE /* CLLJLocalization.swift in Sources */,
 				04B231F222F19210002824F4 /* UserModel.swift in Sources */,
 				04FDC813230A2D0B0038CCFE /* TransactionListVM.swift in Sources */,
 				043EAC3922E9B0C6004F5594 /* AppDelegate.swift in Sources */,
@@ -872,6 +991,7 @@
 				04B231E222F1656F002824F4 /* ToWatchViewController.swift in Sources */,
 				04B2320022F2D07B002824F4 /* AlamofireHelper.swift in Sources */,
 				04FDC8012306845F0038CCFE /* CalendarPickerVM.swift in Sources */,
+				04FDC862230BA15B0038CCFE /* CLAppVersionRepo.swift in Sources */,
 				046FC8FB2303BF4E00C1C805 /* UIView+.swift in Sources */,
 				04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */,
 				046FC90C2305064E00C1C805 /* MyBarGraphViewModel.swift in Sources */,

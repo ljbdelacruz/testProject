@@ -14,9 +14,15 @@ class UserDefaultsHelpers{
     }
     func setData(value:String, key:String){
         UserDefaults.standard.set(value, forKey: key);
+        print(key)
+        print(value);
+        
     }
     func readData(key:String)->String{
-        return UserDefaults.standard.string(forKey: key) ?? "";
+        
+        let data=UserDefaults.standard.string(forKey: key);
+        print(data);
+        return data!;
     }
     func clearData(){
         
