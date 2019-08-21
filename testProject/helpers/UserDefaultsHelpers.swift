@@ -22,7 +22,7 @@ class UserDefaultsHelpers{
         
         let data=UserDefaults.standard.string(forKey: key);
         print(data);
-        return data!;
+        return data ?? "";
     }
     func clearData(){
         

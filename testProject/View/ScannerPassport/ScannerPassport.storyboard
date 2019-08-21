@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n6B-s1-90I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner PassportVC-->
+        <scene sceneID="6Zb-jo-wyB">
+            <objects>
+                <viewController id="n6B-s1-90I" customClass="ScannerPassportVC" customModule="testProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CKa-G4-leb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqT-AY-Nvr" customClass="LJPassportScanner" customModule="testProject" customModuleProvider="target">
+                                <rect key="frame" x="16" y="219" width="330" height="227"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSl-Ue-ZlJ">
+                                <rect key="frame" x="285" y="20" width="76" height="30"/>
+                                <state key="normal" title="ScanImage"/>
+                                <connections>
+                                    <action selector="scanImageOnClick:" destination="n6B-s1-90I" eventType="touchDown" id="yjQ-dZ-3W4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iqT-AY-Nvr" firstAttribute="top" secondItem="8AJ-Kd-Jrb" secondAttribute="top" constant="199" id="Hrj-Cd-oPd"/>
+                            <constraint firstItem="iqT-AY-Nvr" firstAttribute="leading" secondItem="8AJ-Kd-Jrb" secondAttribute="leading" constant="16" id="LNt-1y-LpG"/>
+                            <constraint firstItem="8AJ-Kd-Jrb" firstAttribute="trailing" secondItem="iqT-AY-Nvr" secondAttribute="trailing" constant="29" id="UtB-ex-8pZ"/>
+                            <constraint firstItem="8AJ-Kd-Jrb" firstAttribute="bottom" secondItem="iqT-AY-Nvr" secondAttribute="bottom" constant="221" id="dnE-rJ-WeG"/>
+                            <constraint firstItem="CSl-Ue-ZlJ" firstAttribute="top" secondItem="8AJ-Kd-Jrb" secondAttribute="top" id="hM7-HW-psV"/>
+                            <constraint firstItem="8AJ-Kd-Jrb" firstAttribute="trailing" secondItem="CSl-Ue-ZlJ" secondAttribute="trailing" constant="14" id="l9C-R3-d2f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8AJ-Kd-Jrb"/>
+                    </view>
+                    <connections>
+                        <outlet property="ljPassportScanner" destination="iqT-AY-Nvr" id="vzc-NS-w6o"/>
+                        <segue destination="xKS-zc-Gaf" kind="show" identifier="scannerPassportSegue" id="ah0-kU-YK7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGd-2V-aAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="170.46476761619192"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g7D-sv-EdM">
+            <objects>
+                <viewController id="xKS-zc-Gaf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dgl-EC-BKD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UNA-Lo-gSf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64f-TF-NlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="189.3553223388306"/>
+        </scene>
+    </scenes>
+</document>

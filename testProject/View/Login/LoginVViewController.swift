@@ -25,9 +25,8 @@ class LoginVViewController: UIViewController {
 //          performSegue(withIdentifier: "salesGraphSegue", sender: nil)
 //        performSegue(withIdentifier: "transactionListSegue", sender: nil)
 //        performSegue(withIdentifier: "SelectLanguageSegue", sender: nil)
-        performSegue(withIdentifier: "restLocalizationSegue", sender: nil)
-        
-        
+//        performSegue(withIdentifier: "restLocalizationSegue", sender: nil)
+        performSegue(withIdentifier: "loginToScannerPassportSegue", sender: nil)
     }
     @IBAction func forgotOnClick(_ sender: Any) {
         performSegue(withIdentifier: "forgotPasswordSegue", sender: nil);
@@ -40,7 +39,6 @@ extension LoginVViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "forgotPasswordSegue"{
             let dest=segue.destination as! ForgotPasswordViewController
-            
         }
     }
 }

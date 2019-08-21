@@ -24,13 +24,9 @@ class RestLocalizationVC: UIViewController {
 
 extension RestLocalizationVC:IMainCLLLocalizationLJ{
     func finishSettingUp() {
-        print("FINISH SETUP")
-        print(self.clfunc?.getLocalization(local: "Please Stay With Me", langID: 2))
-        print("DISPLAY!!!");
+        myLocalLabel.text=self.clfunc?.getLocalization(local: "Please Stay With Me", langID: 3);
     }
     func error(err: Error) {
+        
     }
-    
-    
-    
 }

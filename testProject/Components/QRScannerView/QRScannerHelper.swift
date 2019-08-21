@@ -143,7 +143,7 @@ public class QRScannerHelper{
         captureArea.layer.borderWidth=2;
         captureArea.layer.borderColor=UIColor.white.cgColor;
         captureArea.backgroundColor = .clear
-        let rectOfInterest = video.metadataOutputRectConverted(fromLayerRect: videoArea.frame)
+        let rectOfInterest = video.metadataOutputRectConverted(fromLayerRect: captureArea.frame)
         output.rectOfInterest = rectOfInterest
     }
     

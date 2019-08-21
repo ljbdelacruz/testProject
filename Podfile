@@ -34,14 +34,14 @@ target 'testProject' do
   #local data storage
   pod 'RxRealm', '0.7.6'
   
-  # Images
+  # Images for picking
   pod 'Fusuma'
   
   # Charts
   pod 'Charts', '3.2.1'
   
-  
-  
+  pod 'SwiftyTesseract'
+
   # QR Code Reader
 #  pod 'QRCodeReader.swift', '~> 10.1.0'
 

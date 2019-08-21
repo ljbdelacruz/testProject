@@ -58,6 +58,14 @@
             </objects>
             <point key="canvasLocation" x="90" y="-51"/>
         </scene>
+        <!--ScannerPassport-->
+        <scene sceneID="1Zb-6i-Pw8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ScannerPassport" id="amw-HU-1rI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XKb-N6-ZDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="30"/>
+        </scene>
         <!--LoginV View Controller-->
         <scene sceneID="yK7-Wf-6Ti">
             <objects>
@@ -136,6 +144,7 @@
                         <segue destination="BxU-Sh-Aqm" kind="show" identifier="transactionListSegue" id="Xr5-Ln-nGo"/>
                         <segue destination="V5x-lS-jNM" kind="show" identifier="SelectLanguageSegue" id="1pA-Er-cYn"/>
                         <segue destination="Py0-jV-7ig" kind="show" identifier="restLocalizationSegue" id="jJg-lR-Ejt"/>
+                        <segue destination="amw-HU-1rI" kind="show" identifier="loginToScannerPassportSegue" id="rqG-Qt-G1W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0v0-VV-0dT" userLabel="First Responder" sceneMemberID="firstResponder"/>
