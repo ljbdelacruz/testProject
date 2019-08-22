@@ -12,7 +12,8 @@ import SwiftyRSA
 class LJCustomQRGeneratorEncryptor{
     
     let publicKey = try! PublicKey(pemNamed: "public")
-    let privateKey = try! PrivateKey(pemNamed: "private")
+    let pkey = try! PrivateKey(pemNamed: "private")
+//    let privateKey = try! PrivateKey(pemNamed: "mykey")
     func encrypt(message: String) -> String {
         let testText = try! ClearMessage(string: message, using: .utf8)
         let encrytped = try! testText.encrypted(with: publicKey, padding: .PKCS1)
@@ -20,8 +21,9 @@ class LJCustomQRGeneratorEncryptor{
         return base64String
     }
     func decrypt(message:String){
+        
         let encrypted = try! EncryptedMessage(base64Encoded: message)
-        let clear = try! encrypted.decrypted(with: privateKey, padding: .PKCS1)
+        let clear = try! encrypted.decrypted(with: pkey, padding: .PKCS1)
         let data = clear.data
         let base64String = clear.base64String
         let string = try! clear.string(encoding: .utf8)
