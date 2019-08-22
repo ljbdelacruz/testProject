@@ -15,22 +15,21 @@ class QRGeneratorVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         encryptor=LJCustomQRGeneratorEncryptor();
-        let value=encryptor!.encrypt(message: "Hello World");
+        let data=try! setupPushPaymentTemp().generatePushPaymentString()
+        let value=encryptor!.encrypt(message: data);
         print(value)
-        print(encryptor!.decrypt(message: value));
-        print("DATA!!!");
-        
         // Do any additional setup after loading the view.
     }
     
 }
 extension QRGeneratorVC{
-    func setupPushPaymentTemp()->UIImage{
+    func setupPushPaymentTemp()->PushPaymentData{
         let temp=PushPaymentData();
         temp.payloadFormatIndicator = "01"
         temp.pointOfInitiationMethod = "12"
-        temp.setMerchantData(cCode: "170", name: "LJ Hardware Store", mCity: "Taguig", pCode: "8000", c: "465", merCatCode: "140", transCurrCode: "180", amt: "50")
-        return temp.generateQRCode()!;
+        temp.setMerchantIdetifier(mi: .merchantIdentifierVisa02, data: "4600678934521435")
+        temp.setMerchantData(cCode: "CN", name: "LJ Hardware Store", mCity: "Taguig", pCode: "8000", c: "6403", merCatCode: "0742", transCurrCode: "156", amt: "50")
+        return temp;
     }
     
 }

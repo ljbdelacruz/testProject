@@ -96,12 +96,6 @@
 		04FDC8E4230E68A50038CCFE /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8E3230E68A50038CCFE /* Encryptor.swift */; };
 		04FDC8EB230E74CC0038CCFE /* QRSDKHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FDC8DB230E60B10038CCFE /* QRSDKHelper.framework */; };
 		04FDC8EC230E74CC0038CCFE /* QRSDKHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04FDC8DB230E60B10038CCFE /* QRSDKHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		04FDC8EF230E892D0038CCFE /* m_public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC8ED230E892D0038CCFE /* m_public.pem */; };
-		04FDC8F0230E892D0038CCFE /* m_private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC8EE230E892D0038CCFE /* m_private.pem */; };
-		04FDC8F3230E909F0038CCFE /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC8F1230E909E0038CCFE /* private.pem */; };
-		04FDC8F4230E909F0038CCFE /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC8F2230E909F0038CCFE /* public.pem */; };
-		04FDC8F7230E91530038CCFE /* mykey.pub in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC8F5230E91530038CCFE /* mykey.pub */; };
-		04FDC8F8230E91530038CCFE /* mykey in Resources */ = {isa = PBXBuildFile; fileRef = 04FDC8F6230E91530038CCFE /* mykey */; };
 		EE08A7FE230CF4F700AAB09E /* ScannerPassport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE08A7FD230CF4F700AAB09E /* ScannerPassport.storyboard */; };
 		EE08A800230CF50A00AAB09E /* ScannerPassportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A7FF230CF50A00AAB09E /* ScannerPassportVC.swift */; };
 		EE08A803230D16B900AAB09E /* CameraComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE08A802230D16B900AAB09E /* CameraComponent.xib */; };
@@ -109,6 +103,8 @@
 		EE08A809230D1A8C00AAB09E /* LJPassportScanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE08A808230D1A8C00AAB09E /* LJPassportScanner.xib */; };
 		EE08A80B230D1A9A00AAB09E /* LJPassportScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A80A230D1A9A00AAB09E /* LJPassportScanner.swift */; };
 		EE08A814230D2A9D00AAB09E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = EE08A813230D2A9D00AAB09E /* tessdata */; };
+		EE08A825230F055500AAB09E /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = EE08A823230F055500AAB09E /* private.pem */; };
+		EE08A826230F055500AAB09E /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = EE08A824230F055500AAB09E /* public.pem */; };
 		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
 		EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */; };
@@ -227,13 +223,7 @@
 		04FDC8DB230E60B10038CCFE /* QRSDKHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QRSDKHelper.framework; sourceTree = "<group>"; };
 		04FDC8DE230E60F50038CCFE /* QRGenerator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRGenerator.storyboard; sourceTree = "<group>"; };
 		04FDC8E0230E61280038CCFE /* QRGeneratorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneratorVC.swift; sourceTree = "<group>"; };
-		04FDC8E3230E68A50038CCFE /* Encryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Encryptor.swift; path = testProject/View/QRGenerator/Encryptor.swift; sourceTree = SOURCE_ROOT; };
-		04FDC8ED230E892D0038CCFE /* m_public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m_public.pem; sourceTree = "<group>"; };
-		04FDC8EE230E892D0038CCFE /* m_private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m_private.pem; sourceTree = "<group>"; };
-		04FDC8F1230E909E0038CCFE /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
-		04FDC8F2230E909F0038CCFE /* public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
-		04FDC8F5230E91530038CCFE /* mykey.pub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mykey.pub; sourceTree = "<group>"; };
-		04FDC8F6230E91530038CCFE /* mykey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mykey; sourceTree = "<group>"; };
+		04FDC8E3230E68A50038CCFE /* Encryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Encryptor.swift; path = testProject/Frameworks/LJQRGenerator/Encryptor.swift; sourceTree = SOURCE_ROOT; };
 		3BCB02FE6001B7C70197FD4E /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
 		3E981D660191362AC2E4C4F2 /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65459B5494B7EC55C71BAFA /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +234,8 @@
 		EE08A808230D1A8C00AAB09E /* LJPassportScanner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LJPassportScanner.xib; sourceTree = "<group>"; };
 		EE08A80A230D1A9A00AAB09E /* LJPassportScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJPassportScanner.swift; sourceTree = "<group>"; };
 		EE08A813230D2A9D00AAB09E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		EE08A823230F055500AAB09E /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
+		EE08A824230F055500AAB09E /* public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
 		EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell1.xib; sourceTree = "<group>"; };
 		EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell1.swift; sourceTree = "<group>"; };
 		EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRadioCell1.swift; sourceTree = "<group>"; };
@@ -633,7 +625,7 @@
 		04FDC85B230B9F830038CCFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04FDC8E2230E68860038CCFE /* CustomQRGenerator */,
+				EE08A822230F050B00AAB09E /* LJQRGenerator */,
 				04FDC85C230B9F890038CCFE /* CLLocalizationLJ */,
 			);
 			path = Frameworks;
@@ -722,14 +714,6 @@
 			path = QRGenerator;
 			sourceTree = "<group>";
 		};
-		04FDC8E2230E68860038CCFE /* CustomQRGenerator */ = {
-			isa = PBXGroup;
-			children = (
-				04FDC8E3230E68A50038CCFE /* Encryptor.swift */,
-			);
-			path = CustomQRGenerator;
-			sourceTree = "<group>";
-		};
 		04FDC8E5230E73890038CCFE /* res */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,12 +725,8 @@
 		04FDC8E6230E738E0038CCFE /* key */ = {
 			isa = PBXGroup;
 			children = (
-				04FDC8F6230E91530038CCFE /* mykey */,
-				04FDC8F5230E91530038CCFE /* mykey.pub */,
-				04FDC8F1230E909E0038CCFE /* private.pem */,
-				04FDC8F2230E909F0038CCFE /* public.pem */,
-				04FDC8EE230E892D0038CCFE /* m_private.pem */,
-				04FDC8ED230E892D0038CCFE /* m_public.pem */,
+				EE08A823230F055500AAB09E /* private.pem */,
+				EE08A824230F055500AAB09E /* public.pem */,
 			);
 			path = key;
 			sourceTree = "<group>";
@@ -793,6 +773,14 @@
 				EE08A80A230D1A9A00AAB09E /* LJPassportScanner.swift */,
 			);
 			path = LJPassportScanner;
+			sourceTree = "<group>";
+		};
+		EE08A822230F050B00AAB09E /* LJQRGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				04FDC8E3230E68A50038CCFE /* Encryptor.swift */,
+			);
+			path = LJQRGenerator;
 			sourceTree = "<group>";
 		};
 		EE3FA2C322FAE403004400A6 /* TransactionCell1 */ = {
@@ -924,7 +912,6 @@
 				046FC9132306426000C1C805 /* TransactionList.storyboard in Resources */,
 				EE3FA2CD22FB1D4E004400A6 /* OptionRadioCell1.xib in Resources */,
 				046FC9182306449100C1C805 /* TogglabbleOptions.xib in Resources */,
-				04FDC8F0230E892D0038CCFE /* m_private.pem in Resources */,
 				04FDC823230A7D900038CCFE /* SelectLanguageCell1.xib in Resources */,
 				04B231CA22F12A79002824F4 /* Dashboard.storyboard in Resources */,
 				EE08A803230D16B900AAB09E /* CameraComponent.xib in Resources */,
@@ -933,21 +920,18 @@
 				046FC908230505AB00C1C805 /* MyBarGraph.xib in Resources */,
 				04FDC80F2306BD590038CCFE /* TransactionList.xib in Resources */,
 				EE08A814230D2A9D00AAB09E /* tessdata in Resources */,
+				EE08A825230F055500AAB09E /* private.pem in Resources */,
 				04FDC7FD230669710038CCFE /* CalendarPicker.xib in Resources */,
-				04FDC8F4230E909F0038CCFE /* public.pem in Resources */,
 				043EAC4322E9B0C8004F5594 /* LaunchScreen.storyboard in Resources */,
 				EE42E8E922F38E2900C469CC /* Notes.txt in Resources */,
 				04FDC82C230A99400038CCFE /* SelectLanguage.storyboard in Resources */,
 				04FDC8DF230E60F50038CCFE /* QRGenerator.storyboard in Resources */,
-				04FDC8F3230E909F0038CCFE /* private.pem in Resources */,
-				04FDC8F8230E91530038CCFE /* mykey in Resources */,
 				EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */,
-				04FDC8F7230E91530038CCFE /* mykey.pub in Resources */,
 				043EAC4022E9B0C8004F5594 /* Assets.xcassets in Resources */,
 				04B231DD22F1625A002824F4 /* YoutubeCell1.xib in Resources */,
 				043EAC3E22E9B0C6004F5594 /* Main.storyboard in Resources */,
+				EE08A826230F055500AAB09E /* public.pem in Resources */,
 				EE08A7FE230CF4F700AAB09E /* ScannerPassport.storyboard in Resources */,
-				04FDC8EF230E892D0038CCFE /* m_public.pem in Resources */,
 				046FC8ED230394F600C1C805 /* QRScannerView.xib in Resources */,
 				EE08A809230D1A8C00AAB09E /* LJPassportScanner.xib in Resources */,
 				EE3FA2D022FFC33C004400A6 /* AdsCell1.xib in Resources */,
@@ -1271,7 +1255,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FTF953N9JJ;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testProject/sdk",
@@ -1294,7 +1278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FTF953N9JJ;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testProject/sdk",
