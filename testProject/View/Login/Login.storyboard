@@ -66,6 +66,14 @@
             </objects>
             <point key="canvasLocation" x="100" y="30"/>
         </scene>
+        <!--QRGenerator-->
+        <scene sceneID="YfB-G9-5Oe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QRGenerator" id="O3c-8c-bqS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLX-xh-5pS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="88"/>
+        </scene>
         <!--LoginV View Controller-->
         <scene sceneID="yK7-Wf-6Ti">
             <objects>
@@ -145,6 +153,7 @@
                         <segue destination="V5x-lS-jNM" kind="show" identifier="SelectLanguageSegue" id="1pA-Er-cYn"/>
                         <segue destination="Py0-jV-7ig" kind="show" identifier="restLocalizationSegue" id="jJg-lR-Ejt"/>
                         <segue destination="amw-HU-1rI" kind="show" identifier="loginToScannerPassportSegue" id="rqG-Qt-G1W"/>
+                        <segue destination="O3c-8c-bqS" kind="show" identifier="qrGeneratorSegue" id="6cn-2I-uaW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0v0-VV-0dT" userLabel="First Responder" sceneMemberID="firstResponder"/>

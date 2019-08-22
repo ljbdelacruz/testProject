@@ -26,7 +26,9 @@ class LoginVViewController: UIViewController {
 //        performSegue(withIdentifier: "transactionListSegue", sender: nil)
 //        performSegue(withIdentifier: "SelectLanguageSegue", sender: nil)
 //        performSegue(withIdentifier: "restLocalizationSegue", sender: nil)
-        performSegue(withIdentifier: "loginToScannerPassportSegue", sender: nil)
+//        performSegue(withIdentifier: "loginToScannerPassportSegue", sender: nil)
+        performSegue(withIdentifier: "qrGeneratorSegue", sender: nil)
+        
     }
     @IBAction func forgotOnClick(_ sender: Any) {
         performSegue(withIdentifier: "forgotPasswordSegue", sender: nil);

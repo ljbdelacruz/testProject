@@ -1,0 +1,11 @@
+framework module QRSDKHelper {
+  umbrella header "QRSDKHelper.h"
+
+  export *
+  module * { export * }
+}
+
+module QRSDKHelper.Swift {
+    header "QRSDKHelper-Swift.h"
+    requires objc
+}
