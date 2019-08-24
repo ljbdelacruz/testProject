@@ -18,6 +18,7 @@ import MVisaQRParser
 import AVFoundation
 
 public protocol IQRScannerView{
+    func getTLVString(tlv:String)
     func successReceive(qrData:QRCodeData)
     func failed(error:Error)
 }
@@ -69,8 +70,8 @@ public class QRScannerView: UIView {
 extension QRScannerView:IQRScannerHelper{
     public func successGetTLV(tlv: String) {
         print(tlv);
+        self.vcHandler?.getTLVString(tlv: tlv)
     }
-    
     public func successProcessTLV(qrData: QRCodeData) {
         vcHandler?.successReceive(qrData: qrData);
     }

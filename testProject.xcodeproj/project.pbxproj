@@ -107,6 +107,8 @@
 		EE08A825230F055500AAB09E /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = EE08A823230F055500AAB09E /* private.pem */; };
 		EE08A826230F055500AAB09E /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = EE08A824230F055500AAB09E /* public.pem */; };
 		EE08A8412310DBE300AAB09E /* LJQRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A8402310DBE300AAB09E /* LJQRGenerator.swift */; };
+		EE08A84A2311808700AAB09E /* LJQRGeneratorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A8492311808700AAB09E /* LJQRGeneratorAPI.swift */; };
+		EE08A84C2311815E00AAB09E /* LJQRGeneratorRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A84B2311815E00AAB09E /* LJQRGeneratorRepo.swift */; };
 		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
 		EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */; };
@@ -238,6 +240,8 @@
 		EE08A823230F055500AAB09E /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
 		EE08A824230F055500AAB09E /* public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
 		EE08A8402310DBE300AAB09E /* LJQRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJQRGenerator.swift; sourceTree = "<group>"; };
+		EE08A8492311808700AAB09E /* LJQRGeneratorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJQRGeneratorAPI.swift; sourceTree = "<group>"; };
+		EE08A84B2311815E00AAB09E /* LJQRGeneratorRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJQRGeneratorRepo.swift; sourceTree = "<group>"; };
 		EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell1.xib; sourceTree = "<group>"; };
 		EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell1.swift; sourceTree = "<group>"; };
 		EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRadioCell1.swift; sourceTree = "<group>"; };
@@ -783,6 +787,8 @@
 			children = (
 				04FDC8E3230E68A50038CCFE /* Encryptor.swift */,
 				EE08A8402310DBE300AAB09E /* LJQRGenerator.swift */,
+				EE08A8492311808700AAB09E /* LJQRGeneratorAPI.swift */,
+				EE08A84B2311815E00AAB09E /* LJQRGeneratorRepo.swift */,
 			);
 			path = LJQRGenerator;
 			sourceTree = "<group>";
@@ -1049,6 +1055,7 @@
 				04B231E622F1682F002824F4 /* String+.swift in Sources */,
 				EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */,
 				046FC8AD22FD408800C1C805 /* CategoryRModel.swift in Sources */,
+				EE08A84A2311808700AAB09E /* LJQRGeneratorAPI.swift in Sources */,
 				04B231E222F1656F002824F4 /* ToWatchViewController.swift in Sources */,
 				04B2320022F2D07B002824F4 /* AlamofireHelper.swift in Sources */,
 				04FDC8012306845F0038CCFE /* CalendarPickerVM.swift in Sources */,
@@ -1068,6 +1075,7 @@
 				04B231FA22F19A5B002824F4 /* KeychainHelpers.swift in Sources */,
 				04FDC81C230A7BCD0038CCFE /* SelectLanguage.swift in Sources */,
 				046FC90A230505F800C1C805 /* MyBarGraph.swift in Sources */,
+				EE08A84C2311815E00AAB09E /* LJQRGeneratorRepo.swift in Sources */,
 				04B231DA22F13651002824F4 /* UICollectionView+.swift in Sources */,
 				04B231D622F1349C002824F4 /* VideosModel.swift in Sources */,
 				04B231F622F19A3E002824F4 /* RealmHelpers.swift in Sources */,

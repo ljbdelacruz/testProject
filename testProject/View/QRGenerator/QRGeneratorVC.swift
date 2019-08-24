@@ -11,7 +11,7 @@ import MPQRCoreSDK
 import QRSDKHelper
 
 class QRGeneratorVC: UIViewController {
-    var qrSetter:LJQRGenerator?=LJQRGenerator(key: "public");
+    var qrSetter:LJQRGenerator?;
     @IBOutlet weak var qrImage: UIImageView!
     
     
@@ -19,8 +19,8 @@ class QRGeneratorVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //encrypt message and return qrcode image with encrypted value when scanned
-        self.qrImage.image = self.qrSetter!.setupQRString(data: "Hello World I Am Dragon", width: 300, height: 300);
-        
+        self.qrSetter=LJQRGenerator(key: "public", handler: self);
+        self.qrSetter!.setupQRString(data: "WIsh the world of storm through trials and error", width: 300, height: 300);
     }
 }
 extension QRGeneratorVC{
@@ -34,3 +34,20 @@ extension QRGeneratorVC{
     }
     
 }
+extension QRGeneratorVC:ILJQRGenerator{
+    func getDecryptedMessage(data: LJQRDecryptionResponse) {
+        print(data.data);
+    }
+    
+    func getError(err: Error) {
+        
+    }
+    func getEncryptedMessage(message: String) {
+        print(message);
+        
+    }
+    func getQRImage(image: UIImage) {
+        self.qrImage.image=image;
+    }
+}
+

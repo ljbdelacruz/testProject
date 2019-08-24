@@ -11,13 +11,14 @@ import AVFoundation
 import MVisaQRParser
 
 class QRScanningViewController: UIViewController {
-
+    var qrSetter:LJQRGenerator?;
     @IBOutlet weak var qrScannerView: QRScannerView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.qrSetter=LJQRGenerator(key: "public", handler: self);
         qrScannerView.setupView(vcH: self, vc:self);
         qrScannerView.viewDidAppearInit();
     }
@@ -35,6 +36,9 @@ class QRScanningViewController: UIViewController {
 
 //MARK: QRScannerView Delegate
 extension QRScanningViewController:IQRScannerView{
+    func getTLVString(tlv: String) {
+        self.qrSetter?.decryptQR(data: tlv);
+    }
     func successReceive(qrData: QRCodeData) {
         print("Data");
         print(qrData.merchantName);
@@ -53,3 +57,24 @@ extension QRScanningViewController:AVCaptureMetadataOutputObjectsDelegate{
         print("Error");
     }
 }
+
+
+//MARK: Decryptor
+extension QRScanningViewController:ILJQRGenerator{
+    func getDecryptedMessage(data: LJQRDecryptionResponse) {
+        print(data.data);
+        print("Response");
+    }
+    
+    
+    func getError(err: Error) {
+    }
+    
+    func getEncryptedMessage(message: String) {
+        print(message);
+        
+    }
+    func getQRImage(image: UIImage) {
+    }
+}
+
