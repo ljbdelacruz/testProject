@@ -11,16 +11,16 @@ import MPQRCoreSDK
 import QRSDKHelper
 
 class QRGeneratorVC: UIViewController {
-    var encryptor:LJCustomQRGeneratorEncryptor?;
+    var qrSetter:LJQRGenerator?=LJQRGenerator(key: "public");
+    @IBOutlet weak var qrImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        encryptor=LJCustomQRGeneratorEncryptor();
-        let data=try! setupPushPaymentTemp().generatePushPaymentString()
-        let value=encryptor!.encrypt(message: data);
-        print(value)
         // Do any additional setup after loading the view.
+        self.qrImage.image = self.qrSetter!.setupQRString(data: "Hello World I Am Dragon", width: 300, height: 300);
+        
     }
-    
 }
 extension QRGeneratorVC{
     func setupPushPaymentTemp()->PushPaymentData{

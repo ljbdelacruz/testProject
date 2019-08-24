@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -96,6 +96,7 @@
 		04FDC8E4230E68A50038CCFE /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDC8E3230E68A50038CCFE /* Encryptor.swift */; };
 		04FDC8EB230E74CC0038CCFE /* QRSDKHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FDC8DB230E60B10038CCFE /* QRSDKHelper.framework */; };
 		04FDC8EC230E74CC0038CCFE /* QRSDKHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04FDC8DB230E60B10038CCFE /* QRSDKHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F07E123151F195F527DCC9C /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8F796D578F90B34199A3BE /* Pods_testProject.framework */; };
 		EE08A7FE230CF4F700AAB09E /* ScannerPassport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE08A7FD230CF4F700AAB09E /* ScannerPassport.storyboard */; };
 		EE08A800230CF50A00AAB09E /* ScannerPassportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A7FF230CF50A00AAB09E /* ScannerPassportVC.swift */; };
 		EE08A803230D16B900AAB09E /* CameraComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE08A802230D16B900AAB09E /* CameraComponent.xib */; };
@@ -105,6 +106,7 @@
 		EE08A814230D2A9D00AAB09E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = EE08A813230D2A9D00AAB09E /* tessdata */; };
 		EE08A825230F055500AAB09E /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = EE08A823230F055500AAB09E /* private.pem */; };
 		EE08A826230F055500AAB09E /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = EE08A824230F055500AAB09E /* public.pem */; };
+		EE08A8412310DBE300AAB09E /* LJQRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A8402310DBE300AAB09E /* LJQRGenerator.swift */; };
 		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
 		EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */; };
@@ -119,7 +121,6 @@
 		EE42E8DD22F2467B00C469CC /* CoreDataEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DB22F2467B00C469CC /* CoreDataEntity.xcdatamodeld */; };
 		EE42E8DF22F2491B00C469CC /* DashboardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42E8DE22F2491B00C469CC /* DashboardViewPresenter.swift */; };
 		EE42E8E922F38E2900C469CC /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE42E8E822F38E2900C469CC /* Notes.txt */; };
-		FE6898389E884CBEE0806856 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E981D660191362AC2E4C4F2 /* Pods_testProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -139,6 +140,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0225353375756B026A1B58D3 /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
 		043EAC3522E9B0C6004F5594 /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043EAC3822E9B0C6004F5594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043EAC3A22E9B0C6004F5594 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -224,9 +226,8 @@
 		04FDC8DE230E60F50038CCFE /* QRGenerator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRGenerator.storyboard; sourceTree = "<group>"; };
 		04FDC8E0230E61280038CCFE /* QRGeneratorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneratorVC.swift; sourceTree = "<group>"; };
 		04FDC8E3230E68A50038CCFE /* Encryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Encryptor.swift; path = testProject/Frameworks/LJQRGenerator/Encryptor.swift; sourceTree = SOURCE_ROOT; };
-		3BCB02FE6001B7C70197FD4E /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
-		3E981D660191362AC2E4C4F2 /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B65459B5494B7EC55C71BAFA /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8F796D578F90B34199A3BE /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB01042FD8ECF3025A937189 /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
 		EE08A7FD230CF4F700AAB09E /* ScannerPassport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScannerPassport.storyboard; sourceTree = "<group>"; };
 		EE08A7FF230CF50A00AAB09E /* ScannerPassportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerPassportVC.swift; sourceTree = "<group>"; };
 		EE08A802230D16B900AAB09E /* CameraComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraComponent.xib; sourceTree = "<group>"; };
@@ -236,6 +237,7 @@
 		EE08A813230D2A9D00AAB09E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		EE08A823230F055500AAB09E /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
 		EE08A824230F055500AAB09E /* public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
+		EE08A8402310DBE300AAB09E /* LJQRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJQRGenerator.swift; sourceTree = "<group>"; };
 		EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell1.xib; sourceTree = "<group>"; };
 		EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell1.swift; sourceTree = "<group>"; };
 		EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRadioCell1.swift; sourceTree = "<group>"; };
@@ -262,8 +264,8 @@
 				043EAC5822E9BB54004F5594 /* BaseCodeAPI.framework in Frameworks */,
 				EE3FA2E723015F1A004400A6 /* MVisaQRParser.framework in Frameworks */,
 				04FDC8DC230E60B10038CCFE /* QRSDKHelper.framework in Frameworks */,
-				FE6898389E884CBEE0806856 /* Pods_testProject.framework in Frameworks */,
 				04FDC8EB230E74CC0038CCFE /* QRSDKHelper.framework in Frameworks */,
+				2F07E123151F195F527DCC9C /* Pods_testProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +277,8 @@
 			children = (
 				043EAC3722E9B0C6004F5594 /* testProject */,
 				043EAC3622E9B0C6004F5594 /* Products */,
-				B67A405EAAB910AEDD92F720 /* Pods */,
-				408179517753F4C096E28F16 /* Frameworks */,
+				A3D20955AF19EE4EEB29DC03 /* Pods */,
+				2E7414BBC7AD229FB1B0166B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,6 +374,7 @@
 		046FC8EA230394DC00C1C805 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EE08A83B2310DB7600AAB09E /* QRGenerator */,
 				EE08A806230D1A6A00AAB09E /* LJPassportScanner */,
 				EE08A801230D16A200AAB09E /* CameraComponent */,
 				04FDC820230A7D730038CCFE /* Language */,
@@ -731,21 +734,21 @@
 			path = key;
 			sourceTree = "<group>";
 		};
-		408179517753F4C096E28F16 /* Frameworks */ = {
+		2E7414BBC7AD229FB1B0166B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3E981D660191362AC2E4C4F2 /* Pods_testProject.framework */,
+				BF8F796D578F90B34199A3BE /* Pods_testProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B67A405EAAB910AEDD92F720 /* Pods */ = {
+		A3D20955AF19EE4EEB29DC03 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B65459B5494B7EC55C71BAFA /* Pods-testProject.debug.xcconfig */,
-				3BCB02FE6001B7C70197FD4E /* Pods-testProject.release.xcconfig */,
+				DB01042FD8ECF3025A937189 /* Pods-testProject.debug.xcconfig */,
+				0225353375756B026A1B58D3 /* Pods-testProject.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		EE08A7FC230CF4E800AAB09E /* ScannerPassport */ = {
@@ -779,8 +782,16 @@
 			isa = PBXGroup;
 			children = (
 				04FDC8E3230E68A50038CCFE /* Encryptor.swift */,
+				EE08A8402310DBE300AAB09E /* LJQRGenerator.swift */,
 			);
 			path = LJQRGenerator;
+			sourceTree = "<group>";
+		};
+		EE08A83B2310DB7600AAB09E /* QRGenerator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QRGenerator;
 			sourceTree = "<group>";
 		};
 		EE3FA2C322FAE403004400A6 /* TransactionCell1 */ = {
@@ -850,12 +861,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043EAC4722E9B0C8004F5594 /* Build configuration list for PBXNativeTarget "testProject" */;
 			buildPhases = (
-				5A217B7B981BF406DE8063E6 /* [CP] Check Pods Manifest.lock */,
+				4F95F997E7695631C0356D7D /* [CP] Check Pods Manifest.lock */,
 				043EAC3122E9B0C6004F5594 /* Sources */,
 				043EAC3222E9B0C6004F5594 /* Frameworks */,
 				043EAC3322E9B0C6004F5594 /* Resources */,
 				043EAC5A22E9BB55004F5594 /* Embed Frameworks */,
-				16DCB4D6C5A6EE312F11F037 /* [CP] Embed Pods Frameworks */,
+				8316508F0B1204523A83ABAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -941,73 +952,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16DCB4D6C5A6EE312F11F037 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-testProject/Pods-testProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/Fusuma/Fusuma.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${PODS_ROOT}/MPQRCoreSDK/Frameworks/MPQRCoreSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftEventBus/SwiftEventBus.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyTesseract/SwiftyTesseract.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fusuma.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MPQRCoreSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEventBus.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTesseract.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testProject/Pods-testProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5A217B7B981BF406DE8063E6 /* [CP] Check Pods Manifest.lock */ = {
+		4F95F997E7695631C0356D7D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1027,6 +972,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8316508F0B1204523A83ABAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testProject/Pods-testProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testProject/Pods-testProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testProject/Pods-testProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1095,6 +1057,7 @@
 				EE08A80B230D1A9A00AAB09E /* LJPassportScanner.swift in Sources */,
 				04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */,
 				046FC90C2305064E00C1C805 /* MyBarGraphViewModel.swift in Sources */,
+				EE08A8412310DBE300AAB09E /* LJQRGenerator.swift in Sources */,
 				EE3FA2DD23013842004400A6 /* QRScannerHelper.swift in Sources */,
 				EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */,
 				043EAC4F22E9B289004F5594 /* AppAssembler.swift in Sources */,
@@ -1251,7 +1214,7 @@
 		};
 		043EAC4822E9B0C8004F5594 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B65459B5494B7EC55C71BAFA /* Pods-testProject.debug.xcconfig */;
+			baseConfigurationReference = DB01042FD8ECF3025A937189 /* Pods-testProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1274,7 +1237,7 @@
 		};
 		043EAC4922E9B0C8004F5594 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BCB02FE6001B7C70197FD4E /* Pods-testProject.release.xcconfig */;
+			baseConfigurationReference = 0225353375756B026A1B58D3 /* Pods-testProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

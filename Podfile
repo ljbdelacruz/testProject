@@ -45,6 +45,10 @@ target 'testProject' do
   # QR Code Reader
 #  pod 'QRCodeReader.swift', '~> 10.1.0'
   pod 'MPQRCoreSDK'
+  
+  #QR Code Generator
+  pod 'QRCode'
+  
 
   #UI
   

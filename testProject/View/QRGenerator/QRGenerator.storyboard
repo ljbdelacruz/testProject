@@ -17,9 +17,23 @@
                     <view key="view" contentMode="scaleToFill" id="AoQ-Yy-bWQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ilK-wy-VDj">
+                                <rect key="frame" x="37" y="124" width="300" height="300"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5YG-qP-N2Z" firstAttribute="trailing" secondItem="ilK-wy-VDj" secondAttribute="trailing" constant="38" id="8kI-hy-rti"/>
+                            <constraint firstItem="5YG-qP-N2Z" firstAttribute="bottom" secondItem="ilK-wy-VDj" secondAttribute="bottom" constant="243" id="RnP-8t-Nw5"/>
+                            <constraint firstItem="ilK-wy-VDj" firstAttribute="top" secondItem="5YG-qP-N2Z" secondAttribute="top" constant="104" id="bhT-em-jaB"/>
+                            <constraint firstItem="ilK-wy-VDj" firstAttribute="leading" secondItem="5YG-qP-N2Z" secondAttribute="leading" constant="37" id="i8K-wX-Hsh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5YG-qP-N2Z"/>
                     </view>
+                    <connections>
+                        <outlet property="qrImage" destination="ilK-wy-VDj" id="6N0-H8-7dX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGo-oX-MaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

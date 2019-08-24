@@ -10,7 +10,10 @@ import Foundation
 import SwiftyRSA
 
 class LJCustomQRGeneratorEncryptor{
-    let publicKey = try! PublicKey(pemNamed: "public")
+    var publicKey = try! PublicKey(pemNamed: "public")
+    init(key:String){
+        publicKey=try! PublicKey(pemNamed:"public");
+    }
     func encrypt(message: String) -> String {
         let testText = try! ClearMessage(string: message, using: .utf8)
         let encrytped = try! testText.encrypted(with: publicKey, padding: .PKCS1)
