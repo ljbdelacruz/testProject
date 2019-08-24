@@ -18,6 +18,7 @@ class QRGeneratorVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //encrypt message and return qrcode image with encrypted value when scanned
         self.qrImage.image = self.qrSetter!.setupQRString(data: "Hello World I Am Dragon", width: 300, height: 300);
         
     }

@@ -15,6 +15,7 @@ import MVisaQRParser
 
 public protocol IQRScannerHelper{
     func successProcessTLV(qrData:QRCodeData)
+    func successGetTLV(tlv:String)
     func setupComplete()
     func error(Error:Any, type:Int);
 }
@@ -156,6 +157,7 @@ public class QRScannerHelper{
                 if object.type == AVMetadataObject.ObjectType.qr
                 {
                     session.stopRunning()
+                    self.responseHandler?.successGetTLV(tlv: object.stringValue!);
                     parse(tlv: object.stringValue!)
                 }
             }

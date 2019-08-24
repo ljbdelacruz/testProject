@@ -67,6 +67,10 @@ public class QRScannerView: UIView {
 
 //Mark: IQScannerHelper
 extension QRScannerView:IQRScannerHelper{
+    public func successGetTLV(tlv: String) {
+        print(tlv);
+    }
+    
     public func successProcessTLV(qrData: QRCodeData) {
         vcHandler?.successReceive(qrData: qrData);
     }
