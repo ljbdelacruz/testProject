@@ -74,6 +74,14 @@
             </objects>
             <point key="canvasLocation" x="119" y="88"/>
         </scene>
+        <!--TouchID-->
+        <scene sceneID="5hV-N2-DC8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TouchID" id="lXT-oH-CzI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lc6-tR-IW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91" y="144"/>
+        </scene>
         <!--LoginV View Controller-->
         <scene sceneID="yK7-Wf-6Ti">
             <objects>
@@ -154,6 +162,7 @@
                         <segue destination="Py0-jV-7ig" kind="show" identifier="restLocalizationSegue" id="jJg-lR-Ejt"/>
                         <segue destination="amw-HU-1rI" kind="show" identifier="loginToScannerPassportSegue" id="rqG-Qt-G1W"/>
                         <segue destination="O3c-8c-bqS" kind="show" identifier="qrGeneratorSegue" id="6cn-2I-uaW"/>
+                        <segue destination="lXT-oH-CzI" kind="show" identifier="loginToTouchIDSegue" id="Rmc-wU-3Fd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0v0-VV-0dT" userLabel="First Responder" sceneMemberID="firstResponder"/>

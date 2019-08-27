@@ -109,6 +109,9 @@
 		EE08A8412310DBE300AAB09E /* LJQRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A8402310DBE300AAB09E /* LJQRGenerator.swift */; };
 		EE08A84A2311808700AAB09E /* LJQRGeneratorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A8492311808700AAB09E /* LJQRGeneratorAPI.swift */; };
 		EE08A84C2311815E00AAB09E /* LJQRGeneratorRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A84B2311815E00AAB09E /* LJQRGeneratorRepo.swift */; };
+		EE08A8662315332300AAB09E /* TouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A8652315332300AAB09E /* TouchID.swift */; };
+		EE08A8692315353E00AAB09E /* TouchID.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE08A8682315353E00AAB09E /* TouchID.storyboard */; };
+		EE08A86B2315354C00AAB09E /* TouchIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A86A2315354C00AAB09E /* TouchIDVC.swift */; };
 		EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */; };
 		EE3FA2C722FAE68C004400A6 /* TransactionCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */; };
 		EE3FA2CB22FB1D40004400A6 /* OptionRadioCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */; };
@@ -242,6 +245,9 @@
 		EE08A8402310DBE300AAB09E /* LJQRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJQRGenerator.swift; sourceTree = "<group>"; };
 		EE08A8492311808700AAB09E /* LJQRGeneratorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJQRGeneratorAPI.swift; sourceTree = "<group>"; };
 		EE08A84B2311815E00AAB09E /* LJQRGeneratorRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJQRGeneratorRepo.swift; sourceTree = "<group>"; };
+		EE08A8652315332300AAB09E /* TouchID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchID.swift; sourceTree = "<group>"; };
+		EE08A8682315353E00AAB09E /* TouchID.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TouchID.storyboard; sourceTree = "<group>"; };
+		EE08A86A2315354C00AAB09E /* TouchIDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDVC.swift; sourceTree = "<group>"; };
 		EE3FA2C422FAE41D004400A6 /* TransactionCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell1.xib; sourceTree = "<group>"; };
 		EE3FA2C622FAE68C004400A6 /* TransactionCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell1.swift; sourceTree = "<group>"; };
 		EE3FA2CA22FB1D40004400A6 /* OptionRadioCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRadioCell1.swift; sourceTree = "<group>"; };
@@ -340,6 +346,7 @@
 		043EAC5222E9B432004F5594 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE08A8672315353100AAB09E /* TouchID */,
 				04FDC8DD230E60D70038CCFE /* QRGenerator */,
 				EE08A7FC230CF4E800AAB09E /* ScannerPassport */,
 				04FDC874230BBE590038CCFE /* RestLocalization */,
@@ -632,6 +639,7 @@
 		04FDC85B230B9F830038CCFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE08A8642315331100AAB09E /* TouchID */,
 				EE08A822230F050B00AAB09E /* LJQRGenerator */,
 				04FDC85C230B9F890038CCFE /* CLLocalizationLJ */,
 			);
@@ -800,6 +808,23 @@
 			path = QRGenerator;
 			sourceTree = "<group>";
 		};
+		EE08A8642315331100AAB09E /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A8652315332300AAB09E /* TouchID.swift */,
+			);
+			path = TouchID;
+			sourceTree = "<group>";
+		};
+		EE08A8672315353100AAB09E /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A8682315353E00AAB09E /* TouchID.storyboard */,
+				EE08A86A2315354C00AAB09E /* TouchIDVC.swift */,
+			);
+			path = TouchID;
+			sourceTree = "<group>";
+		};
 		EE3FA2C322FAE403004400A6 /* TransactionCell1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -946,6 +971,7 @@
 				EE3FA2C522FAE41D004400A6 /* TransactionCell1.xib in Resources */,
 				043EAC4022E9B0C8004F5594 /* Assets.xcassets in Resources */,
 				04B231DD22F1625A002824F4 /* YoutubeCell1.xib in Resources */,
+				EE08A8692315353E00AAB09E /* TouchID.storyboard in Resources */,
 				043EAC3E22E9B0C6004F5594 /* Main.storyboard in Resources */,
 				EE08A826230F055500AAB09E /* public.pem in Resources */,
 				EE08A7FE230CF4F700AAB09E /* ScannerPassport.storyboard in Resources */,
@@ -1008,6 +1034,7 @@
 				04FDC85F230B9FF70038CCFE /* API.swift in Sources */,
 				04B231C722F12521002824F4 /* ForgotPasswordViewController.swift in Sources */,
 				04FDC86C230BA7A10038CCFE /* CLLocalizationRepo.swift in Sources */,
+				EE08A8662315332300AAB09E /* TouchID.swift in Sources */,
 				04FDC87D230BC3B40038CCFE /* CLLRealmLJ.swift in Sources */,
 				04FDC815230A3D840038CCFE /* AllTransactionListVC.swift in Sources */,
 				EE3FA2D823012D28004400A6 /* StripeIntegration.swift in Sources */,
@@ -1063,6 +1090,7 @@
 				046FC8FB2303BF4E00C1C805 /* UIView+.swift in Sources */,
 				EE08A80B230D1A9A00AAB09E /* LJPassportScanner.swift in Sources */,
 				04B231DF22F16290002824F4 /* YoutubeCell1.swift in Sources */,
+				EE08A86B2315354C00AAB09E /* TouchIDVC.swift in Sources */,
 				046FC90C2305064E00C1C805 /* MyBarGraphViewModel.swift in Sources */,
 				EE08A8412310DBE300AAB09E /* LJQRGenerator.swift in Sources */,
 				EE3FA2DD23013842004400A6 /* QRScannerHelper.swift in Sources */,
